@@ -1,0 +1,38 @@
+@use '../abstracts/mixins' as *;
+
+.pk-card {
+  @include pk-card-base;
+}
+
+.pk-card-img {
+  width: 100%;
+  display: block;
+}
+
+.pk-card-header {
+  padding: 1rem;
+  font-weight: 700;
+  background-color: var(--pk-gray-100);
+  border-bottom: 1px solid var(--pk-gray-300);
+}
+
+.pk-card-body {
+  padding: 1rem;
+}
+
+.pk-card-title {
+  margin: 0 0 0.5rem;
+  font-size: var(--pk-font-size-xl);
+  font-weight: 700;
+}
+
+.pk-card-text {
+  margin: 0;
+  color: var(--pk-gray-700);
+}
+
+.pk-card-footer {
+  padding: 1rem;
+  background-color: var(--pk-gray-100);
+  border-top: 1px solid var(--pk-gray-300);
+}

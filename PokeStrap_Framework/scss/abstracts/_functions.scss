@@ -1,0 +1,69 @@
+//Funciones del framework
+
+@use 'sass:map';
+@use 'sass:color';
+@use 'maps' as *;
+
+// Obtiene un color del mapa principal
+@function pk-color($name) {
+  @if map.has-key($pk-theme-colors, $name) {
+    @return map.get($pk-theme-colors, $name);
+  }
+
+  @error "El color `#{$name}` no existe en $pk-theme-colors.";
+}
+
+// Obtiene un gris
+@function pk-gray($level) {
+  @if map.has-key($pk-grays, $level) {
+    @return map.get($pk-grays, $level);
+  }
+
+  @error "El gris `#{$level}` no existe en $pk-grays.";
+}
+
+// Obtiene un espaciado
+@function pk-space($size) {
+  @if map.has-key($pk-spacers, $size) {
+    @return map.get($pk-spacers, $size);
+  }
+
+  @error "El espacio `#{$size}` no existe en $pk-spacers.";
+}
+
+// Obtiene un breakpoint
+@function pk-breakpoint($name) {
+  @if map.has-key($pk-breakpoints, $name) {
+    @return map.get($pk-breakpoints, $name);
+  }
+
+  @error "El breakpoint `#{$name}` no existe en $pk-breakpoints.";
+}
+
+// Obtiene un radio
+@function pk-radius($name) {
+  @if map.has-key($pk-radii, $name) {
+    @return map.get($pk-radii, $name);
+  }
+
+  @error "El radio `#{$name}` no existe en $pk-radii.";
+}
+
+// Obtiene una sombra
+@function pk-shadow($name) {
+  @if map.has-key($pk-shadows, $name) {
+    @return map.get($pk-shadows, $name);
+  }
+
+  @error "La sombra `#{$name}` no existe en $pk-shadows.";
+}
+
+// Aclara un color
+@function pk-tint($color-value, $percentage) {
+  @return color.mix(#ffffff, $color-value, $percentage);
+}
+
+// Oscurece un color
+@function pk-shade($color-value, $percentage) {
+  @return color.mix(#000000, $color-value, $percentage);
+}

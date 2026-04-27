@@ -1,49 +1,29 @@
-
-// Estructura globalizada del framework
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-}
-body {
-  margin: 0;
+.pk-app {
   font-family: var(--pk-font-sans);
   font-size: var(--pk-font-size-md);
-  line-height: 1.5;
+  line-height: var(--pk-line-height-md);
   color: var(--pk-gray-900);
-  background-color: var(--pk-light);
+  background-color: var(--pk-gray-100);
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-a {
+.pk-link {
   color: var(--pk-accent);
   text-decoration: none;
   transition: color var(--pk-transition-fast);
 
   &:hover {
-    color: var(--pk-accent-dark);
+    color: var(--pk-primary);
   }
 }
 
-button,input,textarea,select {
-  font: inherit;
+.pk-img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-ul,ol {
-  padding-left: 1.5rem;
-}
-p,h1,h2,h3,h4,h5,h6 {
-  margin-top: 0;
-}
-hr {
+.pk-divider {
   border: 0;
   border-top: 1px solid var(--pk-gray-300);
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }

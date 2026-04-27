@@ -1,37 +1,50 @@
-//COLORES
+//TEMA BASE DE COLORES 
+// Colores de marca
+$pk-primary: #ee1515 !default;
+$pk-secondary: #ffde00 !default;
+$pk-accent: #3b4cca !default;
 
-// Variables para colores clasicos
-$pk-primary: #ee1515;
-$pk-secondary: #ffde00;
-$pk-accent: #3b4cca;
-$pk-dark: #222224;
-$pk-light: #f5f5f5;
-$pk-white: #ffffff;
-$pk-black: #000000;
+// Variantes de colores de marca
+$pk-primary-light: #ff4c4c !default;
+$pk-primary-dark: #b30000 !default;
 
-// Escala neutral de grises
-$pk-gray-100: #f8f9fa;
-$pk-gray-200: #e9ecef;
-$pk-gray-300: #dee2e6;
-$pk-gray-400: #ced4da;
-$pk-gray-500: #adb5bd;
-$pk-gray-600: #6c757d;
-$pk-gray-700: #495057;
-$pk-gray-800: #343a40;
-$pk-gray-900: #212529;
+// Variantes secundarias
+$pk-secondary-light: #fff176 !default;
+$pk-secondary-dark: #c7a600 !default;
 
-// Colores de estado
-$pk-success: #4caf50;
-$pk-danger: #e53935;
-$pk-warning: #ffc107;
-$pk-info: #2196f3;
+// Variantes de acento
+$pk-accent-light: #6c79ff !default;
+$pk-accent-dark: #2a2f8f !default;
 
-// Variantes de color
-$pk-primary-light: #ff4c4c;
-$pk-primary-dark: #b30000;
+// Colores neutros
+$pk-white: #ffffff !default;
+$pk-black: #000000 !default;
 
-$pk-secondary-light: #fff176;
-$pk-secondary-dark: #c7a600;
+$pk-light: #f5f5f5 !default;
+$pk-dark: #222224 !default;
 
-$pk-accent-light: #6c79ff;
-$pk-accent-dark: #2a2f8f;
+// Escala de grises
+$pk-gray-100: #f8f9fa !default;
+$pk-gray-200: #e9ecef !default;
+$pk-gray-300: #dee2e6 !default;
+$pk-gray-400: #ced4da !default;
+$pk-gray-500: #adb5bd !default;
+$pk-gray-600: #6c757d !default;
+$pk-gray-700: #495057 !default;
+$pk-gray-800: #343a40 !default;
+$pk-gray-900: #212529 !default;
+
+// Colores semánticos
+$pk-success: #4caf50 !default;
+$pk-danger: #e53935 !default;
+$pk-warning: #ffc107 !default;
+$pk-info: #2196f3 !default;
+
+// Colores de texto
+$pk-text-main: $pk-gray-900 !default;
+$pk-text-muted: $pk-gray-600 !default;
+$pk-text-light: $pk-white !default;
+
+// Background colors
+$pk-body-bg: $pk-light !default;
+$pk-surface-bg: $pk-white !default;
