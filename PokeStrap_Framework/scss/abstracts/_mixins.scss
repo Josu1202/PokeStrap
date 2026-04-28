@@ -1,0 +1,130 @@
+//Mixins 😈
+
+@use 'sass:map';
+@use 'breakpoints' as *;
+@use 'variables' as *;
+
+// Media query Mobile First
+@mixin pk-media-up($breakpoint) {
+  @if map.has-key($pk-breakpoints, $breakpoint) {
+    @media (min-width: map.get($pk-breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "El breakpoint `#{$breakpoint}` no existe.";
+  }
+}
+
+// Media query hacia abajo
+@mixin pk-media-down($breakpoint) {
+  @if map.has-key($pk-breakpoints, $breakpoint) {
+    @media (max-width: (map.get($pk-breakpoints, $breakpoint) - 0.02px)) {
+      @content;
+    }
+  } @else {
+    @error "El breakpoint `#{$breakpoint}` no existe.";
+  }
+}
+
+// Flex centrado
+@mixin pk-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Tamaño fijo
+@mixin pk-size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Botón base
+@mixin pk-button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: $pk-border-width $pk-border-style transparent;
+  border-radius: $pk-radius-md;
+  font-family: inherit;
+  font-weight: $pk-font-weight-semibold;
+  line-height: $pk-line-height-sm;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  transition:
+    background-color $pk-transition-fast,
+    color $pk-transition-fast,
+    border-color $pk-transition-fast,
+    box-shadow $pk-transition-fast,
+    transform $pk-transition-fast;
+
+  &:disabled,
+  &.is-disabled {
+    opacity: 0.65;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+}
+
+// Variante solid de botón
+@mixin pk-button-solid($bg, $color: #ffffff) {
+  background-color: $bg;
+  border-color: $bg;
+  color: $color;
+
+  &:hover {
+    background-color: color-mix(in srgb, #{$bg} 88%, black);
+    border-color: color-mix(in srgb, #{$bg} 88%, black);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Variante outline de boton
+@mixin pk-button-outline($color) {
+  background-color: transparent;
+  border-color: $color;
+  color: $color;
+
+  &:hover {
+    background-color: $color;
+    color: #ffffff;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Card base
+@mixin pk-card-base {
+  background-color: var(--pk-surface-bg, #ffffff);
+  border: 1px solid var(--pk-gray-300);
+  border-radius: var(--pk-radius-lg);
+  box-shadow: var(--pk-shadow-sm);
+  overflow: hidden;
+}
+
+// Truncar texto
+@mixin pk-text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// ocultar elementos visualmente
+@mixin pk-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}

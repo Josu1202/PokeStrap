@@ -1,0 +1,52 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+:root {
+  --pk-primary: #{$pk-primary};
+  --pk-secondary: #{$pk-secondary};
+  --pk-accent: #{$pk-accent};
+
+  --pk-success: #{$pk-success};
+  --pk-danger: #{$pk-danger};
+  --pk-warning: #{$pk-warning};
+  --pk-info: #{$pk-info};
+
+  --pk-white: #{$pk-white};
+  --pk-black: #{$pk-black};
+
+  --pk-gray-100: #{$pk-gray-100};
+  --pk-gray-200: #{$pk-gray-200};
+  --pk-gray-300: #{$pk-gray-300};
+  --pk-gray-400: #{$pk-gray-400};
+  --pk-gray-500: #{$pk-gray-500};
+  --pk-gray-600: #{$pk-gray-600};
+  --pk-gray-700: #{$pk-gray-700};
+  --pk-gray-800: #{$pk-gray-800};
+  --pk-gray-900: #{$pk-gray-900};
+
+  --pk-font-sans: #{$pk-font-sans};
+  --pk-font-mono: #{$pk-font-mono};
+
+  --pk-font-size-sm: #{$pk-font-size-sm};
+  --pk-font-size-md: #{$pk-font-size-md};
+  --pk-font-size-lg: #{$pk-font-size-lg};
+  --pk-font-size-xl: #{$pk-font-size-xl};
+  --pk-font-size-2xl: #{$pk-font-size-2xl};
+  --pk-font-size-3xl: #{$pk-font-size-3xl};
+
+  --pk-line-height-sm: #{$pk-line-height-sm};
+  --pk-line-height-md: #{$pk-line-height-md};
+  --pk-line-height-lg: #{$pk-line-height-lg};
+
+  --pk-radius-sm: #{$pk-radius-sm};
+  --pk-radius-md: #{$pk-radius-md};
+  --pk-radius-lg: #{$pk-radius-lg};
+  --pk-radius-pill: #{$pk-radius-pill};
+
+  --pk-shadow-sm: #{$pk-shadow-sm};
+  --pk-shadow-md: #{$pk-shadow-md};
+  --pk-shadow-lg: #{$pk-shadow-lg};
+
+  --pk-transition-fast: #{$pk-transition-fast};
+  --pk-transition-base: #{$pk-transition-base};
+}

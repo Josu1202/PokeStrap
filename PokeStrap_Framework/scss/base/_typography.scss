@@ -1,0 +1,38 @@
+.pk-title-1 {
+  font-size: var(--pk-font-size-3xl);
+  line-height: var(--pk-line-height-sm);
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.pk-title-2 {
+  font-size: var(--pk-font-size-2xl);
+  line-height: var(--pk-line-height-sm);
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.pk-title-3 {
+  font-size: var(--pk-font-size-xl);
+  line-height: var(--pk-line-height-sm);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.pk-text {
+  font-size: var(--pk-font-size-md);
+  line-height: var(--pk-line-height-md);
+  margin: 0 0 1rem;
+}
+
+.pk-lead {
+  font-size: var(--pk-font-size-lg);
+  line-height: var(--pk-line-height-lg);
+  color: var(--pk-gray-700);
+  margin: 0 0 1rem;
+}
+
+.pk-small {
+  font-size: var(--pk-font-size-sm);
+  line-height: var(--pk-line-height-md);
+}

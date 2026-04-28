@@ -1,0 +1,31 @@
+.pk-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--pk-font-size-md);
+  background-color: var(--pk-white);
+}
+
+.pk-table th,
+.pk-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--pk-gray-300);
+  text-align: left;
+}
+
+.pk-table th {
+  font-weight: 700;
+  background-color: var(--pk-gray-100);
+}
+
+.pk-table-bordered th,
+.pk-table-bordered td {
+  border: 1px solid var(--pk-gray-300);
+}
+
+.pk-table-hover tbody tr:hover {
+  background-color: var(--pk-gray-100);
+}
+
+.pk-table-striped tbody tr:nth-child(odd) {
+  background-color: var(--pk-gray-100);
+}

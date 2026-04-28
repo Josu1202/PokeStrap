@@ -1,0 +1,25 @@
+.pk-hero {
+  padding: 4rem 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      var(--pk-primary),
+      var(--pk-accent)
+    );
+  color: var(--pk-white);
+  text-align: center;
+}
+
+.pk-hero-title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.pk-hero-text {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  font-size: var(--pk-font-size-lg);
+  line-height: var(--pk-line-height-md);
+}

@@ -1,0 +1,29 @@
+.pk-app {
+  font-family: var(--pk-font-sans);
+  font-size: var(--pk-font-size-md);
+  line-height: var(--pk-line-height-md);
+  color: var(--pk-gray-900);
+  background-color: var(--pk-gray-100);
+}
+
+.pk-link {
+  color: var(--pk-accent);
+  text-decoration: none;
+  transition: color var(--pk-transition-fast);
+
+  &:hover {
+    color: var(--pk-primary);
+  }
+}
+
+.pk-img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pk-divider {
+  border: 0;
+  border-top: 1px solid var(--pk-gray-300);
+  margin: 1rem 0;
+}
