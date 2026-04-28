@@ -1,6 +1,40 @@
-//Compilador
+// Compilador principal
 
 @use 'core';
+
+// Abstracts ya vienen desde core
+// Base ya viene desde core
+
+// Vendors
+@use 'vendors/normalize';
+@use 'vendors/code';
+
+// Layout
+@use 'layout/columns';
+@use 'layout/container';
+@use 'layout/flex';
+@use 'layout/grid';
+@use 'layout/section';
+@use 'layout/spacing-layout';
+
+// Themes
+@use 'themes/theme-electric';
+@use 'themes/theme-fire';
+@use 'themes/theme-grass';
+@use 'themes/theme-pokemon-classic';
+@use 'themes/theme-water';
+
+// Utilities
+@use 'utilities/backgrounds';
+@use 'utilities/borders';
+@use 'utilities/display';
+@use 'utilities/opacity';
+@use 'utilities/positions';
+@use 'utilities/shadows';
+@use 'utilities/sizing';
+@use 'utilities/spacing';
+@use 'utilities/text';
+@use 'utilities/visibility';
 
 // Components
 @use 'components/alerts';

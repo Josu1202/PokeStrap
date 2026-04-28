@@ -1,4 +1,6 @@
-@use '../abstracts/maps' as *;
+@use 'sass:map';
+@use '../abstracts/maps' as maps;
+@use '../abstracts/breakpoints' as bp;
 
 .container {
   width: 100%;
@@ -14,8 +16,8 @@
   padding-right: 1rem;
 }
 
-@each $breakpoint, $max-width in $pk-container-max-widths {
-  @media (min-width: map-get($pk-breakpoints, $breakpoint)) {
+@each $breakpoint, $max-width in maps.$pk-container-widths {
+  @media (min-width: map.get(bp.$pk-breakpoints, $breakpoint)) {
     .container {
       max-width: $max-width;
     }

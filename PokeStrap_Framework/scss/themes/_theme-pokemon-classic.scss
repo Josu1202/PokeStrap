@@ -1,0 +1,44 @@
+.theme-pokemon-classic {
+  --pk-theme-primary: #ef4444;
+  --pk-theme-secondary: #ffcb05;
+  --pk-theme-accent: #3b4cca;
+  --pk-theme-bg: #f8fafc;
+  --pk-theme-surface: #ffffff;
+  --pk-theme-text: #1f2937;
+  --pk-theme-muted: #4b5563;
+  --pk-theme-border: #d1d5db;
+  --pk-theme-gradient: linear-gradient(135deg, #ef4444 0%, #ef4444 48%, #ffffff 49%, #ffffff 51%, #3b4cca 52%);
+}
+
+.theme-pokemon-classic .theme-section {
+  background:
+    linear-gradient(180deg, rgba(59, 76, 202, 0.08), transparent 45%),
+    var(--pk-theme-bg);
+  color: var(--pk-theme-text);
+}
+
+.theme-pokemon-classic .theme-card {
+  background: var(--pk-theme-surface);
+  border: 2px solid var(--pk-theme-border);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(59, 76, 202, 0.14);
+}
+
+.theme-pokemon-classic .theme-title {
+  color: var(--pk-theme-accent);
+}
+
+.theme-pokemon-classic .theme-badge {
+  background-color: var(--pk-theme-secondary);
+  color: #111111;
+}
+
+.theme-pokemon-classic .theme-button {
+  background: var(--pk-theme-accent);
+  color: #ffffff;
+  border: 1px solid var(--pk-theme-accent);
+}
+
+.theme-pokemon-classic .theme-button:hover {
+  background-color: #2f3aa5;
+}

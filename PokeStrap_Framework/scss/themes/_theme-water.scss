@@ -1,0 +1,44 @@
+.theme-water {
+  --pk-theme-primary: #2563eb;
+  --pk-theme-secondary: #06b6d4;
+  --pk-theme-accent: #93c5fd;
+  --pk-theme-bg: #eef8ff;
+  --pk-theme-surface: #ffffff;
+  --pk-theme-text: #0f172a;
+  --pk-theme-muted: #075985;
+  --pk-theme-border: #bae6fd;
+  --pk-theme-gradient: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.theme-water .theme-section {
+  background:
+    linear-gradient(180deg, rgba(147, 197, 253, 0.35), transparent 40%),
+    var(--pk-theme-bg);
+  color: var(--pk-theme-text);
+}
+
+.theme-water .theme-card {
+  background: var(--pk-theme-surface);
+  border: 1px solid var(--pk-theme-border);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.16);
+}
+
+.theme-water .theme-title {
+  color: var(--pk-theme-primary);
+}
+
+.theme-water .theme-badge {
+  background-color: var(--pk-theme-secondary);
+  color: #ffffff;
+}
+
+.theme-water .theme-button {
+  background: var(--pk-theme-gradient);
+  color: #ffffff;
+  border: 1px solid var(--pk-theme-primary);
+}
+
+.theme-water .theme-button:hover {
+  filter: saturate(1.15);
+}

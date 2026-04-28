@@ -1,5 +1,6 @@
-@use '../abstracts/maps' as *;
-@use '../abstracts/mixins' as *;
+@use 'sass:math';
+@use '../abstracts/breakpoints' as bp;
+@use '../abstracts/mixins' as mx;
 
 .row {
   display: flex;
@@ -20,12 +21,12 @@
 @for $i from 1 through 12 {
   .col-#{$i} {
     flex: 0 0 auto;
-    width: percentage($i / 12);
+    width: math.percentage(math.div($i, 12));
   }
 }
 
-@each $breakpoint, $value in $pk-breakpoints {
-  @include pk-media-up($breakpoint) {
+@each $breakpoint, $value in bp.$pk-breakpoints {
+  @include mx.pk-media-up($breakpoint) {
     .col-#{$breakpoint} {
       flex: 1 0 0%;
     }
@@ -33,7 +34,7 @@
     @for $i from 1 through 12 {
       .col-#{$breakpoint}-#{$i} {
         flex: 0 0 auto;
-        width: percentage($i / 12);
+        width: math.percentage(math.div($i, 12));
       }
     }
   }
