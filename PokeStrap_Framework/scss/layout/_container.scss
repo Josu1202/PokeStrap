@@ -1,0 +1,23 @@
+@use '../abstracts/maps' as *;
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@each $breakpoint, $max-width in $pk-container-max-widths {
+  @media (min-width: map-get($pk-breakpoints, $breakpoint)) {
+    .container {
+      max-width: $max-width;
+    }
+  }
+}

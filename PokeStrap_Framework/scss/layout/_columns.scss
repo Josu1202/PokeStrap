@@ -1,0 +1,30 @@
+@use '../abstracts/maps' as *;
+@use '../abstracts/mixins' as *;
+
+@for $i from 1 through 6 {
+  .columns-#{$i} {
+    columns: $i;
+  }
+}
+
+@each $breakpoint, $value in $pk-breakpoints {
+  @include pk-media-up($breakpoint) {
+    @for $i from 1 through 6 {
+      .columns-#{$breakpoint}-#{$i} {
+        columns: $i;
+      }
+    }
+  }
+}
+
+.column-gap-sm {
+  column-gap: 0.5rem;
+}
+
+.column-gap-md {
+  column-gap: 1rem;
+}
+
+.column-gap-lg {
+  column-gap: 1.5rem;
+}
