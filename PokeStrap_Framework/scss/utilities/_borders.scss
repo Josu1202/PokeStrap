@@ -1,0 +1,47 @@
+@use '../abstracts/maps' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/colors' as *;
+
+.border {
+  border: $pk-border-width $pk-border-style $pk-gray-300 !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-top {
+  border-top: $pk-border-width $pk-border-style $pk-gray-300 !important;
+}
+
+.border-bottom {
+  border-bottom: $pk-border-width $pk-border-style $pk-gray-300 !important;
+}
+
+.border-start {
+  border-left: $pk-border-width $pk-border-style $pk-gray-300 !important;
+}
+
+.border-end {
+  border-right: $pk-border-width $pk-border-style $pk-gray-300 !important;
+}
+
+@each $name, $color in $pk-theme-colors {
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}
+
+@each $name, $radius in $pk-radii {
+  .rounded-#{$name} {
+    border-radius: $radius !important;
+  }
+}
+
+.rounded {
+  border-radius: $pk-radius-md !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}

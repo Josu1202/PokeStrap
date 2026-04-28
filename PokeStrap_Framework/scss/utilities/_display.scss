@@ -1,0 +1,19 @@
+@use '../abstracts/maps' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/breakpoints' as *;
+
+@each $name, $value in $pk-displays {
+  .d-#{$name} {
+    display: $value !important;
+  }
+}
+
+@each $breakpoint, $size in $pk-breakpoints {
+  @include pk-media-up($breakpoint) {
+    @each $name, $value in $pk-displays {
+      .d-#{$breakpoint}-#{$name} {
+        display: $value !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+
+.position-static {
+  position: static !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: sticky !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.start-0 {
+  left: 0 !important;
+}
+
+.end-0 {
+  right: 0 !important;
+}
+
+.z-dropdown {
+  z-index: $pk-z-dropdown !important;
+}
+
+.z-sticky {
+  z-index: $pk-z-sticky !important;
+}
+
+.z-fixed {
+  z-index: $pk-z-fixed !important;
+}
+
+.z-modal {
+  z-index: $pk-z-modal !important;
+}

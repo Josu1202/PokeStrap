@@ -1,0 +1,11 @@
+@use '../abstracts/maps' as *;
+
+@each $name, $shadow in $pk-shadows {
+  .shadow-#{$name} {
+    box-shadow: $shadow !important;
+  }
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
+}

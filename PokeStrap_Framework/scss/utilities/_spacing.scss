@@ -1,0 +1,72 @@
+@use '../abstracts/maps' as *;
+
+@each $key, $value in $pk-spacers {
+  .m-#{$key} {
+    margin: $value !important;
+  }
+
+  .mt-#{$key} {
+    margin-top: $value !important;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $value !important;
+  }
+
+  .ms-#{$key} {
+    margin-left: $value !important;
+  }
+
+  .me-#{$key} {
+    margin-right: $value !important;
+  }
+
+  .mx-#{$key} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .my-#{$key} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .p-#{$key} {
+    padding: $value !important;
+  }
+
+  .pt-#{$key} {
+    padding-top: $value !important;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $value !important;
+  }
+
+  .ps-#{$key} {
+    padding-left: $value !important;
+  }
+
+  .pe-#{$key} {
+    padding-right: $value !important;
+  }
+
+  .px-#{$key} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .py-#{$key} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

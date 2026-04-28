@@ -1,0 +1,59 @@
+@use '../abstracts/maps' as *;
+
+.text-start {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+@each $name, $color in $pk-theme-colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}
+
+@each $name, $color in $pk-grays {
+  .text-gray-#{$name} {
+    color: $color !important;
+  }
+}
+
+@each $name, $size in $pk-font-sizes {
+  .fs-#{$name} {
+    font-size: $size !important;
+  }
+}
+
+@each $name, $weight in $pk-font-weights {
+  .fw-#{$name} {
+    font-weight: $weight !important;
+  }
+}

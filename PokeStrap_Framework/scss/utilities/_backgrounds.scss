@@ -1,0 +1,28 @@
+@use '../abstracts/maps' as *;
+
+@each $name, $color in $pk-theme-colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+
+  .text-bg-#{$name} {
+    background-color: $color !important;
+    color: if($name == light or $name == secondary or $name == warning or $name == 'white', #000000, #ffffff) !important;
+  }
+}
+
+@each $name, $color in $pk-color-variants {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+@each $name, $color in $pk-grays {
+  .bg-gray-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
