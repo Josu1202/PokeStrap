@@ -1,0 +1,16 @@
+// Estilos pensados para bloques de codigo usados en la documentacion.
+
+pre,
+code {
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+code {
+  font-size: 0.9em;
+}

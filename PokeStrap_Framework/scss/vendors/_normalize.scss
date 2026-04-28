@@ -1,0 +1,25 @@
+// Ajustes minimos de consistencia entre navegadores.
+// No sustituye el reset principal del framework.
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
