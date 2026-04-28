@@ -1,0 +1,101 @@
+:root {
+  --pk-primary: #ee1515;
+  --pk-primary-light: #ff4c4c;
+  --pk-primary-dark: #b30000;
+  --pk-secondary: #ffde00;
+  --pk-secondary-light: #fff176;
+  --pk-secondary-dark: #c7a600;
+  --pk-accent: #3b4cca;
+  --pk-accent-light: #6c79ff;
+  --pk-accent-dark: #2a2f8f;
+  --pk-dark: #222224;
+  --pk-light: #f5f5f5;
+  --pk-white: #ffffff;
+  --pk-black: #000000;
+  --pk-gray-100: #f8f9fa;
+  --pk-gray-200: #e9ecef;
+  --pk-gray-300: #dee2e6;
+  --pk-gray-400: #ced4da;
+  --pk-gray-500: #adb5bd;
+  --pk-gray-600: #6c757d;
+  --pk-gray-700: #495057;
+  --pk-gray-800: #343a40;
+  --pk-gray-900: #212529;
+  --pk-success: #4caf50;
+  --pk-danger: #e53935;
+  --pk-warning: #ffc107;
+  --pk-info: #2196f3;
+  --pk-font-sans: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  --pk-font-mono: Courier New, Courier, monospace;
+  --pk-font-size-xs: 0.75rem;
+  --pk-font-size-sm: 0.875rem;
+  --pk-font-size-md: 1rem;
+  --pk-font-size-lg: 1.125rem;
+  --pk-font-size-xl: 1.25rem;
+  --pk-font-size-2xl: 1.5rem;
+  --pk-font-size-3xl: 2rem;
+  --pk-radius-sm: 0.25rem;
+  --pk-radius-md: 0.5rem;
+  --pk-radius-lg: 0.75rem;
+  --pk-radius-xl: 1rem;
+  --pk-radius-pill: 999px;
+  --pk-shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --pk-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --pk-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --pk-transition-fast: 0.2s ease-in-out;
+  --pk-transition-base: 0.3s ease-in-out;
+  --pk-transition-slow: 0.45s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--pk-font-sans);
+  font-size: var(--pk-font-size-md);
+  line-height: 1.5;
+  color: var(--pk-gray-900);
+  background-color: var(--pk-light);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--pk-accent);
+  text-decoration: none;
+  transition: color var(--pk-transition-fast);
+}
+a:hover {
+  color: var(--pk-accent-dark);
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--pk-gray-300);
+  margin: 1.5rem 0;
+}
+
+/*# sourceMappingURL=pokestrap.css.map */
