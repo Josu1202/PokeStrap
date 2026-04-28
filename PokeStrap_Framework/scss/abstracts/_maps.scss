@@ -14,8 +14,8 @@ $pk-theme-colors: (
   info: $pk-info,
   light: $pk-light,
   dark: $pk-dark,
-  white: $pk-white,
-  black: $pk-black
+  'white': $pk-white,
+  'black': $pk-black
 ) !default;
 
 // Variantes de colores

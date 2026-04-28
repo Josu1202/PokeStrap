@@ -1,10 +1,16 @@
-//Esto se compila broskitos
+//Compilador
 
-// Abstracts
-@use 'abstracts/colors';
-@use 'abstracts/variables';
-@use 'abstracts/maps';
+@use 'core';
 
-// Base
-@use 'base/root';
-@use 'base/globals';
+// Components
+@use 'components/alerts';
+@use 'components/badges';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/dropdown';
+@use 'components/forms';
+@use 'components/hero';
+@use 'components/modals';
+@use 'components/navbar';
+@use 'components/pagination';
+@use 'components/tables';
