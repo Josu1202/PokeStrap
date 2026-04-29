@@ -1,24 +1,158 @@
-<main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards - PokeStrap</title>
 
-<header>
-    <h1>Cards</h1>
-    <p>Las cards son contenedores flexibles para mostrar contenido.</p>
-</header>
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
 
-<section>
-    <article>
-        <header>
-            <h2>Título</h2>
-        </header>
+<body class="pk-app">
 
-        <section>
-            <p>Contenido de la card.</p>
-        </section>
+<nav class="pk-navbar pk-navbar-fixed">
+  <a href="../index.html" class="pk-navbar-brand">PokeStrap</a>
 
-        <footer>
-            <button>Acción</button>
-        </footer>
-    </article>
-</section>
+  <div class="pk-navbar-menu">
+    <a href="../index.html" class="pk-navbar-link">Inicio</a>
+    <a href="../getting-started.html" class="pk-navbar-link">Getting Started</a>
+    <a href="../basic-layout.html" class="pk-navbar-link">Layout</a>
+    <a href="../components.html" class="pk-navbar-link">Componentes</a>
+    <a href="../examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
+
+<main style="padding:5rem 1rem; max-width:1000px; margin:auto;">
+
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Cards</h1>
+    <p class="pk-lead">
+      Las cards son contenedores flexibles que permiten agrupar contenido relacionado como texto, imágenes y acciones.
+    </p>
+  </header>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Estructura básica</h2>
+
+    <div class="pk-card" style="max-width:400px;">
+      <div class="pk-card-header">Título</div>
+
+      <div class="pk-card-body">
+        <p class="pk-card-text">Contenido de la card.</p>
+      </div>
+
+      <div class="pk-card-footer">
+        <button class="pk-btn pk-btn-primary">Acción</button>
+      </div>
+    </div>
+
+    <pre style="margin-top:1rem;">
+<code>&lt;div class="pk-card"&gt;
+  &lt;div class="pk-card-header"&gt;Título&lt;/div&gt;
+
+  &lt;div class="pk-card-body"&gt;
+    &lt;p&gt;Contenido de la card&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="pk-card-footer"&gt;
+    &lt;button class="pk-btn pk-btn-primary"&gt;Acción&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Card con imagen</h2>
+
+    <div class="pk-card" style="max-width:400px;">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" class="pk-card-img">
+
+      <div class="pk-card-body">
+        <h3 class="pk-card-title">Pikachu</h3>
+        <p class="pk-card-text">Tipo: Eléctrico</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Card con acciones</h2>
+
+    <div class="pk-card" style="max-width:400px;">
+      <div class="pk-card-body">
+        <h3 class="pk-card-title">Entrenador</h3>
+        <p class="pk-card-text">Gestiona tus Pokémon.</p>
+      </div>
+
+      <div class="pk-card-footer" style="display:flex; gap:0.5rem;">
+        <button class="pk-btn pk-btn-primary">Ver</button>
+        <button class="pk-btn pk-btn-outline-primary">Editar</button>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Grid de cards</h2>
+
+    <div style="
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:1rem;
+      margin-top:1rem;
+    ">
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Pikachu</h3>
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Charmander</h3>
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Bulbasaur</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Buenas prácticas</h2>
+
+    <ul class="pk-text">
+      <li>Usar cards para agrupar información relacionada.</li>
+      <li>Mantener consistencia en el contenido interno.</li>
+      <li>No sobrecargar la card con demasiados elementos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Explorar más</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="../components.html" class="pk-btn pk-btn-primary">Componentes</a>
+      <a href="../examples.html" class="pk-btn pk-btn-outline-primary">Ejemplos</a>
+    </div>
+  </section>
 
 </main>
+
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
+</footer>
+
+</body>
+</html>

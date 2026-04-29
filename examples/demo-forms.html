@@ -1,17 +1,134 @@
-<main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Forms - PokeStrap</title>
 
-<header>
-    <h1>Demo Forms</h1>
-</header>
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
 
-<form>
-    <label>Usuario</label>
-    <input type="text">
+<body class="pk-app">
 
-    <label>Password</label>
-    <input type="password">
+<nav class="pk-navbar">
+  <a href="../index.html" class="pk-navbar-brand">PokeStrap</a>
 
-    <button>Login</button>
-</form>
+  <div class="pk-navbar-menu">
+    <a href="../index.html" class="pk-navbar-link">Inicio</a>
+    <a href="../components.html" class="pk-navbar-link">Componentes</a>
+    <a href="../utilities.html" class="pk-navbar-link">Utilities</a>
+    <a href="../examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
+
+<main style="padding:2rem; max-width:600px; margin:auto;">
+
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Demo Forms</h1>
+    <p class="pk-lead">
+      Ejemplo de formulario de autenticación utilizando los estilos de PokeStrap.
+    </p>
+  </header>
+
+  <section style="margin-bottom:3rem;">
+
+    <div class="pk-card">
+      <div class="pk-card-header">
+        Acceso
+      </div>
+
+      <div class="pk-card-body">
+
+        <form>
+
+          <div class="pk-form-group">
+            <label class="pk-label">Usuario</label>
+            <input type="text" class="pk-input" placeholder="Ingresa tu usuario">
+          </div>
+
+          <div class="pk-form-group">
+            <label class="pk-label">Contraseña</label>
+            <input type="password" class="pk-input" placeholder="Ingresa tu contraseña">
+          </div>
+
+          <div class="pk-form-group">
+            <label class="pk-label">
+              <input type="checkbox" class="pk-checkbox">
+              Recordarme
+            </label>
+          </div>
+
+          <button type="submit" class="pk-btn pk-btn-primary" style="width:100%;">
+            Iniciar sesión
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Estados de validación</h2>
+
+    <div style="display:grid; gap:1rem; margin-top:1rem;">
+
+      <input class="pk-input pk-is-valid" value="Correcto">
+      <input class="pk-input pk-is-invalid" value="Error">
+
+    </div>
+
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Código</h2>
+
+    <pre style="
+      background: var(--pk-gray-900);
+      color:white;
+      padding:1rem;
+      border-radius:0.5rem;
+      overflow:auto;
+    ">
+<code>&lt;div class="pk-form-group"&gt;
+  &lt;label class="pk-label"&gt;Usuario&lt;/label&gt;
+  &lt;input type="text" class="pk-input"&gt;
+&lt;/div&gt;
+
+&lt;button class="pk-btn pk-btn-primary"&gt;
+  Login
+&lt;/button&gt;</code>
+    </pre>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Buenas prácticas</h2>
+
+    <div style="display:grid; gap:1rem; margin-top:1rem;">
+      <div class="pk-alert pk-alert-success">
+        Usa pk-form-group para mantener consistencia en los espacios.
+      </div>
+
+      <div class="pk-alert pk-alert-info">
+        Combina inputs con estados pk-is-valid y pk-is-invalid.
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
+</footer>
+
+</body>
+</html>

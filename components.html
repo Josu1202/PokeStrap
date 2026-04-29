@@ -1,109 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Components - PokeStrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes - PokeStrap</title>
+
+  <link rel="stylesheet" href="PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
 
-<header>
-    <h1>PokeStrap</h1>
+<body class="pk-app">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="basic-layout.html">Layout</a></li>
-            <li><a href="utilities.html">Utilities</a></li>
-            <li><a href="examples.html">Ejemplos</a></li>
-        </ul>
-    </nav>
-</header>
+<nav class="pk-navbar pk-navbar-fixed">
+  <a href="index.html" class="pk-navbar-brand">PokeStrap</a>
 
-<main>
+  <div class="pk-navbar-menu">
+    <a href="index.html" class="pk-navbar-link">Inicio</a>
+    <a href="getting-started.html" class="pk-navbar-link">Getting Started</a>
+    <a href="basic-layout.html" class="pk-navbar-link">Layout</a>
+    <a href="utilities.html" class="pk-navbar-link">Utilities</a>
+    <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
 
-<header>
-    <h2>Componentes</h2>
-    <p>Explora los elementos reutilizables de PokeStrap para construir interfaces inspiradas en Pokémon.</p>
-</header>
+<main style="padding:5rem 1rem; max-width:1000px; margin:auto;">
 
-<!-- INTRO -->
-<section>
-    <h2>¿Qué son los componentes?</h2>
-    <p>Los componentes son bloques reutilizables que puedes usar para construir interfaces rápidamente.</p>
-</section>
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Componentes</h1>
+    <p class="pk-lead">
+      Los componentes de PokeStrap son bloques reutilizables diseñados para construir interfaces consistentes,
+      accesibles y fáciles de mantener.
+    </p>
+  </header>
 
-<!-- LISTA DE COMPONENTES -->
-<section>
-    <h2>Lista de componentes</h2>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">¿Qué son los componentes?</h2>
+    <p class="pk-text">
+      Un componente es una unidad visual reutilizable que encapsula estructura, estilo y comportamiento.
+      Permiten construir interfaces complejas combinando piezas simples.
+    </p>
+  </section>
 
-    <section>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Lista de componentes</h2>
 
-        <article>
-            <h3>Botones</h3>
-            <p>Acciones como capturar Pokémon o iniciar batallas.</p>
-            <a href="guides/buttons.html">Ver guía</a>
-        </article>
+    <div style="
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:1.5rem;
+      margin-top:1rem;
+    ">
 
-        <article>
-            <h3>Formularios</h3>
-            <p>Captura datos de entrenadores o registros.</p>
-            <a href="guides/forms.html">Ver guía</a>
-        </article>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Botones</h3>
+          <p class="pk-card-text">
+            Permiten ejecutar acciones dentro de la interfaz.
+          </p>
+          <br>
+          <a href="guides/buttons.html" class="pk-btn pk-btn-primary">Ver guía</a>
+        </div>
+      </div>
 
-        <article>
-            <h3>Navbar</h3>
-            <p>Navegación principal del sitio.</p>
-            <a href="guides/navbar.html">Ver guía</a>
-        </article>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Formularios</h3>
+          <p class="pk-card-text">
+            Recogen datos del usuario mediante inputs y controles.
+          </p>
+          <br>
+          <a href="guides/forms.html" class="pk-btn pk-btn-success">Ver guía</a>
+        </div>
+      </div>
 
-        <article>
-            <h3>Cards</h3>
-            <p>Muestra información de Pokémon o entrenadores.</p>
-            <a href="guides/cards.html">Ver guía</a>
-        </article>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Navbar</h3>
+          <p class="pk-card-text">
+            Proporciona navegación principal entre secciones.
+          </p>
+          <br>
+          <a href="guides/navbar.html" class="pk-btn pk-btn-accent">Ver guía</a>
+        </div>
+      </div>
 
-    </section>
-</section>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Cards</h3>
+          <p class="pk-card-text">
+            Contenedores flexibles para mostrar contenido estructurado.
+          </p>
+          <br>
+          <a href="guides/cards.html" class="pk-btn pk-btn-secondary">Ver guía</a>
+        </div>
+      </div>
 
-<!-- EJEMPLOS RÁPIDOS -->
-<section>
-    <h2>Ejemplo rápido</h2>
+    </div>
+  </section>
 
-    <article>
-        <h3>Botón de captura</h3>
-        <button>Capturar</button>
-    </article>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Ejemplos rápidos</h2>
 
-    <article>
-        <h3>Card de Pokémon</h3>
-        <article>
-            <header>
-                <h4>Pikachu</h4>
-            </header>
-            <section>
-                <p>Tipo: Eléctrico</p>
-            </section>
-        </article>
-    </article>
-</section>
+    <div style="display:grid; gap:1.5rem;">
 
-<!-- NAVEGACIÓN -->
-<section>
-    <h2>Explorar más</h2>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Botón</h3>
 
-    <ul>
-        <li><a href="utilities.html">Ir a Utilities</a></li>
-        <li><a href="examples.html">Ver ejemplos</a></li>
-    </ul>
-</section>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+            <button class="pk-btn pk-btn-primary">Primario</button>
+            <button class="pk-btn pk-btn-outline-primary">Outline</button>
+            <button class="pk-btn pk-btn-success">Éxito</button>
+          </div>
+
+          <pre style="margin-top:1rem;">
+<code>&lt;button class="pk-btn pk-btn-primary"&gt;Primario&lt;/button&gt;</code>
+          </pre>
+
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Card</h3>
+
+          <div style="margin-top:1rem;">
+            <div class="pk-card">
+              <div class="pk-card-body">
+                <h4 class="pk-card-title">Ejemplo</h4>
+                <p class="pk-card-text">Contenido dentro de una card.</p>
+              </div>
+            </div>
+          </div>
+
+          <pre style="margin-top:1rem;">
+<code>&lt;div class="pk-card"&gt;
+  &lt;div class="pk-card-body"&gt;
+    &lt;h4&gt;Título&lt;/h4&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+          </pre>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Explorar más</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="utilities.html" class="pk-btn pk-btn-outline-primary">Ir a Utilities</a>
+      <a href="examples.html" class="pk-btn pk-btn-primary">Ver ejemplos</a>
+    </div>
+  </section>
 
 </main>
 
-<footer>
-    <p>Proyecto desarrollado por Alejandro</p>
-    <p>© 2026 PokeStrap</p>
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
 </footer>
 
 </body>

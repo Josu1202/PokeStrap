@@ -1,44 +1,145 @@
-<main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons - PokeStrap</title>
 
-<header>
-    <h1>Buttons</h1>
-    <p>Los botones permiten a los usuarios ejecutar acciones o navegar dentro de la aplicación.</p>
-</header>
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
 
-<section>
-    <h2>Ejemplo básico</h2>
+<body class="pk-app">
 
-    <button>Botón</button>
-    <button type="submit">Enviar</button>
-    <button type="reset">Resetear</button>
-</section>
+<nav class="pk-navbar pk-navbar-fixed">
+  <a href="../index.html" class="pk-navbar-brand">PokeStrap</a>
 
-<section>
-    <h2>Tipos de botón</h2>
+  <div class="pk-navbar-menu">
+    <a href="../index.html" class="pk-navbar-link">Inicio</a>
+    <a href="../getting-started.html" class="pk-navbar-link">Getting Started</a>
+    <a href="../basic-layout.html" class="pk-navbar-link">Layout</a>
+    <a href="../components.html" class="pk-navbar-link">Componentes</a>
+    <a href="../examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
 
-    <article>
-        <h3>Botón estándar</h3>
-        <button>Click</button>
-    </article>
+<main style="padding:5rem 1rem; max-width:1000px; margin:auto;">
 
-    <article>
-        <h3>Botón como enlace</h3>
-        <a href="#">Ir a página</a>
-    </article>
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Buttons</h1>
+    <p class="pk-lead">
+      Los botones permiten a los usuarios ejecutar acciones dentro de la interfaz.
+      PokeStrap proporciona múltiples variantes, tamaños y estados para cubrir diferentes necesidades.
+    </p>
+  </header>
 
-    <article>
-        <h3>Botón deshabilitado</h3>
-        <button disabled>No disponible</button>
-    </article>
-</section>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Ejemplo básico</h2>
 
-<section>
-    <h2>Código</h2>
-    <pre><code>
-&lt;button&gt;Botón&lt;/button&gt;
-&lt;button type="submit"&gt;Enviar&lt;/button&gt;
-&lt;a href="#"&gt;Link&lt;/a&gt;
-    </code></pre>
-</section>
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <button class="pk-btn pk-btn-primary">Botón</button>
+      <button type="submit" class="pk-btn pk-btn-success">Enviar</button>
+      <button type="reset" class="pk-btn pk-btn-danger">Resetear</button>
+    </div>
+
+    <pre style="margin-top:1rem;">
+<code>&lt;button class="pk-btn pk-btn-primary"&gt;Botón&lt;/button&gt;
+&lt;button type="submit" class="pk-btn pk-btn-success"&gt;Enviar&lt;/button&gt;
+&lt;button type="reset" class="pk-btn pk-btn-danger"&gt;Resetear&lt;/button&gt;</code>
+    </pre>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Variantes</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <button class="pk-btn pk-btn-primary">Primary</button>
+      <button class="pk-btn pk-btn-secondary">Secondary</button>
+      <button class="pk-btn pk-btn-accent">Accent</button>
+      <button class="pk-btn pk-btn-success">Success</button>
+      <button class="pk-btn pk-btn-danger">Danger</button>
+      <button class="pk-btn pk-btn-warning">Warning</button>
+      <button class="pk-btn pk-btn-info">Info</button>
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Outline</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <button class="pk-btn pk-btn-outline-primary">Primary</button>
+      <button class="pk-btn pk-btn-outline-success">Success</button>
+      <button class="pk-btn pk-btn-outline-danger">Danger</button>
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Tamaños</h2>
+
+    <div style="display:flex; gap:1rem; align-items:center; flex-wrap:wrap; margin-top:1rem;">
+      <button class="pk-btn pk-btn-primary pk-btn-sm">Pequeño</button>
+      <button class="pk-btn pk-btn-primary">Normal</button>
+      <button class="pk-btn pk-btn-primary pk-btn-lg">Grande</button>
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Estados</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <button class="pk-btn pk-btn-primary">Activo</button>
+      <button class="pk-btn pk-btn-primary" disabled>Deshabilitado</button>
+    </div>
+
+    <p class="pk-small" style="margin-top:1rem;">
+      Los botones deshabilitados utilizan el atributo <code>disabled</code> y no responden a interacciones.
+    </p>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Botones como enlace</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="#" class="pk-btn pk-btn-primary">Ir a página</a>
+      <a href="#" class="pk-btn pk-btn-outline-primary">Enlace alternativo</a>
+    </div>
+
+    <pre style="margin-top:1rem;">
+<code>&lt;a href="#" class="pk-btn pk-btn-primary"&gt;Ir a página&lt;/a&gt;</code>
+    </pre>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Buenas prácticas</h2>
+
+    <ul class="pk-text">
+      <li>Usar botones para acciones y enlaces para navegación.</li>
+      <li>Mantener consistencia en colores según el tipo de acción.</li>
+      <li>Evitar usar demasiados estilos diferentes en una misma vista.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Explorar más</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="forms.html" class="pk-btn pk-btn-outline-primary">Formularios</a>
+      <a href="../components.html" class="pk-btn pk-btn-primary">Componentes</a>
+    </div>
+  </section>
 
 </main>
+
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
+</footer>
+
+</body>
+</html>

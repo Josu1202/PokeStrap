@@ -1,106 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utilities - PokeStrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilities - PokeStrap</title>
+
+  <link rel="stylesheet" href="PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
 
-<header>
-    <h1>PokeStrap</h1>
+<body class="pk-app">
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="getting-started.html">Getting Started</a></li>
-            <li><a href="basic-layout.html">Layout</a></li>
-            <li><a href="components.html">Componentes</a></li>
-            <li><a href="examples.html">Ejemplos</a></li>
-        </ul>
-    </nav>
-</header>
+<nav class="pk-navbar pk-navbar-fixed">
+  <a href="index.html" class="pk-navbar-brand">PokeStrap</a>
 
-<main>
+  <div class="pk-navbar-menu">
+    <a href="index.html" class="pk-navbar-link">Inicio</a>
+    <a href="getting-started.html" class="pk-navbar-link">Getting Started</a>
+    <a href="basic-layout.html" class="pk-navbar-link">Layout</a>
+    <a href="components.html" class="pk-navbar-link">Componentes</a>
+    <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
 
-<header>
-    <h2>Utilities</h2>
-    <p>Herramientas para controlar estilos rápidamente en PokeStrap.</p>
-</header>
+<main style="padding:5rem 1rem; max-width:1000px; margin:auto;">
 
-<!-- INTRO -->
-<section>
-    <h2>¿Qué son las utilities?</h2>
-    <p>Las utilities permiten modificar el diseño sin necesidad de escribir estilos complejos.</p>
-</section>
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Utilities</h1>
+    <p class="pk-lead">
+      Las utilities permiten aplicar estilos rápidamente mediante clases predefinidas sin necesidad de escribir CSS adicional.
+    </p>
+  </header>
 
-<!-- LISTA -->
-<section>
-    <h2>Utilities disponibles</h2>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">¿Qué son las utilities?</h2>
+    <p class="pk-text">
+      Son clases diseñadas para modificar propiedades específicas como colores, espaciado, alineación o tipografía.
+      Se utilizan directamente en el HTML para acelerar el desarrollo.
+    </p>
+  </section>
 
-    <section>
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Categorías</h2>
 
-        <article>
-            <h3>Colores</h3>
-            <p>Define estados como ataque, defensa o tipos de Pokémon.</p>
-            <a href="guides/colors.html">Ver guía</a>
-        </article>
+    <div style="
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap:1.5rem;
+      margin-top:1rem;
+    ">
 
-        <article>
-            <h3>Tipografía</h3>
-            <p>Controla títulos, textos y jerarquía visual.</p>
-            <a href="guides/typography.html">Ver guía</a>
-        </article>
-
-        <article>
-            <h3>Spacing</h3>
-            <p>Controla los espacios entre elementos.</p>
-            <a href="guides/spacing.html">Ver guía</a>
-        </article>
-
-        <article>
-            <h3>Flex</h3>
-            <p>Organiza elementos como equipos o listas de Pokémon.</p>
-            <a href="guides/flex.html">Ver guía</a>
-        </article>
-
-    </section>
-</section>
-
-<!-- EJEMPLO -->
-<section>
-    <h2>Ejemplo</h2>
-
-    <article>
-        <h3>Texto importante</h3>
-        <strong>¡Pokémon capturado!</strong>
-    </article>
-
-    <article>
-        <h3>Distribución</h3>
-        <div>
-            <div>Pikachu</div>
-            <div>Charmander</div>
-            <div>Bulbasaur</div>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Colores</h3>
+          <p class="pk-card-text">
+            Controla colores de texto y fondos usando variables del sistema.
+          </p>
+          <a href="guides/colors.html" class="pk-btn pk-btn-outline-primary">Ver guía</a>
         </div>
-    </article>
-</section>
+      </div>
 
-<!-- NAVEGACIÓN -->
-<section>
-    <h2>Explorar más</h2>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Tipografía</h3>
+          <p class="pk-card-text">
+            Ajusta tamaños, jerarquía y estilos de texto.
+          </p>
+          <a href="guides/typography.html" class="pk-btn pk-btn-outline-primary">Ver guía</a>
+        </div>
+      </div>
 
-    <ul>
-        <li><a href="components.html">Ir a Componentes</a></li>
-        <li><a href="examples.html">Ver ejemplos</a></li>
-    </ul>
-</section>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Spacing</h3>
+          <p class="pk-card-text">
+            Controla márgenes y padding entre elementos.
+          </p>
+          <a href="guides/spacing.html" class="pk-btn pk-btn-outline-primary">Ver guía</a>
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Flexbox</h3>
+          <p class="pk-card-text">
+            Organiza elementos en filas o columnas fácilmente.
+          </p>
+          <a href="guides/flex.html" class="pk-btn pk-btn-outline-primary">Ver guía</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Ejemplos prácticos</h2>
+
+    <div style="display:grid; gap:1.5rem;">
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Texto y color</h3>
+
+          <p class="pk-text">Texto normal</p>
+          <p class="pk-text" style="color:var(--pk-primary); font-weight:700;">
+            ¡Pokémon capturado!
+          </p>
+
+          <pre style="margin-top:1rem;">
+<code>&lt;p style="color:var(--pk-primary); font-weight:700;"&gt;
+  ¡Pokémon capturado!
+&lt;/p&gt;</code>
+          </pre>
+
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Espaciado</h3>
+
+          <div style="margin-top:1rem;">
+            <div style="padding:1rem; background:var(--pk-gray-200); margin-bottom:0.5rem;">
+              Pikachu
+            </div>
+            <div style="padding:1rem; background:var(--pk-gray-200); margin-bottom:0.5rem;">
+              Charmander
+            </div>
+            <div style="padding:1rem; background:var(--pk-gray-200);">
+              Bulbasaur
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Flexbox</h3>
+
+          <div style="
+            display:flex;
+            gap:1rem;
+            margin-top:1rem;
+          ">
+            <div class="pk-badge pk-badge-primary">Pikachu</div>
+            <div class="pk-badge pk-badge-accent">Charmander</div>
+            <div class="pk-badge pk-badge-success">Bulbasaur</div>
+          </div>
+
+          <pre style="margin-top:1rem;">
+<code>&lt;div style="display:flex; gap:1rem;"&gt;
+  &lt;div&gt;Pikachu&lt;/div&gt;
+  &lt;div&gt;Charmander&lt;/div&gt;
+&lt;/div&gt;</code>
+          </pre>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Explorar más</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="components.html" class="pk-btn pk-btn-primary">Componentes</a>
+      <a href="examples.html" class="pk-btn pk-btn-outline-primary">Ejemplos</a>
+    </div>
+  </section>
 
 </main>
 
-<footer>
-    <p>Proyecto desarrollado por Alejandro</p>
-    <p>© 2026 PokeStrap</p>
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
 </footer>
 
 </body>

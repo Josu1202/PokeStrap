@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeStrap</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeStrap</title>
+
+  <link rel="stylesheet" href="PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
 
-<header>
-    <h1>PokeStrap</h1>
+<body class="pk-app body-content">
 
-    <nav>
-        <ul>
-            <li><a href="getting-started.html">Docs</a></li>
-            <li><a href="components.html">Componentes</a></li>
-            <li><a href="examples.html">Ejemplos</a></li>
-        </ul>
-    </nav>
-</header>
+  <nav class="pk-navbar pk-navbar-sticky">
+    <a href="#" class="pk-navbar-brand">PokeStrap</a>
 
-<main>
+    <div class="pk-navbar-menu">
+      <a href="#" class="pk-navbar-link">Inicio</a>
+      <a href="components.html" class="pk-navbar-link">Componentes</a>
+      <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section>
-    <header>
-        <h2>Construye interfaces al estilo Pokémon</h2>
-        <p>PokeStrap es un framework inspirado en Bootstrap diseñado para crear interfaces modernas con temática Pokémon.</p>
-    </header>
+  <section class="pk-hero">
+    <h1 class="pk-hero-title">Crea interfaces modernas con PokeStrap</h1>
+    
+    <p class="pk-hero-text">
+      Un framework CSS ligero y consistente para construir interfaces rápidas, escalables y bien estructuradas.
+    </p>
 
-    <section>
-        <a href="getting-started.html">Comenzar</a>
-        <a href="components.html">Explorar componentes</a>
-    </section>
-</section>
+    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+      <button class="pk-btn pk-btn-secondary pk-btn-lg"><a href="getting-started.html" class="pk-navbar-link">Empezar</a></button>
+      <button class="pk-btn pk-btn-outline-white pk-btn-lg"><a href="utilities.html" class="pk-navbar-link">Ve Guias</a></button>
+    </div>
+  </section>
 
-<!-- INSTALACIÓN -->
-<section>
-    <header>
-        <h2>Instalación rápida</h2>
-    </header>
+  <section style="padding:3rem 1rem;">
+    <h2 class="pk-title-2" style="text-align:center;">Componentes</h2>
 
-    <pre>
-<code>
-npm install pokestrap
-</code>
-    </pre>
-</section>
+    <div style="
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap:1.5rem;
+      margin-top:2rem;
+    ">
 
-<!-- CARACTERÍSTICAS -->
-<section>
-    <header>
-        <h2>Características</h2>
-    </header>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Botones</h3>
+          <p class="pk-card-text">
+            Variantes con diferentes estilos y estados para interacción.
+          </p>
+          <br>
+          <button class="pk-btn pk-btn-primary"><a href="guides/buttons.html" class="pk-navbar-link">Ver mas</a></button>
+        </div>
+      </div>
 
-    <section>
-        <article>
-            <h3>Componentes</h3>
-            <p>Botones, tarjetas y formularios inspirados en el mundo Pokémon.</p>
-        </article>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Formularios</h3>
+          <p class="pk-card-text">
+            Campos de entrada estilizados con enfoque en usabilidad.
+          </p>
+          <br>
+          <button class="pk-btn pk-btn-success"><a href="guides/forms.html" class="pk-navbar-link">Ver mas</a></button>
+        </div>
+      </div>
 
-        <article>
-            <h3>Layouts</h3>
-            <p>Sistema de diseño adaptable para diferentes dispositivos.</p>
-        </article>
+      <div class="pk-card">
+        <div class="pk-card-body">
+          <h3 class="pk-card-title">Layout</h3>
+          <p class="pk-card-text">
+            Estructuras flexibles para organizar contenido de forma eficiente.
+          </p>
+          <br>
+          <button class="pk-btn pk-btn-accent"><a href="examples/demo-layout.html" class="pk-navbar-link">Ver mas</a></button>
+        </div>
+      </div>
 
-        <article>
-            <h3>Utilities</h3>
-            <p>Herramientas para personalizar fácilmente la interfaz.</p>
-        </article>
-    </section>
-</section>
+    </div>
+  </section>
 
-<!-- EJEMPLOS -->
-<section>
-    <header>
-        <h2>Ejemplos</h2>
-        <p>Interfaces inspiradas en entrenadores, batallas y Pokédex.</p>
-    </header>
+  <section style="padding:3rem 1rem;">
+    <h2 class="pk-title-2" style="text-align:center;">Contacto</h2>
 
-    <section>
-        <article>
-            <h3>Botones Pokémon</h3>
-            <a href="examples/demo-buttons.html">Ver ejemplo</a>
-        </article>
+    <div style="max-width:500px; margin:2rem auto;">
+      <form class="pk-card">
+        
+        <div class="pk-card-body">
 
-        <article>
-            <h3>Formulario de entrenador</h3>
-            <a href="examples/demo-forms.html">Ver ejemplo</a>
-        </article>
+          <div class="pk-form-group">
+            <label class="pk-label">Nombre</label>
+            <input type="text" class="pk-input" placeholder="Tu nombre">
+          </div>
 
-        <article>
-            <h3>Layout tipo Pokédex</h3>
-            <a href="examples/demo-layout.html">Ver ejemplo</a>
-        </article>
-    </section>
-</section>
+          <div class="pk-form-group">
+            <label class="pk-label">Correo electrónico</label>
+            <input type="email" class="pk-input" placeholder="Tu correo">
+          </div>
 
-<!-- DOCUMENTACIÓN -->
-<section>
-    <header>
-        <h2>Documentación</h2>
-    </header>
+          <div class="pk-form-group">
+            <label class="pk-label">Mensaje</label>
+            <textarea class="pk-textarea"></textarea>
+          </div>
 
-    <ul>
-        <li><a href="basic-layout.html">Layout</a></li>
-        <li><a href="components.html">Componentes</a></li>
-        <li><a href="utilities.html">Utilities</a></li>
-    </ul>
-</section>
+          <button class="pk-btn pk-btn-primary" style="width:100%;">
+            Enviar
+          </button>
 
-</main>
+        </div>
 
-<footer>
-    <section>
-        <p>Proyecto desarrollado por Alejandro</p>
-        <p>© 2026 PokeStrap</p>
-    </section>
-</footer>
+      </form>
+    </div>
+  </section>
+
+  <footer style="
+    background: var(--pk-gray-900);
+    color:white;
+    text-align:center;
+    padding:1rem;
+  ">
+    <p>© 2026 PokeStrap</p>
+  </footer>
 
 </body>
 </html>

@@ -1,14 +1,120 @@
- <main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Layout - PokeStrap</title>
 
-<header>
-    <h1>Demo Layout</h1>
-</header>
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
 
-<section>
-    <div>
-        <div>Sidebar</div>
-        <div>Contenido</div>
+<body class="pk-app">
+
+<nav class="pk-navbar">
+  <a href="../index.html" class="pk-navbar-brand">PokeStrap</a>
+
+  <div class="pk-navbar-menu">
+    <a href="../index.html" class="pk-navbar-link">Inicio</a>
+    <a href="../components.html" class="pk-navbar-link">Componentes</a>
+    <a href="../utilities.html" class="pk-navbar-link">Utilities</a>
+    <a href="../examples.html" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
+
+<main style="padding:2rem; max-width:1200px; margin:auto;">
+
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Demo Layout</h1>
+    <p class="pk-lead">
+      Ejemplo práctico de distribución de contenido usando layout tipo sidebar + contenido principal.
+    </p>
+  </header>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Vista previa</h2>
+
+    <div style="
+      display:grid;
+      grid-template-columns: 250px 1fr;
+      gap:1rem;
+      margin-top:1rem;
+    ">
+
+      <aside class="pk-card">
+        <div class="pk-card-header">
+          Menú
+        </div>
+
+        <div class="pk-card-body">
+          <p class="pk-text"><a href="#" class="pk-link">Dashboard</a></p>
+          <p class="pk-text"><a href="#" class="pk-link">Pokémon</a></p>
+          <p class="pk-text"><a href="#" class="pk-link">Entrenadores</a></p>
+          <p class="pk-text"><a href="#" class="pk-link">Configuración</a></p>
+        </div>
+      </aside>
+
+      <section class="pk-card">
+        <div class="pk-card-header">
+          Contenido principal
+        </div>
+
+        <div class="pk-card-body">
+          <h3 class="pk-title-3">Área de trabajo</h3>
+          <p class="pk-text">
+            Aquí puedes mostrar información, tablas, formularios o cualquier componente del sistema.
+          </p>
+
+          <button class="pk-btn pk-btn-primary">Acción principal</button>
+        </div>
+      </section>
+
     </div>
-</section>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Código</h2>
+
+    <pre style="
+      background: var(--pk-gray-900);
+      color:white;
+      padding:1rem;
+      border-radius:0.5rem;
+      overflow:auto;
+    ">
+<code>&lt;div style="display:grid; grid-template-columns:250px 1fr;"&gt;
+  &lt;aside&gt;Sidebar&lt;/aside&gt;
+  &lt;section&gt;Contenido&lt;/section&gt;
+&lt;/div&gt;</code>
+    </pre>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Uso recomendado</h2>
+
+    <div style="display:grid; gap:1rem; margin-top:1rem;">
+      <div class="pk-alert pk-alert-info">
+        Ideal para dashboards o paneles administrativos.
+      </div>
+
+      <div class="pk-alert pk-alert-primary">
+        Combina este layout con cards, tablas y formularios.
+      </div>
+    </div>
+  </section>
 
 </main>
+
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
+</footer>
+
+</body>
+</html>

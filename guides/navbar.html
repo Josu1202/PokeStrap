@@ -1,32 +1,137 @@
-<main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar - PokeStrap</title>
 
-<header>
-    <h1>Navbar</h1>
-    <p>La barra de navegación permite moverse entre secciones del sitio.</p>
-</header>
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
 
-<section>
-    <h2>Ejemplo</h2>
+<body class="pk-app">
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Ejemplos</a></li>
-        </ul>
+<nav class="pk-navbar pk-navbar-fixed">
+  <a href="../index.html" class="pk-navbar-brand">PokeStrap</a>
+
+  <div class="pk-navbar-menu">
+    <a href="#" class="pk-navbar-link">Inicio</a>
+    <a href="#" class="pk-navbar-link">Docs</a>
+    <a href="#" class="pk-navbar-link">Ejemplos</a>
+  </div>
+</nav>
+
+<main style="padding:5rem 1rem; max-width:1000px; margin:auto;">
+
+  <header style="margin-bottom:2rem;">
+    <h1 class="pk-title-1">Navbar</h1>
+    <p class="pk-lead">
+      La barra de navegación permite moverse entre secciones del sitio y organizar enlaces principales.
+    </p>
+  </header>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Ejemplo básico</h2>
+
+    <nav class="pk-navbar" style="margin-top:1rem;">
+      <a href="#" class="pk-navbar-brand">PokeStrap</a>
+
+      <div class="pk-navbar-menu">
+        <a href="#" class="pk-navbar-link">Inicio</a>
+        <a href="#" class="pk-navbar-link">Docs</a>
+        <a href="#" class="pk-navbar-link">Ejemplos</a>
+      </div>
     </nav>
-</section>
 
-<section>
-    <h2>Dropdown semántico</h2>
+    <pre style="margin-top:1rem;">
+<code>&lt;nav class="pk-navbar"&gt;
+  &lt;a class="pk-navbar-brand"&gt;PokeStrap&lt;/a&gt;
 
-    <details>
-        <summary>Menú</summary>
-        <ul>
-            <li><a href="#">Opción 1</a></li>
-            <li><a href="#">Opción 2</a></li>
-        </ul>
+  &lt;div class="pk-navbar-menu"&gt;
+    &lt;a class="pk-navbar-link"&gt;Inicio&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code>
+    </pre>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Navbar fija</h2>
+
+    <p class="pk-text">
+      Puedes fijar la barra en la parte superior para mantener la navegación siempre visible.
+    </p>
+
+    <pre style="margin-top:1rem;">
+<code>.pk-navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}</code>
+    </pre>
+
+    <p class="pk-small">
+      Recuerda agregar espacio superior al contenido para evitar que quede oculto.
+    </p>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Dropdown sin JavaScript</h2>
+
+    <p class="pk-text">
+      PokeStrap permite crear menús desplegables usando elementos semánticos HTML como <code>details</code>.
+    </p>
+
+    <details style="margin-top:1rem;">
+      <summary class="pk-btn pk-btn-outline-primary">Menú</summary>
+
+      <ul style="margin-top:0.5rem;">
+        <li><a href="#" class="pk-link">Opción 1</a></li>
+        <li><a href="#" class="pk-link">Opción 2</a></li>
+      </ul>
     </details>
-</section>
+
+    <pre style="margin-top:1rem;">
+<code>&lt;details&gt;
+  &lt;summary&gt;Menú&lt;/summary&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a&gt;Opción&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/details&gt;</code>
+    </pre>
+  </section>
+
+  <section style="margin-bottom:3rem;">
+    <h2 class="pk-title-2">Estructura</h2>
+
+    <ul class="pk-text">
+      <li>pk-navbar: contenedor principal</li>
+      <li>pk-navbar-brand: nombre o logo</li>
+      <li>pk-navbar-menu: grupo de enlaces</li>
+      <li>pk-navbar-link: enlaces de navegación</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="pk-title-2">Explorar más</h2>
+
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem;">
+      <a href="../components.html" class="pk-btn pk-btn-primary">Componentes</a>
+      <a href="../basic-layout.html" class="pk-btn pk-btn-outline-primary">Layout</a>
+    </div>
+  </section>
 
 </main>
+
+<footer style="
+  background: var(--pk-gray-900);
+  color:white;
+  text-align:center;
+  padding:1rem;
+  margin-top:3rem;
+">
+  <p>Proyecto desarrollado por Alejandro</p>
+  <p>© 2026 PokeStrap</p>
+</footer>
+
+</body>
+</html>
