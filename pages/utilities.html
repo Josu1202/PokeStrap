@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Utilidades | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-pokemon-classic">
+        <div class="pk-app theme-pokemon-classic">
+            <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+                <nav class="pk-navbar">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="../index.html" class="pk-navbar-brand">
+                            <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                            <span>PokeStrap</span>
+                        </a>
+
+                        <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                            style="color: #fff; border: 0; font-size: 2rem;">
+                            ☰
+                        </button>
+                    </div>
+
+                    <div class="pk-navbar-menu d-none d-md-flex">
+                        <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                            rápido</a>
+                        <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                        <a href="components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                    </div>
+
+                    <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                        style="background-color: var(--pk-primary); padding-top: 1rem;">
+                        <a href="getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                        <a href="layout.html" class="pk-navbar-link">Layout</a>
+                        <a href="components.html" class="pk-navbar-link">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+                    </div>
+                </nav>
+            </header>
+            <main style="padding-top: 70px;">
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row">
+
+                            <aside class="col-12 col-lg-3 mb-6">
+                                <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                    <div class="pk-card-header">
+                                        Documentación
+                                    </div>
+
+                                    <div class="pk-card-body">
+                                        <div class="stack-md">
+                                            <a class="pk-link" href="getting-started.html">Inicio rápido</a>
+                                            <a class="pk-link" href="installation.html">Instalación</a>
+                                            <a class="pk-link" href="layout.html">Layout</a>
+                                            <a class="pk-link" href="components.html">Componentes</a>
+                                            <a class="pk-link" href="utilities.html">Utilidades</a>
+                                            <a class="pk-link" href="themes.html">Temas</a>
+                                            <a class="pk-link" href="examples.html">Ejemplos</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <section class="col-12 col-lg-9">
+                                <span class="pk-badge pk-badge-success pk-badge-pill mb-4">
+                                    Utilities
+                                </span>
+
+                                <h1 class="pk-title-1">Clases utilitarias</h1>
+
+                                <p class="pk-lead">
+                                    Las utilidades de PokeStrap son clases de un solo propósito que permiten
+                                    ajustar rápidamente espaciado, colores, display, flexbox, tipografía,
+                                    bordes y sombras.
+                                </p>
+
+                                <hr class="pk-divider" />
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Espaciado</h2>
+
+                                    <p class="pk-text">
+                                        Las clases de espaciado permiten aplicar márgenes y paddings de forma rápida.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="bg-gray-200 p-4 rounded-md mb-3">
+                                                <div class="bg-primary text-white p-3 rounded-md">
+                                                    Caja con <code>.p-3</code>
+                                                </div>
+                                            </div>
+
+                                            <div class="bg-gray-200 p-4 rounded-md">
+                                                <div class="bg-accent text-white p-4 rounded-md mb-4">
+                                                    Caja con <code>.p-4</code> y <code>.mb-4</code>
+                                                </div>
+
+                                                <div class="bg-success text-white p-2 rounded-md">
+                                                    Caja inferior
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="p-3"&gt;Padding 3&lt;/div&gt;
+&lt;div class="mb-4"&gt;Margin bottom 4&lt;/div&gt;
+&lt;div class="px-4 py-2"&gt;Padding horizontal y vertical&lt;/div&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Colores de fondo y texto</h2>
+
+                                    <p class="pk-text">
+                                        Puedes aplicar colores semánticos al fondo o al texto mediante clases
+                                        utilitarias.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="bg-primary text-white p-4 rounded-md text-center">
+                                                        bg-primary
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="bg-secondary text-black p-4 rounded-md text-center">
+                                                        bg-secondary</div>
+                                                </div>
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="bg-accent text-white p-4 rounded-md text-center">
+                                                        bg-accent
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-primary fw-bold mt-4">Texto primary</p>
+                                            <p class="text-accent fw-bold">Texto accent</p>
+                                            <p class="text-success fw-bold">Texto success</p>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="bg-primary text-white"&gt;Fondo primary&lt;/div&gt;
+&lt;p class="text-accent fw-bold"&gt;Texto accent&lt;/p&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Tipografía</h2>
+
+                                    <p class="pk-text">
+                                        Las utilidades tipográficas permiten controlar tamaño, peso, alineación
+                                        y transformación del texto.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <p class="fs-sm">Texto pequeño con <code>.fs-sm</code></p>
+                                            <p class="fs-lg">Texto grande con <code>.fs-lg</code></p>
+                                            <p class="fs-2xl fw-bold">Texto destacado con <code>.fs-2xl .fw-bold</code>
+                                            </p>
+                                            <p class="text-center text-uppercase text-accent fw-semibold">
+                                                Texto centrado, uppercase y accent
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="fs-lg fw-bold text-center"&gt;
+  Texto grande, en negrita y centrado
+&lt;/p&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Flexbox</h2>
+
+                                    <p class="pk-text">
+                                        Las clases flex permiten alinear elementos de forma rápida sin escribir CSS
+                                        adicional.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div
+                                                class="d-flex justify-content-between align-items-center bg-gray-200 p-4 rounded-md">
+                                                <span class="pk-badge pk-badge-primary">Inicio</span>
+                                                <span class="pk-badge pk-badge-accent">Centro</span>
+                                                <span class="pk-badge pk-badge-success">Final</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex justify-content-between align-items-center"&gt;
+  &lt;span&gt;Inicio&lt;/span&gt;
+  &lt;span&gt;Centro&lt;/span&gt;
+  &lt;span&gt;Final&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Display responsive</h2>
+
+                                    <p class="pk-text">
+                                        Las utilidades display permiten mostrar u ocultar elementos según el tamaño de
+                                        pantalla.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="pk-alert pk-alert-info">
+                                                Prueba cambiando el ancho del navegador para ver las clases responsive.
+                                            </div>
+
+                                            <div class="bg-gray-200 p-4 rounded-md mt-4">
+                                                <p class="d-block d-md-none m-0 text-primary fw-bold">
+                                                    Visible solo en móvil
+                                                </p>
+
+                                                <p class="d-none d-md-block m-0 text-accent fw-bold">
+                                                    Visible desde pantallas medianas
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="d-block d-md-none"&gt;Visible solo en móvil&lt;/p&gt;
+&lt;p class="d-none d-md-block"&gt;Visible desde md&lt;/p&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Bordes y sombras</h2>
+
+                                    <p class="pk-text">
+                                        Usa clases rápidas para aplicar bordes, radios y sombras.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="border rounded-md p-4 text-center">
+                                                        .border .rounded-md
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="shadow-sm rounded-lg p-4 text-center">
+                                                        .shadow-sm
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-3">
+                                                    <div class="shadow-lg rounded-xl p-4 text-center">
+                                                        .shadow-lg
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="border rounded-md shadow-sm p-4"&gt;
+  Caja con borde, radio y sombra
+&lt;/div&gt;</code></pre>
+                                </section>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="section-sm bg-gray-900 text-white">
+                <div class="container text-center">
+                    <p class="pk-small m-0">
+                        PokeStrap Framework · Documentación oficial
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+        <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Instalación | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-pokemon-classic">
+        <div class="pk-app theme-pokemon-classic">
+            <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+                <nav class="pk-navbar">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="../index.html" class="pk-navbar-brand">
+                            <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                            <span>PokeStrap</span>
+                        </a>
+
+                        <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                            style="color: #fff; border: 0; font-size: 2rem;">
+                            ☰
+                        </button>
+                    </div>
+
+                    <div class="pk-navbar-menu d-none d-md-flex">
+                        <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                            rápido</a>
+                        <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                        <a href="components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                    </div>
+
+                    <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                        style="background-color: var(--pk-primary); padding-top: 1rem;">
+                        <a href="getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                        <a href="layout.html" class="pk-navbar-link">Layout</a>
+                        <a href="components.html" class="pk-navbar-link">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+                    </div>
+                </nav>
+            </header>
+
+            <main style="padding-top: 70px;">
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <aside class="col-12 col-lg-3 mb-6">
+                                <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                    <div class="pk-card-header">
+                                        Documentación
+                                    </div>
+
+                                    <div class="pk-card-body">
+                                        <div class="stack-md">
+                                            <a class="pk-link" href="getting-started.html">Inicio rápido</a>
+                                            <a class="pk-link" href="installation.html">Instalación</a>
+                                            <a class="pk-link" href="layout.html">Layout</a>
+                                            <a class="pk-link" href="components.html">Componentes</a>
+                                            <a class="pk-link" href="utilities.html">Utilidades</a>
+                                            <a class="pk-link" href="themes.html">Temas</a>
+                                            <a class="pk-link" href="examples.html">Ejemplos</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <section class="col-12 col-lg-9">
+                                <span class="pk-badge pk-badge-primary pk-badge-pill mb-4">
+                                    Instalación
+                                </span>
+
+                                <h1 class="pk-title-1">Cómo usar PokeStrap en tu proyecto</h1>
+
+                                <p class="pk-lead">
+                                    Para utilizar PokeStrap solo necesitas enlazar el archivo CSS compilado
+                                    dentro de tu documento HTML.
+                                </p>
+
+                                <hr class="pk-divider" />
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">1. Enlazar el CSS compilado</h2>
+
+                                    <p class="pk-text">
+                                        Copia el archivo <strong>pokestrap.css</strong> dentro de tu proyecto
+                                        y enlázalo en la sección <strong>&lt;head&gt;</strong>.
+                                    </p>
+
+                                    <pre
+                                        class="bg-gray-900 text-white shadow-md"><code>&lt;link rel="stylesheet" href="pokestrap.css"&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">2. Estructura mínima recomendada</h2>
+
+                                    <p class="pk-text">
+                                        Esta es una plantilla base para comenzar a construir una página usando
+                                        PokeStrap.
+                                    </p>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Mi proyecto con PokeStrap&lt;/title&gt;
+  &lt;link rel="stylesheet" href="pokestrap.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="pk-app theme-pokemon-classic"&gt;
+    &lt;div class="container"&gt;
+      &lt;h1 class="pk-title-1"&gt;Hola PokeStrap&lt;/h1&gt;
+      &lt;p class="pk-text"&gt;Mi primera página usando el framework.&lt;/p&gt;
+      &lt;a href="#" class="pk-btn pk-btn-primary"&gt;Empezar&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">3. Activar un tema</h2>
+
+                                    <p class="pk-text">
+                                        PokeStrap permite aplicar temas visuales usando clases sobre el
+                                        contenedor principal.
+                                    </p>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-app theme-pokemon-classic"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+
+                                    <div class="pk-alert pk-alert-info mt-4">
+                                        El tema clásico es el recomendado para comenzar, ya que utiliza la
+                                        paleta principal del framework.
+                                    </div>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">4. Usar componentes</h2>
+
+                                    <p class="pk-text">
+                                        Los componentes utilizan clases con el prefijo <strong>pk-</strong>.
+                                    </p>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <button class="pk-btn pk-btn-primary me-2 mb-2">Primary</button>
+                                            <button class="pk-btn pk-btn-secondary me-2 mb-2">Secondary</button>
+                                            <button class="pk-btn pk-btn-outline-primary mb-2">Outline</button>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-outline-primary"&gt;Outline&lt;/button&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">5. Usar layout y utilidades</h2>
+
+                                    <p class="pk-text">
+                                        Las clases de layout y utilidades usan nombres cortos inspirados en
+                                        Bootstrap para facilitar la maquetación.
+                                    </p>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-12 col-md-6"&gt;
+      Columna izquierda
+    &lt;/div&gt;
+
+    &lt;div class="col-12 col-md-6"&gt;
+      Columna derecha
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </section>
+
+                                <section>
+                                    <h2 class="pk-title-2">Recomendación</h2>
+
+                                    <div class="pk-alert pk-alert-success">
+                                        Utiliza <strong>pk-app</strong> como contenedor principal para aplicar
+                                        la base visual del framework sin modificar de forma agresiva todo el
+                                        documento HTML.
+                                    </div>
+                                </section>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="section-sm bg-gray-900 text-white">
+                <div class="container text-center">
+                    <p class="pk-small m-0">
+                        PokeStrap Framework · Documentación oficial
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+        <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

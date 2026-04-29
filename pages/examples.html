@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ejemplos | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-pokemon-classic">
+        <div class="pk-app theme-pokemon-classic">
+            <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+                <nav class="pk-navbar">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="../index.html" class="pk-navbar-brand">
+                            <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                            <span>PokeStrap</span>
+                        </a>
+
+                        <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                            style="color: #fff; border: 0; font-size: 2rem;">
+                            ☰
+                        </button>
+                    </div>
+
+                    <div class="pk-navbar-menu d-none d-md-flex">
+                        <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                            rápido</a>
+                        <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                        <a href="components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Ejemplos</a>
+                    </div>
+
+                    <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                        style="background-color: var(--pk-primary); padding-top: 1rem;">
+                        <a href="getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                        <a href="layout.html" class="pk-navbar-link">Layout</a>
+                        <a href="components.html" class="pk-navbar-link">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link is-active">Ejemplos</a>
+                    </div>
+                </nav>
+            </header>
+            <main style="padding-top: 70px;">
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row">
+
+                            <aside class="col-12 col-lg-3 mb-6">
+                                <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                    <div class="pk-card-header">Documentación</div>
+
+                                    <div class="pk-card-body">
+                                        <div class="stack-md">
+                                            <a class="pk-link" href="getting-started.html">Inicio rápido</a>
+                                            <a class="pk-link" href="installation.html">Instalación</a>
+                                            <a class="pk-link" href="layout.html">Layout</a>
+                                            <a class="pk-link" href="components.html">Componentes</a>
+                                            <a class="pk-link" href="utilities.html">Utilidades</a>
+                                            <a class="pk-link" href="themes.html">Temas</a>
+                                            <a class="pk-link" href="examples.html">Ejemplos</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <section class="col-12 col-lg-9">
+                                <span class="pk-badge pk-badge-accent pk-badge-pill mb-4">
+                                    Examples
+                                </span>
+
+                                <h1 class="pk-title-1">Ejemplos de uso</h1>
+
+                                <p class="pk-lead">
+                                    Estos ejemplos muestran cómo combinar layout, componentes y utilidades de
+                                    PokeStrap para construir secciones reales de una interfaz.
+                                </p>
+
+                                <hr class="pk-divider" />
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Landing page simple</h2>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <section class="pk-hero rounded-lg">
+                                                <h2 class="pk-hero-title">Atrapa mejores interfaces</h2>
+                                                <p class="pk-hero-text">
+                                                    Construye páginas responsivas usando componentes de PokeStrap.
+                                                </p>
+                                                <a href="#" class="pk-btn pk-btn-secondary">Comenzar</a>
+                                            </section>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;section class="pk-hero"&gt;
+  &lt;h2 class="pk-hero-title"&gt;Atrapa mejores interfaces&lt;/h2&gt;
+  &lt;p class="pk-hero-text"&gt;Construye páginas responsivas usando PokeStrap.&lt;/p&gt;
+  &lt;a href="#" class="pk-btn pk-btn-secondary"&gt;Comenzar&lt;/a&gt;
+&lt;/section&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Dashboard básico</h2>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card shadow-sm">
+                                                        <div class="pk-card-body">
+                                                            <span
+                                                                class="pk-badge pk-badge-primary pk-badge-pill mb-3">Usuarios</span>
+                                                            <h3 class="pk-title-2">128</h3>
+                                                            <p class="pk-card-text">Registros activos</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card shadow-sm">
+                                                        <div class="pk-card-body">
+                                                            <span
+                                                                class="pk-badge pk-badge-success pk-badge-pill mb-3">Ventas</span>
+                                                            <h3 class="pk-title-2">$1,240</h3>
+                                                            <p class="pk-card-text">Ingresos del mes</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card shadow-sm">
+                                                        <div class="pk-card-body">
+                                                            <span
+                                                                class="pk-badge pk-badge-warning pk-badge-pill mb-3">Alertas</span>
+                                                            <h3 class="pk-title-2">7</h3>
+                                                            <p class="pk-card-text">Pendientes de revisión</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="row"&gt;
+  &lt;div class="col-12 col-md-4"&gt;
+    &lt;div class="pk-card"&gt;
+      &lt;div class="pk-card-body"&gt;
+        &lt;span class="pk-badge pk-badge-primary"&gt;Usuarios&lt;/span&gt;
+        &lt;h3 class="pk-title-2"&gt;128&lt;/h3&gt;
+        &lt;p class="pk-card-text"&gt;Registros activos&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Formulario de contacto</h2>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-8">
+                                                    <div class="pk-form-group">
+                                                        <label class="pk-label" for="example-name">Nombre</label>
+                                                        <input class="pk-input" id="example-name" type="text"
+                                                            placeholder="Misty Waterflower" />
+                                                    </div>
+
+                                                    <div class="pk-form-group">
+                                                        <label class="pk-label" for="example-email">Correo</label>
+                                                        <input class="pk-input" id="example-email" type="email"
+                                                            placeholder="misty@email.com" />
+                                                    </div>
+
+                                                    <div class="pk-form-group">
+                                                        <label class="pk-label" for="example-message">Mensaje</label>
+                                                        <textarea class="pk-textarea" id="example-message"
+                                                            placeholder="Escribe tu mensaje"></textarea>
+                                                    </div>
+
+                                                    <button class="pk-btn pk-btn-primary">Enviar mensaje</button>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mt-4">
+                                                    <div class="pk-alert pk-alert-info">
+                                                        Puedes combinar formularios, alertas y grid para crear
+                                                        interfaces
+                                                        completas.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-form-group"&gt;
+  &lt;label class="pk-label" for="name"&gt;Nombre&lt;/label&gt;
+  &lt;input class="pk-input" id="name" type="text"&gt;
+&lt;/div&gt;
+
+&lt;button class="pk-btn pk-btn-primary"&gt;Enviar mensaje&lt;/button&gt;</code></pre>
+                                </section>
+
+                                <section>
+                                    <h2 class="pk-title-2">Galería de cards</h2>
+
+                                    <div class="pk-card shadow-sm mb-4">
+                                        <div class="pk-card-body">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card h-100 shadow-sm">
+                                                        <div class="pk-card-header">Classic</div>
+                                                        <div class="pk-card-body">
+                                                            <h3 class="pk-card-title">Bulbasaur</h3>
+                                                            <p class="pk-card-text">
+                                                                Card de ejemplo usando header, body y estilos base.
+                                                            </p>
+                                                        </div>
+                                                        <div class="pk-card-footer">
+                                                            <span class="pk-badge pk-badge-success">Grass</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card h-100 shadow-sm">
+                                                        <div class="pk-card-header">Classic</div>
+                                                        <div class="pk-card-body">
+                                                            <h3 class="pk-card-title">Charmander</h3>
+                                                            <p class="pk-card-text">
+                                                                Ejemplo de card con badge y espaciado utilitario.
+                                                            </p>
+                                                        </div>
+                                                        <div class="pk-card-footer">
+                                                            <span class="pk-badge pk-badge-danger">Fire</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 col-md-4 mb-4">
+                                                    <div class="pk-card h-100 shadow-sm">
+                                                        <div class="pk-card-header">Classic</div>
+                                                        <div class="pk-card-body">
+                                                            <h3 class="pk-card-title">Squirtle</h3>
+                                                            <p class="pk-card-text">
+                                                                Estructura reutilizable para bloques de contenido.
+                                                            </p>
+                                                        </div>
+                                                        <div class="pk-card-footer">
+                                                            <span class="pk-badge pk-badge-info">Water</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
+  &lt;div class="pk-card-header"&gt;Classic&lt;/div&gt;
+  &lt;div class="pk-card-body"&gt;
+    &lt;h3 class="pk-card-title"&gt;Bulbasaur&lt;/h3&gt;
+    &lt;p class="pk-card-text"&gt;Card de ejemplo.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="pk-card-footer"&gt;
+    &lt;span class="pk-badge pk-badge-success"&gt;Grass&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                </section>
+
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="section-sm bg-gray-900 text-white">
+                <div class="container text-center">
+                    <p class="pk-small m-0">
+                        PokeStrap Framework · Documentación oficial
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+        <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

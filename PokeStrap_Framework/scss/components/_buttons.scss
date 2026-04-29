@@ -24,6 +24,10 @@
   }
 
   .pk-btn-outline-#{$name} {
-    @include pk-button-outline($color);
+    @if $name == 'light' or $name == 'white' or $name == 'secondary' or $name == 'warning' {
+      @include pk-button-outline($color, #000000);
+    } @else {
+      @include pk-button-outline($color, #ffffff);
+    }
   }
 }

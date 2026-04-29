@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Temas | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-pokemon-classic">
+        <div class="pk-app theme-pokemon-classic">
+            <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+                <nav class="pk-navbar">
+                    <div class="d-flex align-items-center justify-content-between w-100">
+                        <a href="../index.html" class="pk-navbar-brand">
+                            <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                            <span>PokeStrap</span>
+                        </a>
+
+                        <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                            style="color: #fff; border: 0; font-size: 2rem;">
+                            ☰
+                        </button>
+                    </div>
+
+                    <div class="pk-navbar-menu d-none d-md-flex">
+                        <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                            rápido</a>
+                        <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                        <a href="components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                    </div>
+
+                    <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                        style="background-color: var(--pk-primary); padding-top: 1rem;">
+                        <a href="getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                        <a href="layout.html" class="pk-navbar-link">Layout</a>
+                        <a href="components.html" class="pk-navbar-link">Componentes</a>
+                        <a href="utilities.html" class="pk-navbar-link">Utilidades</a>
+                        <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+                    </div>
+                </nav>
+            </header>
+            <main style="padding-top: 70px;">
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row">
+
+                            <aside class="col-12 col-lg-3 mb-6">
+                                <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                    <div class="pk-card-header">Documentación</div>
+
+                                    <div class="pk-card-body">
+                                        <div class="stack-md">
+                                            <a class="pk-link" href="getting-started.html">Inicio rápido</a>
+                                            <a class="pk-link" href="installation.html">Instalación</a>
+                                            <a class="pk-link" href="layout.html">Layout</a>
+                                            <a class="pk-link" href="components.html">Componentes</a>
+                                            <a class="pk-link" href="utilities.html">Utilidades</a>
+                                            <a class="pk-link" href="themes.html">Temas</a>
+                                            <a class="pk-link" href="examples.html">Ejemplos</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+
+                            <section class="col-12 col-lg-9">
+                                <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">
+                                    Themes
+                                </span>
+
+                                <h1 class="pk-title-1">Temas visuales</h1>
+
+                                <p class="pk-lead">
+                                    PokeStrap incluye temas inspirados en distintos tipos Pokémon. Cada tema
+                                    modifica colores, fondos, tarjetas, botones y detalles visuales.
+                                </p>
+
+                                <hr class="pk-divider" />
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Cómo aplicar un tema</h2>
+
+                                    <p class="pk-text">
+                                        Los temas se aplican mediante una clase en el contenedor principal.
+                                    </p>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-app theme-pokemon-classic"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+
+                                    <div class="pk-alert pk-alert-info mt-4">
+                                        En esta documentación se utiliza el tema clásico como base visual principal.
+                                    </div>
+                                </section>
+
+                                <section class="mb-8">
+                                    <h2 class="pk-title-2">Temas disponibles</h2>
+
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <div class="theme-pokemon-classic theme-section p-4 rounded-lg">
+                                                <div class="theme-card p-4">
+                                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Classic</span>
+                                                    <h3 class="theme-title pk-title-3">Pokémon Classic</h3>
+                                                    <p class="pk-text">
+                                                        Tema principal inspirado en la Pokébola y la identidad clásica.
+                                                    </p>
+                                                    <button class="theme-button pk-btn">Botón del tema</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <div class="theme-fire theme-section p-4 rounded-lg">
+                                                <div class="theme-card p-4">
+                                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Fire</span>
+                                                    <h3 class="theme-title pk-title-3">Fire Theme</h3>
+                                                    <p class="pk-text">
+                                                        Tema cálido con tonos rojos, naranjas y energía visual intensa.
+                                                    </p>
+                                                    <button class="theme-button pk-btn">Botón del tema</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <div class="theme-water theme-section p-4 rounded-lg">
+                                                <div class="theme-card p-4">
+                                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Water</span>
+                                                    <h3 class="theme-title pk-title-3">Water Theme</h3>
+                                                    <p class="pk-text">
+                                                        Tema fresco con tonos azules, ideal para interfaces limpias.
+                                                    </p>
+                                                    <button class="theme-button pk-btn">Botón del tema</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <div class="theme-electric theme-section p-4 rounded-lg">
+                                                <div class="theme-card p-4">
+                                                    <span
+                                                        class="theme-badge pk-badge pk-badge-pill mb-3">Electric</span>
+                                                    <h3 class="theme-title pk-title-3">Electric Theme</h3>
+                                                    <p class="pk-text">
+                                                        Tema brillante con tonos amarillos y acentos energéticos.
+                                                    </p>
+                                                    <button class="theme-button pk-btn">Botón del tema</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 mb-4">
+                                            <div class="theme-grass theme-section p-4 rounded-lg">
+                                                <div class="theme-card p-4">
+                                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Grass</span>
+                                                    <h3 class="theme-title pk-title-3">Grass Theme</h3>
+                                                    <p class="pk-text">
+                                                        Tema natural con verdes suaves y sensación orgánica.
+                                                    </p>
+                                                    <button class="theme-button pk-btn">Botón del tema</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section>
+                                    <h2 class="pk-title-2">Ejemplo de uso</h2>
+
+                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-app theme-fire"&gt;
+  &lt;section class="theme-section"&gt;
+    &lt;div class="theme-card"&gt;
+      &lt;h2 class="theme-title"&gt;Fire Theme&lt;/h2&gt;
+      &lt;button class="theme-button"&gt;Botón&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+                                </section>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="section-sm bg-gray-900 text-white">
+                <div class="container text-center">
+                    <p class="pk-small m-0">
+                        PokeStrap Framework · Documentación oficial
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+        <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

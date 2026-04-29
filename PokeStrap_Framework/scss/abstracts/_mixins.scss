@@ -86,14 +86,14 @@
 }
 
 // Variante outline de boton
-@mixin pk-button-outline($color) {
+@mixin pk-button-outline($color, $hover-text: #ffffff) {
   background-color: transparent;
   border-color: $color;
   color: $color;
 
   &:hover {
     background-color: $color;
-    color: #ffffff;
+    color: $hover-text;
   }
 
   &:active {

@@ -15,6 +15,34 @@
   color: inherit;
   font-weight: 700;
   text-decoration: none;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--pk-radius-pill);
+  transition:
+    background-color var(--pk-transition-fast),
+    transform var(--pk-transition-fast),
+    box-shadow var(--pk-transition-fast);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.pk-navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.pk-navbar-offset {
+  padding-top: 4rem;
 }
 
 .pk-navbar-menu {
@@ -29,9 +57,43 @@
   font-weight: 500;
   opacity: 0.9;
 
+  position: relative;
+  transition:
+    opacity var(--pk-transition-fast),
+    color var(--pk-transition-fast),
+    transform var(--pk-transition-fast);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 0;
+    height: 2px;
+    background-color: var(--pk-secondary);
+    border-radius: var(--pk-radius-pill);
+    transition: width var(--pk-transition-fast);
+  }
+
   &:hover {
     opacity: 1;
+    color: var(--pk-secondary);
+    transform: translateY(-1px);
   }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &.is-active {
+    color: var(--pk-secondary);
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  &.is-active::after {
+    width: 100%;
+}
 }
 
 .pk-navbar-toggle {

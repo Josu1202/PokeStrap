@@ -1,8 +1,9 @@
 @use '../abstracts/maps' as *;
 @use '../abstracts/mixins' as mx;
 @use '../abstracts/breakpoints' as bp;
+@use '../abstracts/variables' as *;
 
-@for $i from 1 through 6 {
+@for $i from 1 through $pk-grid-columns {
   .columns-#{$i} {
     columns: $i;
   }
@@ -10,7 +11,7 @@
 
 @each $breakpoint, $value in bp.$pk-breakpoints {
   @include mx.pk-media-up($breakpoint) {
-    @for $i from 1 through 6 {
+   @for $i from 1 through $pk-grid-columns {
       .columns-#{$breakpoint}-#{$i} {
         columns: $i;
       }
