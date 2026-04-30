@@ -3226,6 +3226,8 @@ code {
   padding: 0.75rem 1rem;
   background-color: var(--pk-primary);
   color: var(--pk-white);
+  border-bottom: 4px solid var(--pk-secondary);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
 }
 
 .pk-navbar-brand {
@@ -3273,11 +3275,20 @@ code {
   gap: 1rem;
 }
 
+.pk-navbar-menu.d-md-flex {
+  gap: 0.35rem;
+  padding: 0.35rem;
+  border-radius: var(--pk-radius-pill);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
 .pk-navbar-link {
   color: inherit;
   text-decoration: none;
   font-weight: 500;
   opacity: 0.9;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--pk-radius-pill);
   position: relative;
   transition: opacity var(--pk-transition-fast), color var(--pk-transition-fast), transform var(--pk-transition-fast);
 }
@@ -3295,6 +3306,7 @@ code {
 .pk-navbar-link:hover {
   opacity: 1;
   color: var(--pk-secondary);
+  background-color: rgba(255, 255, 255, 0.16);
   transform: translateY(-1px);
 }
 .pk-navbar-link:hover::after {
@@ -3304,6 +3316,7 @@ code {
   color: var(--pk-secondary);
   opacity: 1;
   font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .pk-navbar-link.is-active::after {
   width: 100%;
