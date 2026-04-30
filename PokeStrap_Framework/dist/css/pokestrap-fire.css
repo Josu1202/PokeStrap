@@ -36,7 +36,7 @@
 }
 :root {
   --pk-primary: #ef4444;
-  --pk-secondary: #f97316;
+  --pk-secondary: #fed7aa;
   --pk-accent: #facc15;
   --pk-success: #22c55e;
   --pk-danger: #dc2626;
@@ -1199,11 +1199,11 @@ code {
 }
 
 .bg-secondary {
-  background-color: #f97316 !important;
+  background-color: #fed7aa !important;
 }
 
 .text-bg-secondary {
-  background-color: #f97316 !important;
+  background-color: #fed7aa !important;
   color: #000000 !important;
 }
 
@@ -1297,11 +1297,11 @@ code {
 }
 
 .bg-secondary-light {
-  background-color: #fb923c !important;
+  background-color: #ffedd5 !important;
 }
 
 .bg-secondary-dark {
-  background-color: #c2410c !important;
+  background-color: #ea580c !important;
 }
 
 .bg-accent-light {
@@ -1381,7 +1381,7 @@ code {
 }
 
 .border-secondary {
-  border-color: #f97316 !important;
+  border-color: #fed7aa !important;
 }
 
 .border-accent {
@@ -2383,7 +2383,7 @@ code {
 }
 
 .text-secondary {
-  color: #f97316 !important;
+  color: #fed7aa !important;
 }
 
 .text-accent {
@@ -2547,9 +2547,9 @@ code {
 }
 
 .pk-alert-secondary {
-  color: #f97316;
-  background-color: color-mix(in srgb, #f97316 12%, white);
-  border-color: color-mix(in srgb, #f97316 35%, white);
+  color: #fed7aa;
+  background-color: color-mix(in srgb, #fed7aa 12%, white);
+  border-color: color-mix(in srgb, #fed7aa 35%, white);
 }
 
 .pk-alert-accent {
@@ -2627,7 +2627,7 @@ code {
 }
 
 .pk-badge-secondary {
-  background-color: #f97316;
+  background-color: #fed7aa;
   color: #ffffff;
 }
 
@@ -2739,13 +2739,13 @@ code {
 }
 
 .pk-btn-secondary {
-  background-color: #f97316;
-  border-color: #f97316;
+  background-color: #fed7aa;
+  border-color: #fed7aa;
   color: #ffffff;
 }
 .pk-btn-secondary:hover {
-  background-color: color-mix(in srgb, #f97316 88%, black);
-  border-color: color-mix(in srgb, #f97316 88%, black);
+  background-color: color-mix(in srgb, #fed7aa 88%, black);
+  border-color: color-mix(in srgb, #fed7aa 88%, black);
 }
 .pk-btn-secondary:active {
   transform: translateY(1px);
@@ -2753,11 +2753,11 @@ code {
 
 .pk-btn-outline-secondary {
   background-color: transparent;
-  border-color: #f97316;
-  color: #f97316;
+  border-color: #fed7aa;
+  color: #fed7aa;
 }
 .pk-btn-outline-secondary:hover {
-  background-color: #f97316;
+  background-color: #fed7aa;
   color: #000000;
 }
 .pk-btn-outline-secondary:active {

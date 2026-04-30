@@ -1,13 +1,12 @@
-@use 'abstracts/colors' with (
-  $pk-primary: #ef4444,
-  $pk-secondary: #f97316,
+@use 'abstracts/colors'with ($pk-primary: #ef4444,
+  $pk-secondary: #fed7aa,
   $pk-accent: #facc15,
 
   $pk-primary-light: #f87171,
   $pk-primary-dark: #b91c1c,
 
-  $pk-secondary-light: #fb923c,
-  $pk-secondary-dark: #c2410c,
+  $pk-secondary-light: #ffedd5,
+  $pk-secondary-dark: #ea580c,
 
   $pk-accent-light: #fde68a,
   $pk-accent-dark: #ca8a04,
@@ -23,7 +22,6 @@
   $pk-body-bg: #fff7ed,
   $pk-surface-bg: #ffffff,
   $pk-text-main: #2b0b05,
-  $pk-text-muted: #7c2d12
-);
+  $pk-text-muted: #7c2d12);
 
 @use 'framework';
