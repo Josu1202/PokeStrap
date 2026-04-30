@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Landing Page | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap-fire.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-fire">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../index.html" class="pk-navbar-brand">
+                        <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                        rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="pk-hero">
+                <div class="container">
+                    <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">
+                        Fire Build Example
+                    </span>
+
+                    <h1 class="pk-hero-title">
+                        Una landing page creada con PokeStrap
+                    </h1>
+
+                    <p class="pk-hero-text">
+                        Este ejemplo combina grid, botones, cards, badges, spacing y utilidades para construir
+                        una página promocional completa.
+                    </p>
+
+                    <div class="d-flex justify-content-center flex-wrap mt-4">
+                        <a href="#features" class="pk-btn pk-btn-secondary me-2 mb-2">
+                            Ver características
+                        </a>
+
+                        <a href="../pages/examples.html" class="pk-btn pk-btn-outline-light mb-2">
+                            Volver a ejemplos
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-light" id="features">
+                <div class="container">
+                    <div class="text-center mb-8">
+                        <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">Features</span>
+                        <h2 class="pk-title-2">Secciones construidas con el framework</h2>
+                        <p class="pk-lead">
+                            Cada bloque utiliza clases propias de PokeStrap.
+                        </p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-primary pk-badge-pill mb-3">Layout</span>
+                                    <h3 class="pk-card-title">Grid responsive</h3>
+                                    <p class="pk-card-text">
+                                        Usa columnas adaptables para organizar contenido en móviles y escritorio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">UI</span>
+                                    <h3 class="pk-card-title">Componentes reutilizables</h3>
+                                    <p class="pk-card-text">
+                                        Combina cards, botones, alertas, badges y tablas fácilmente.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">Theme</span>
+                                    <h3 class="pk-card-title">Build Fire</h3>
+                                    <p class="pk-card-text">
+                                        La misma estructura HTML adopta una identidad visual cálida e intensa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-6 mb-6">
+                            <span class="pk-badge pk-badge-primary pk-badge-pill mb-3">Demo</span>
+                            <h2 class="pk-title-2">Una sección de contenido promocional</h2>
+                            <p class="pk-text">
+                                Esta sección muestra cómo una landing puede alternar texto, botones y tarjetas
+                                usando únicamente clases del framework.
+                            </p>
+
+                            <div class="d-flex flex-wrap mt-4">
+                                <a href="#" class="pk-btn pk-btn-primary me-2 mb-2">Acción principal</a>
+                                <a href="#" class="pk-btn pk-btn-outline-primary mb-2">Acción secundaria</a>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="pk-card shadow-lg rounded-xl">
+                                <div class="pk-card-header">Preview</div>
+                                <div class="pk-card-body">
+                                    <h3 class="pk-card-title">Card destacada</h3>
+                                    <p class="pk-card-text">
+                                        Ideal para mostrar productos, módulos, servicios o características.
+                                    </p>
+
+                                    <div class="pk-alert pk-alert-warning mt-4">
+                                        Este bloque usa card + alert + spacing + shadow.
+                                    </div>
+                                </div>
+                                <div class="pk-card-footer">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill">Fire</span>
+                                    <span class="pk-badge pk-badge-warning pk-badge-pill">Landing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Ejemplo Landing Page · Fire Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap-fire.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-fire">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../index.html" class="pk-navbar-brand">
+                        <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                        rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center" style="min-height: 75vh;">
+
+                        <div class="col-12 col-md-8 col-lg-5">
+                            <div class="pk-card shadow-lg rounded-xl">
+                                <div class="pk-card-header text-center">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill">
+                                        Fire Build Example
+                                    </span>
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <div class="text-center mb-6">
+                                        <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="64" height="64"
+                                            class="mx-auto d-block" />
+
+                                        <h1 class="pk-title-2 mt-4">
+                                            Iniciar sesión
+                                        </h1>
+
+                                        <p class="pk-text">
+                                            Ejemplo de formulario usando cards, inputs, botones y utilidades.
+                                        </p>
+                                    </div>
+
+                                    <form>
+                                        <div class="pk-form-group">
+                                            <label class="pk-label" for="email">Correo electrónico</label>
+                                            <input class="pk-input" id="email" type="email"
+                                                placeholder="entrenador@email.com" />
+                                        </div>
+
+                                        <div class="pk-form-group">
+                                            <label class="pk-label" for="password">Contraseña</label>
+                                            <input class="pk-input" id="password" type="password"
+                                                placeholder="••••••••" />
+                                        </div>
+
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
+                                            <label class="d-flex align-items-center">
+                                                <input class="pk-checkbox me-2" type="checkbox" />
+                                                Recordarme
+                                            </label>
+
+                                            <a href="#" class="pk-link text-decoration-none">
+                                                ¿Olvidaste tu contraseña?
+                                            </a>
+                                        </div>
+
+                                        <button class="pk-btn pk-btn-primary w-100 shadow-md" type="button">
+                                            Entrar
+                                        </button>
+                                    </form>
+
+                                    <div class="pk-alert pk-alert-warning mt-4">
+                                        Este login es solo una demostración visual del framework.
+                                    </div>
+                                </div>
+
+                                <div class="pk-card-footer text-center">
+                                    <span class="pk-small">
+                                        ¿No tienes cuenta?
+                                        <a href="#" class="pk-link text-decoration-none fw-bold">Crear cuenta</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Ejemplo Login · Fire Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

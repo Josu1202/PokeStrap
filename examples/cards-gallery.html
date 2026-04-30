@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cards Gallery | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap-fire.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-fire">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../index.html" class="pk-navbar-brand">
+                        <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                        rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+
+                    <div class="text-center mb-8">
+                        <span class="pk-badge pk-badge-danger pk-badge-pill mb-4">
+                            Fire Build Example
+                        </span>
+
+                        <h1 class="pk-title-1">
+                            Cards Gallery
+                        </h1>
+
+                        <p class="pk-lead">
+                            Galería responsiva construida con grid, cards, badges, sombras, botones e imágenes
+                            simuladas.
+                        </p>
+
+                        <a href="../pages/examples.html" class="pk-btn pk-btn-outline-primary mt-4">
+                            Volver a ejemplos
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-danger text-white p-8 text-center">
+                                    Imagen de Charmander
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">
+                                        Fire
+                                    </span>
+
+                                    <h3 class="pk-card-title">Charmander</h3>
+
+                                    <p class="pk-card-text">
+                                        Card de galería con espacio para imagen, badge, texto y acción.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-primary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-primary text-white p-8 text-center">
+                                    Imagen de Charmeleon
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-primary pk-badge-pill mb-3">
+                                        Evolution
+                                    </span>
+
+                                    <h3 class="pk-card-title">Charmeleon</h3>
+
+                                    <p class="pk-card-text">
+                                        Ejemplo de tarjeta con estructura reutilizable y diseño consistente.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-primary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-warning text-dark p-8 text-center">
+                                    Imagen de Charizard
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">
+                                        Final
+                                    </span>
+
+                                    <h3 class="pk-card-title">Charizard</h3>
+
+                                    <p class="pk-card-text">
+                                        Card destacada que demuestra badges, colores y sombras del build Fire.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-secondary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-info text-white p-8 text-center">
+                                    Imagen de Growlithe
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-info pk-badge-pill mb-3">
+                                        Support
+                                    </span>
+
+                                    <h3 class="pk-card-title">Growlithe</h3>
+
+                                    <p class="pk-card-text">
+                                        El grid permite mantener una galería ordenada y responsive.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-primary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-dark text-white p-8 text-center">
+                                    Imagen de Vulpix
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-dark pk-badge-pill mb-3">
+                                        Classic
+                                    </span>
+
+                                    <h3 class="pk-card-title">Vulpix</h3>
+
+                                    <p class="pk-card-text">
+                                        Combina fondos, tipografía, botones y espaciado de forma simple.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-secondary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="pk-card h-100 shadow-md">
+                                <div class="bg-secondary text-white p-8 text-center">
+                                    Imagen de Cyndaquil
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-secondary pk-badge-pill mb-3">
+                                        Starter
+                                    </span>
+
+                                    <h3 class="pk-card-title">Cyndaquil</h3>
+
+                                    <p class="pk-card-text">
+                                        Ejemplo final de card adaptable a distintas resoluciones.
+                                    </p>
+                                </div>
+
+                                <div class="pk-card-footer">
+                                    <button class="pk-btn pk-btn-sm pk-btn-primary">
+                                        Ver detalle
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="mt-8">
+                        <div class="pk-card shadow-lg rounded-xl">
+                            <div class="pk-card-body text-center">
+                                <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">
+                                    Gallery Summary
+                                </span>
+
+                                <h2 class="pk-title-2">
+                                    Una galería completa usando solo clases del framework
+                                </h2>
+
+                                <p class="pk-text">
+                                    Este ejemplo combina <code>.row</code>, <code>.col-*</code>,
+                                    <code>.pk-card</code>, <code>.pk-badge</code>, <code>.pk-btn</code>,
+                                    <code>.shadow-md</code>, <code>.rounded-xl</code> y utilidades de color.
+                                </p>
+
+                                <a href="../docs/components/cards.html" class="pk-btn pk-btn-primary mt-3">
+                                    Ver documentación de Cards
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Ejemplo Cards Gallery · Fire Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>

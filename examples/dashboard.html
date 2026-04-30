@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap-fire.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-fire">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../index.html" class="pk-navbar-brand">
+                        <img src="../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio
+                        rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../pages/examples.html" class="pk-navbar-link is-active">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+
+                    <div class="d-flex justify-content-between align-items-center flex-wrap mb-6">
+                        <div>
+                            <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">
+                                Fire Build Example
+                            </span>
+
+                            <h1 class="pk-title-1">
+                                Dashboard
+                            </h1>
+
+                            <p class="pk-lead">
+                                Panel administrativo construido con grid, cards, badges, tablas, alertas y utilidades.
+                            </p>
+                        </div>
+
+                        <a href="../pages/examples.html" class="pk-btn pk-btn-outline-primary mb-3">
+                            Volver a ejemplos
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="pk-card shadow-md h-100">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-primary pk-badge-pill mb-3">Usuarios</span>
+                                    <h2 class="pk-title-2">1,248</h2>
+                                    <p class="pk-card-text">Entrenadores registrados</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="pk-card shadow-md h-100">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">Ventas</span>
+                                    <h2 class="pk-title-2">$4,820</h2>
+                                    <p class="pk-card-text">Ingresos simulados</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="pk-card shadow-md h-100">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-success pk-badge-pill mb-3">Activos</span>
+                                    <h2 class="pk-title-2">86%</h2>
+                                    <p class="pk-card-text">Actividad semanal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="pk-card shadow-md h-100">
+                                <div class="pk-card-body">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">Alertas</span>
+                                    <h2 class="pk-title-2">12</h2>
+                                    <p class="pk-card-text">Pendientes de revisión</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mb-4">
+                            <div class="pk-card shadow-sm">
+                                <div class="pk-card-header">
+                                    Actividad reciente
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <table class="pk-table pk-table-bordered pk-table-hover pk-table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Usuario</th>
+                                                <th>Acción</th>
+                                                <th>Estado</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>Ash Ketchum</td>
+                                                <td>Registró un nuevo equipo</td>
+                                                <td><span
+                                                        class="pk-badge pk-badge-success pk-badge-pill">Completado</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Misty</td>
+                                                <td>Actualizó perfil</td>
+                                                <td><span
+                                                        class="pk-badge pk-badge-warning pk-badge-pill">Pendiente</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Brock</td>
+                                                <td>Creó una publicación</td>
+                                                <td><span class="pk-badge pk-badge-primary pk-badge-pill">Activo</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Gary Oak</td>
+                                                <td>Reportó una incidencia</td>
+                                                <td><span class="pk-badge pk-badge-danger pk-badge-pill">Revisar</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 mb-4">
+                            <div class="pk-card shadow-sm mb-4">
+                                <div class="pk-card-header">
+                                    Resumen
+                                </div>
+
+                                <div class="pk-card-body">
+                                    <div class="pk-alert pk-alert-warning mb-3">
+                                        Hay reportes pendientes por revisar.
+                                    </div>
+
+                                    <div class="pk-alert pk-alert-success mb-3">
+                                        El sistema se encuentra funcionando correctamente.
+                                    </div>
+
+                                    <a href="#" class="pk-btn pk-btn-primary w-100">
+                                        Ver reportes
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="pk-card shadow-sm">
+                                <div class="pk-card-body text-center">
+                                    <span class="pk-badge pk-badge-danger pk-badge-pill mb-3">
+                                        Fire Mode
+                                    </span>
+
+                                    <h3 class="pk-card-title">
+                                        Panel destacado
+                                    </h3>
+
+                                    <p class="pk-card-text">
+                                        Este bloque combina card, badge, botón, texto centrado y sombra.
+                                    </p>
+
+                                    <button class="pk-btn pk-btn-secondary mt-3">
+                                        Acción rápida
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Ejemplo Dashboard · Fire Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../assets/js/docs.js"></script>
+</body>
+
+</html>
