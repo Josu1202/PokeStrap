@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cards | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="buttons.html">Buttons</a>
+                                        <a class="pk-link fw-bold text-success" href="cards.html">Cards</a>
+                                        <a class="pk-link" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link" href="navbar.html">Navbar</a>
+                                        <a class="pk-link" href="badges.html">Badges</a>
+                                        <a class="pk-link" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Cards</h1>
+
+                            <p class="pk-lead">
+                                Las cards de PokeStrap permiten organizar contenido en bloques visuales con
+                                encabezado, cuerpo, pie e imágenes.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Component Docs</span>
+                                    <h2 class="theme-title pk-title-2">Cards con tema tipo planta</h2>
+                                    <p class="pk-text">
+                                        Las tarjetas mantienen la misma estructura base, pero adoptan colores y detalles
+                                        visuales del build Grass.
+                                    </p>
+                                    <a href="#card-grid" class="theme-button pk-btn">
+                                        Explorar cards
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="card-grid">
+                                <h2 class="pk-title-2">Card básica</h2>
+
+                                <p class="pk-text">
+                                    Una card básica se construye con <code>.pk-card</code> y
+                                    <code>.pk-card-body</code>.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <h3 class="pk-card-title">Bulbasaur Card</h3>
+                                        <p class="pk-card-text">
+                                            Esta es una tarjeta simple usando la estructura principal de PokeStrap.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
+  &lt;div class="pk-card-body"&gt;
+    &lt;h3 class="pk-card-title"&gt;Bulbasaur Card&lt;/h3&gt;
+    &lt;p class="pk-card-text"&gt;Contenido de la tarjeta.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Card con header y footer</h2>
+
+                                <p class="pk-text">
+                                    Puedes dividir la card en encabezado, cuerpo y pie usando clases específicas.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-7">
+                                        <div class="pk-card shadow-sm">
+                                            <div class="pk-card-header">
+                                                Pokémon Info
+                                            </div>
+
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Ivysaur</h3>
+                                                <p class="pk-card-text">
+                                                    Card con encabezado, cuerpo y pie para separar mejor la información.
+                                                </p>
+                                            </div>
+
+                                            <div class="pk-card-footer">
+                                                <span class="pk-badge pk-badge-success">Grass</span>
+                                                <span class="pk-badge pk-badge-accent">Poison</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
+  &lt;div class="pk-card-header"&gt;Pokémon Info&lt;/div&gt;
+
+  &lt;div class="pk-card-body"&gt;
+    &lt;h3 class="pk-card-title"&gt;Ivysaur&lt;/h3&gt;
+    &lt;p class="pk-card-text"&gt;Contenido de la card.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="pk-card-footer"&gt;
+    &lt;span class="pk-badge pk-badge-success"&gt;Grass&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Cards en grid</h2>
+
+                                <p class="pk-text">
+                                    Las cards se integran fácilmente con el sistema de columnas responsive.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-4 mb-4">
+                                        <div class="pk-card h-100 shadow-sm">
+                                            <div class="pk-card-header">Starter</div>
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Bulbasaur</h3>
+                                                <p class="pk-card-text">
+                                                    Card dentro de una columna responsive.
+                                                </p>
+                                            </div>
+                                            <div class="pk-card-footer">
+                                                <span class="pk-badge pk-badge-success">Grass</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-4">
+                                        <div class="pk-card h-100 shadow-sm">
+                                            <div class="pk-card-header">Starter</div>
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Chikorita</h3>
+                                                <p class="pk-card-text">
+                                                    Otra card usando la misma estructura.
+                                                </p>
+                                            </div>
+                                            <div class="pk-card-footer">
+                                                <span class="pk-badge pk-badge-success">Grass</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-4 mb-4">
+                                        <div class="pk-card h-100 shadow-sm">
+                                            <div class="pk-card-header">Starter</div>
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Treecko</h3>
+                                                <p class="pk-card-text">
+                                                    Card adaptable en móviles y escritorio.
+                                                </p>
+                                            </div>
+                                            <div class="pk-card-footer">
+                                                <span class="pk-badge pk-badge-success">Grass</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="row"&gt;
+  &lt;div class="col-12 col-md-4"&gt;
+    &lt;div class="pk-card h-100"&gt;
+      &lt;div class="pk-card-body"&gt;
+        &lt;h3 class="pk-card-title"&gt;Bulbasaur&lt;/h3&gt;
+        &lt;p class="pk-card-text"&gt;Card responsive.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Card con imagen</h2>
+
+                                <p class="pk-text">
+                                    Usa <code>.pk-card-img</code> para imágenes dentro de una card.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <div class="pk-card shadow-sm">
+                                            <img src="../../assets/img/venusaur.png" class="pk-card-img"
+                                                alt="Venusaur" />
+
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Venusaur</h3>
+                                                <p class="pk-card-text">
+                                                    Puedes colocar imágenes o vistas previas encima del cuerpo de la
+                                                    card.
+                                                </p>
+                                            </div>
+
+                                            <div class="pk-card-footer">
+                                                <a href="#" class="pk-btn pk-btn-success">Ver detalle</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
+  &lt;img src="imagen.png" class="pk-card-img" alt="..."&gt;
+
+  &lt;div class="pk-card-body"&gt;
+    &lt;h3 class="pk-card-title"&gt;Venusaur&lt;/h3&gt;
+    &lt;p class="pk-card-text"&gt;Card con imagen.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación con utilidades</h2>
+
+                                <p class="pk-text">
+                                    Puedes usar sombras, bordes, espaciado y colores para extender el diseño.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <div class="pk-card shadow-lg border-success rounded-xl">
+                                            <div class="pk-card-body">
+                                                <span class="pk-badge pk-badge-success pk-badge-pill mb-3">
+                                                    Utility Card
+                                                </span>
+
+                                                <h3 class="pk-card-title">Card personalizada</h3>
+
+                                                <p class="pk-card-text">
+                                                    Esta card combina clases del componente con utilidades del
+                                                    framework.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card shadow-lg border-success rounded-xl"&gt;
+  &lt;div class="pk-card-body"&gt;
+    &lt;span class="pk-badge pk-badge-success pk-badge-pill"&gt;Utility Card&lt;/span&gt;
+    &lt;h3 class="pk-card-title"&gt;Card personalizada&lt;/h3&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

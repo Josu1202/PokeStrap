@@ -13,7 +13,7 @@
 
 <body style="margin: 0;">
     <div class="pk-app theme-pokemon-classic">
-        <<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
             <nav class="pk-navbar">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <a href="../index.html" class="pk-navbar-brand">
@@ -30,7 +30,8 @@
                 <div class="pk-navbar-menu d-none d-md-flex">
                     <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
                     <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
-                    <a href="components.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Componentes</a>
+                    <a href="components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
                     <a href="utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
                     <a href="examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
                 </div>
@@ -44,112 +45,221 @@
                     <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
                 </div>
             </nav>
-            </header>
-            <main style="padding-top: 70px;">
-                <section class="section bg-white">
-                    <div class="container">
-                        <div class="row">
+        </header>
+        <main style="padding-top: 70px;">
+            <section class="section bg-white">
+                <div class="container">
+                    <div class="row">
 
-                            <aside class="col-12 col-lg-3 mb-6">
-                                <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
-                                    <div class="pk-card-header">
-                                        Documentación
-                                    </div>
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Documentación</div>
 
-                                    <div class="pk-card-body">
-                                        <div class="stack-md">
-                                            <a class="pk-link" href="getting-started.html">Inicio rápido</a>
-                                            <a class="pk-link" href="installation.html">Instalación</a>
-                                            <a class="pk-link" href="layout.html">Layout</a>
-                                            <a class="pk-link" href="components.html">Componentes</a>
-                                            <a class="pk-link" href="utilities.html">Utilidades</a>
-                                            <a class="pk-link" href="themes.html">Temas</a>
-                                            <a class="pk-link" href="examples.html">Ejemplos</a>
-                                        </div>
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="getting-started.html">Inicio
+                                            rápido</a>
+                                        <a class="pk-link" href="installation.html">Instalación</a>
+                                        <a class="pk-link" href="layout.html">Layout</a>
+                                        <a class="pk-link fw-bold text-primary" href="components.html">Componentes</a>
+                                        <a class="pk-link" href="utilities.html">Utilidades</a>
+                                        <a class="pk-link" href="themes.html">Temas</a>
+                                        <a class="pk-link" href="examples.html">Ejemplos</a>
                                     </div>
                                 </div>
-                            </aside>
+                            </div>
+                        </aside>
 
-                            <section class="col-12 col-lg-9">
-                                <span class="pk-badge pk-badge-primary pk-badge-pill mb-4">
-                                    Componentes
-                                </span>
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-primary pk-badge-pill mb-4">
+                                Componentes
+                            </span>
 
-                                <h1 class="pk-title-1">Componentes UI</h1>
+                            <h1 class="pk-title-1">Componentes UI</h1>
 
-                                <p class="pk-lead">
-                                    PokeStrap incluye una colección de componentes reutilizables para construir
-                                    interfaces de usuario de forma rápida, clara y consistente.
+                            <p class="pk-lead">
+                                PokeStrap incluye una colección de componentes reutilizables para construir
+                                interfaces de usuario de forma rápida, clara y consistente.
+                            </p>
+
+                            <hr class="pk-divider" />
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Documentación detallada</h2>
+
+                                <p class="pk-text">
+                                    Explora cada componente de PokeStrap con ejemplos completos, variantes y código
+                                    listo para usar.
                                 </p>
 
-                                <hr class="pk-divider" />
-
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Botones</h2>
-                                    <p class="pk-text">
-                                        Los botones permiten representar acciones principales, secundarias y variantes
-                                        visuales tipo solid u outline.
-                                    </p>
-
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <button class="pk-btn pk-btn-primary me-2 mb-2">Primary</button>
-                                            <button class="pk-btn pk-btn-secondary me-2 mb-2">Secondary</button>
-                                            <button class="pk-btn pk-btn-accent me-2 mb-2">Accent</button>
-                                            <button class="pk-btn pk-btn-success me-2 mb-2">Success</button>
-                                            <button class="pk-btn pk-btn-danger me-2 mb-2">Danger</button>
-                                        </div>
-                                    </div>
-
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary"&gt;Primary&lt;/button&gt;
-&lt;button class="pk-btn pk-btn-secondary"&gt;Secondary&lt;/button&gt;
-&lt;button class="pk-btn pk-btn-accent"&gt;Accent&lt;/button&gt;</code></pre>
-                                </section>
-
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Botones outline y tamaños</h2>
-
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <button class="pk-btn pk-btn-outline-primary me-2 mb-2">Outline
-                                                Primary</button>
-                                            <button class="pk-btn pk-btn-outline-accent me-2 mb-2">Outline
-                                                Accent</button>
-                                            <button class="pk-btn pk-btn-sm pk-btn-primary me-2 mb-2">Small</button>
-                                            <button class="pk-btn pk-btn-primary me-2 mb-2">Default</button>
-                                            <button class="pk-btn pk-btn-lg pk-btn-primary mb-2">Large</button>
-                                        </div>
-                                    </div>
-
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-outline-primary"&gt;Outline Primary&lt;/button&gt;
-&lt;button class="pk-btn pk-btn-sm pk-btn-primary"&gt;Small&lt;/button&gt;
-&lt;button class="pk-btn pk-btn-lg pk-btn-primary"&gt;Large&lt;/button&gt;</code></pre>
-                                </section>
-
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Cards</h2>
-                                    <p class="pk-text">
-                                        Las tarjetas permiten agrupar contenido con encabezado, cuerpo y pie.
-                                    </p>
-
-                                    <div class="row mb-4">
-                                        <div class="col-12 col-md-6">
-                                            <div class="pk-card shadow-sm">
-                                                <div class="pk-card-header">Pokémon Card</div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/buttons.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
                                                 <div class="pk-card-body">
-                                                    <h3 class="pk-card-title">PokeStrap Card</h3>
-                                                    <p class="pk-card-text">
-                                                        Una tarjeta sencilla usando clases del framework.
+                                                    <span
+                                                        class="pk-badge pk-badge-primary pk-badge-pill mb-3">Actions</span>
+                                                    <h3 class="pk-card-title">Buttons</h3>
+                                                    <p class="pk-card-text">Botones solid, outline, tamaños y estados.
                                                     </p>
                                                 </div>
-                                                <div class="pk-card-footer">
-                                                    Footer de la card
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/cards.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span
+                                                        class="pk-badge pk-badge-success pk-badge-pill mb-3">Content</span>
+                                                    <h3 class="pk-card-title">Cards</h3>
+                                                    <p class="pk-card-text">Tarjetas con header, body, footer e
+                                                        imágenes.</p>
                                                 </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/alerts.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span
+                                                        class="pk-badge pk-badge-warning pk-badge-pill mb-3">Feedback</span>
+                                                    <h3 class="pk-card-title">Alerts</h3>
+                                                    <p class="pk-card-text">Mensajes de éxito, error, advertencia e
+                                                        información.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/forms.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span
+                                                        class="pk-badge pk-badge-info pk-badge-pill mb-3">Inputs</span>
+                                                    <h3 class="pk-card-title">Forms</h3>
+                                                    <p class="pk-card-text">Inputs, selects, textareas y validaciones.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/navbar.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span
+                                                        class="pk-badge pk-badge-accent pk-badge-pill mb-3">Navigation</span>
+                                                    <h3 class="pk-card-title">Navbar</h3>
+                                                    <p class="pk-card-text">Barra de navegación responsive con menú
+                                                        móvil.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/badges.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span
+                                                        class="pk-badge pk-badge-secondary pk-badge-pill mb-3">Tags</span>
+                                                    <h3 class="pk-card-title">Badges</h3>
+                                                    <p class="pk-card-text">Etiquetas pequeñas para estados y
+                                                        categorías.</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <a href="../docs/components/tables.html" class="pk-link text-decoration-none">
+                                            <div class="pk-card h-100 shadow-sm">
+                                                <div class="pk-card-body">
+                                                    <span class="pk-badge pk-badge-dark pk-badge-pill mb-3">Data</span>
+                                                    <h3 class="pk-card-title">Tables</h3>
+                                                    <p class="pk-card-text">Tablas con bordes, hover y filas alternadas.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                    Contenedores
+                                </h2>
+                                <p class="pk-text">
+                                    Los botones permiten representar acciones principales, secundarias y variantes
+                                    visuales tipo solid u outline.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2">Primary</button>
+                                        <button class="pk-btn pk-btn-secondary me-2 mb-2">Secondary</button>
+                                        <button class="pk-btn pk-btn-accent me-2 mb-2">Accent</button>
+                                        <button class="pk-btn pk-btn-success me-2 mb-2">Success</button>
+                                        <button class="pk-btn pk-btn-danger me-2 mb-2">Danger</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-accent"&gt;Accent&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Botones outline y tamaños</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-outline-primary me-2 mb-2">Outline
+                                            Primary</button>
+                                        <button class="pk-btn pk-btn-outline-accent me-2 mb-2">Outline
+                                            Accent</button>
+                                        <button class="pk-btn pk-btn-sm pk-btn-primary me-2 mb-2">Small</button>
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2">Default</button>
+                                        <button class="pk-btn pk-btn-lg pk-btn-primary mb-2">Large</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-outline-primary"&gt;Outline Primary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-sm pk-btn-primary"&gt;Small&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-lg pk-btn-primary"&gt;Large&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                    Cards
+                                </h2>
+                                <p class="pk-text">
+                                    Las tarjetas permiten agrupar contenido con encabezado, cuerpo y pie.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-6">
+                                        <div class="pk-card shadow-sm">
+                                            <div class="pk-card-header">Pokémon Card</div>
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">PokeStrap Card</h3>
+                                                <p class="pk-card-text">
+                                                    Una tarjeta sencilla usando clases del framework.
+                                                </p>
+                                            </div>
+                                            <div class="pk-card-footer">
+                                                Footer de la card
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card"&gt;
   &lt;div class="pk-card-header"&gt;Header&lt;/div&gt;
   &lt;div class="pk-card-body"&gt;
     &lt;h3 class="pk-card-title"&gt;Título&lt;/h3&gt;
@@ -157,136 +267,180 @@
   &lt;/div&gt;
   &lt;div class="pk-card-footer"&gt;Footer&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                                </section>
+                            </section>
 
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Alertas</h2>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                    Alertas
+                                </h2>
 
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <div class="pk-alert pk-alert-success mb-3">Operación realizada
-                                                correctamente.
-                                            </div>
-                                            <div class="pk-alert pk-alert-danger mb-3">Ha ocurrido un error importante.
-                                            </div>
-                                            <div class="pk-alert pk-alert-warning mb-3">Revisa esta información antes de
-                                                continuar.</div>
-                                            <div class="pk-alert pk-alert-info">Mensaje informativo para el usuario.
-                                            </div>
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-alert pk-alert-success mb-3">Operación realizada
+                                            correctamente.
+                                        </div>
+                                        <div class="pk-alert pk-alert-danger mb-3">Ha ocurrido un error importante.
+                                        </div>
+                                        <div class="pk-alert pk-alert-warning mb-3">Revisa esta información antes de
+                                            continuar.</div>
+                                        <div class="pk-alert pk-alert-info">Mensaje informativo para el usuario.
                                         </div>
                                     </div>
+                                </div>
 
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-success"&gt;Operación realizada correctamente.&lt;/div&gt;
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-success"&gt;Operación realizada correctamente.&lt;/div&gt;
 &lt;div class="pk-alert pk-alert-danger"&gt;Ha ocurrido un error.&lt;/div&gt;
 &lt;div class="pk-alert pk-alert-warning"&gt;Advertencia.&lt;/div&gt;
 &lt;div class="pk-alert pk-alert-info"&gt;Información.&lt;/div&gt;</code></pre>
-                                </section>
+                            </section>
 
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Formularios</h2>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                    Formularios
+                                </h2>
 
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <div class="pk-form-group">
-                                                <label class="pk-label" for="name">Nombre</label>
-                                                <input class="pk-input" id="name" type="text"
-                                                    placeholder="Ash Ketchum" />
-                                            </div>
-
-                                            <div class="pk-form-group">
-                                                <label class="pk-label" for="region">Región</label>
-                                                <select class="pk-select" id="region">
-                                                    <option>Kanto</option>
-                                                    <option>Johto</option>
-                                                    <option>Hoenn</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="pk-form-group">
-                                                <label class="pk-label" for="message">Mensaje</label>
-                                                <textarea class="pk-textarea" id="message"
-                                                    placeholder="Escribe un mensaje"></textarea>
-                                            </div>
-
-                                            <button class="pk-btn pk-btn-primary">Enviar</button>
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-form-group">
+                                            <label class="pk-label" for="name">Nombre</label>
+                                            <input class="pk-input" id="name" type="text" placeholder="Ash Ketchum" />
                                         </div>
-                                    </div>
 
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;input class="pk-input" type="text" placeholder="Nombre"&gt;
+                                        <div class="pk-form-group">
+                                            <label class="pk-label" for="region">Región</label>
+                                            <select class="pk-select" id="region">
+                                                <option>Kanto</option>
+                                                <option>Johto</option>
+                                                <option>Hoenn</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="pk-form-group">
+                                            <label class="pk-label" for="message">Mensaje</label>
+                                            <textarea class="pk-textarea" id="message"
+                                                placeholder="Escribe un mensaje"></textarea>
+                                        </div>
+
+                                        <button class="pk-btn pk-btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;input class="pk-input" type="text" placeholder="Nombre"&gt;
 &lt;select class="pk-select"&gt;
   &lt;option&gt;Kanto&lt;/option&gt;
 &lt;/select&gt;
 &lt;textarea class="pk-textarea"&gt;&lt;/textarea&gt;</code></pre>
-                                </section>
+                            </section>
 
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Badges</h2>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                  Badges
+                                </h2>
 
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <span class="pk-badge pk-badge-primary me-2 mb-2">Primary</span>
-                                            <span class="pk-badge pk-badge-secondary me-2 mb-2">Secondary</span>
-                                            <span class="pk-badge pk-badge-accent me-2 mb-2">Accent</span>
-                                            <span class="pk-badge pk-badge-success pk-badge-pill me-2 mb-2">Pill</span>
-                                        </div>
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span class="pk-badge pk-badge-primary me-2 mb-2">Primary</span>
+                                        <span class="pk-badge pk-badge-secondary me-2 mb-2">Secondary</span>
+                                        <span class="pk-badge pk-badge-accent me-2 mb-2">Accent</span>
+                                        <span class="pk-badge pk-badge-success pk-badge-pill me-2 mb-2">Pill</span>
                                     </div>
+                                </div>
 
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-primary"&gt;Primary&lt;/span&gt;
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-primary"&gt;Primary&lt;/span&gt;
 &lt;span class="pk-badge pk-badge-success pk-badge-pill"&gt;Pill&lt;/span&gt;</code></pre>
-                                </section>
+                            </section>
 
-                                <section class="mb-8">
-                                    <h2 class="pk-title-2">Tablas</h2>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                   Tablas
+                                </h2>
 
-                                    <div class="pk-card shadow-sm mb-4">
-                                        <div class="pk-card-body">
-                                            <table class="pk-table pk-table-bordered pk-table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Componente</th>
-                                                        <th>Clase</th>
-                                                        <th>Estado</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Botones</td>
-                                                        <td><code>.pk-btn</code></td>
-                                                        <td>Disponible</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cards</td>
-                                                        <td><code>.pk-card</code></td>
-                                                        <td>Disponible</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Alertas</td>
-                                                        <td><code>.pk-alert</code></td>
-                                                        <td>Disponible</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Componente</th>
+                                                    <th>Clase</th>
+                                                    <th>Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Botones</td>
+                                                    <td><code>.pk-btn</code></td>
+                                                    <td>Disponible</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cards</td>
+                                                    <td><code>.pk-card</code></td>
+                                                    <td>Disponible</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alertas</td>
+                                                    <td><code>.pk-alert</code></td>
+                                                    <td>Disponible</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                </div>
 
-                                    <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-bordered pk-table-hover"&gt;
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-bordered pk-table-hover"&gt;
   ...
 &lt;/table&gt;</code></pre>
-                                </section>
-
                             </section>
-                        </div>
-                    </div>
-                </section>
-            </main>
 
-            <footer class="section-sm bg-gray-900 text-white">
-                <div class="container text-center">
-                    <p class="pk-small m-0">
-                        PokeStrap Framework · Documentación oficial
-                    </p>
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">
+                                  Navbar
+                                </h2>
+
+                                <p class="pk-text">
+                                    La barra de navegación permite mostrar el nombre del sitio, enlaces principales
+                                    y opciones
+                                    responsive para adaptar el menú a pantallas pequeñas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <nav class="pk-navbar rounded-md">
+                                            <a href="#" class="pk-navbar-brand">
+                                                <span>PokeStrap</span>
+                                            </a>
+
+                                            <div class="pk-navbar-menu">
+                                                <a href="#" class="pk-navbar-link">Inicio</a>
+                                                <a href="#" class="pk-navbar-link">Docs</a>
+                                                <a href="#" class="pk-navbar-link">Ejemplos</a>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;nav class="pk-navbar"&gt;
+  &lt;a href="#" class="pk-navbar-brand"&gt;PokeStrap&lt;/a&gt;
+
+  &lt;div class="pk-navbar-menu"&gt;
+    &lt;a href="#" class="pk-navbar-link"&gt;Inicio&lt;/a&gt;
+    &lt;a href="#" class="pk-navbar-link"&gt;Docs&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
                 </div>
-            </footer>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación oficial
+                </p>
+            </div>
+        </footer>
 
     </div>
     <script src="../assets/js/docs.js"></script>

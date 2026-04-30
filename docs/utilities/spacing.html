@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Spacing | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-electric">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Utilities</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="colors.html">Colors</a>
+                                        <a class="pk-link fw-bold text-warning" href="spacing.html">Spacing</a>
+                                        <a class="pk-link" href="typography.html">Typography</a>
+                                        <a class="pk-link" href="flex.html">Flexbox</a>
+                                        <a class="pk-link" href="display.html">Display</a>
+                                        <a class="pk-link" href="borders.html">Borders</a>
+                                        <a class="pk-link" href="shadows.html">Shadows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+                            <h1 class="pk-title-1">Spacing</h1>
+
+                            <p class="pk-lead">
+                                Las utilidades de spacing permiten aplicar márgenes y paddings rápidamente
+                                usando clases cortas inspiradas en Bootstrap.
+                            </p>
+
+                            <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                                    <h2 class="theme-title pk-title-2">Espaciado rápido y consistente</h2>
+                                    <p class="pk-text">
+                                        Usa clases como <code>.m-4</code>, <code>.mt-6</code>, <code>.p-3</code>,
+                                        <code>.px-4</code> o <code>.py-2</code> para controlar separación sin CSS
+                                        adicional.
+                                    </p>
+                                    <a href="#spacing-examples" class="theme-button pk-btn">Ver ejemplos</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="spacing-examples">
+                                <h2 class="pk-title-2">Padding</h2>
+
+                                <p class="pk-text">
+                                    Las clases <code>.p-*</code> aplican padding en todos los lados.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="bg-gray-200 rounded-md mb-4">
+                                            <div class="bg-warning text-dark p-2 rounded-md">
+                                                .p-2
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-gray-200 rounded-md mb-4">
+                                            <div class="bg-warning text-dark p-4 rounded-md">
+                                                .p-4
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-gray-200 rounded-md">
+                                            <div class="bg-warning text-dark p-8 rounded-md">
+                                                .p-8
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="p-2"&gt;Padding 2&lt;/div&gt;
+&lt;div class="p-4"&gt;Padding 4&lt;/div&gt;
+&lt;div class="p-8"&gt;Padding 8&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Padding por eje</h2>
+
+                                <p class="pk-text">
+                                    Usa <code>.px-*</code> para padding horizontal y <code>.py-*</code> para padding
+                                    vertical.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="bg-gray-200 rounded-md mb-4">
+                                            <div class="bg-primary text-black px-6 py-2 rounded-md">
+                                                .px-6 .py-2
+                                            </div>
+                                        </div>
+
+                                        <div class="bg-gray-200 rounded-md">
+                                            <div class="bg-accent text-black px-2 py-6 rounded-md">
+                                                .px-2 .py-6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="px-6 py-2"&gt;Padding horizontal amplio&lt;/div&gt;
+&lt;div class="px-2 py-6"&gt;Padding vertical amplio&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Margin</h2>
+
+                                <p class="pk-text">
+                                    Las clases <code>.m-*</code> aplican margin en todos los lados.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body bg-gray-200 rounded-md">
+                                        <div class="bg-info text-white m-2 p-3 rounded-md">.m-2</div>
+                                        <div class="bg-primary text-black m-4 p-3 rounded-md">.m-4</div>
+                                        <div class="bg-accent text-black m-6 p-3 rounded-md">.m-6</div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="m-2"&gt;Margin 2&lt;/div&gt;
+&lt;div class="m-4"&gt;Margin 4&lt;/div&gt;
+&lt;div class="m-6"&gt;Margin 6&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Margin por dirección</h2>
+
+                                <p class="pk-text">
+                                    Usa <code>.mt-*</code>, <code>.mb-*</code>, <code>.ms-*</code> y
+                                    <code>.me-*</code> para controlar direcciones específicas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="bg-gray-200 p-4 rounded-md">
+                                            <div class="bg-warning text-dark p-3 rounded-md mb-4">
+                                                Elemento con .mb-4
+                                            </div>
+
+                                            <div class="bg-primary text-black p-3 rounded-md mt-6">
+                                                Elemento con .mt-6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="mb-4"&gt;Margin bottom 4&lt;/div&gt;
+&lt;div class="mt-6"&gt;Margin top 6&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Margin automático</h2>
+
+                                <p class="pk-text">
+                                    Las clases <code>.m-auto</code> y <code>.mx-auto</code> ayudan a centrar elementos.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="bg-gray-200 p-4 rounded-md">
+                                            <div class="bg-warning text-dark p-4 rounded-md w-50 mx-auto text-center">
+                                                .w-50 .mx-auto
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="w-50 mx-auto"&gt;
+  Elemento centrado
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Referencia rápida</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Clase</th>
+                                                    <th>Uso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>.m-4</code></td>
+                                                    <td>Margin en todos los lados.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.mt-4</code></td>
+                                                    <td>Margin superior.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.mb-4</code></td>
+                                                    <td>Margin inferior.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.p-4</code></td>
+                                                    <td>Padding en todos los lados.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.px-4</code></td>
+                                                    <td>Padding horizontal.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.py-4</code></td>
+                                                    <td>Padding vertical.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="p-4 mb-6"&gt;
+  Caja con padding y separación inferior
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de utilities · Electric Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

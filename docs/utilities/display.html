@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Display | PokeStrap</title>
+
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+  <div class="pk-app theme-electric">
+
+    <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+      <nav class="pk-navbar">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="../../index.html" class="pk-navbar-brand">
+            <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+            <span>PokeStrap</span>
+          </a>
+
+          <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+            style="color: #fff; border: 0; font-size: 2rem;">
+            ☰
+          </button>
+        </div>
+
+        <div class="pk-navbar-menu d-none d-md-flex">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+        </div>
+
+        <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+          style="background-color: var(--pk-primary); padding-top: 1rem;">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <main style="padding-top: 70px;">
+      <section class="section bg-light">
+        <div class="container">
+          <div class="row">
+
+            <aside class="col-12 col-lg-3 mb-6">
+              <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                <div class="pk-card-header">Utilities</div>
+
+                <div class="pk-card-body">
+                  <div class="stack-md">
+                    <a class="pk-link" href="colors.html">Colors</a>
+                    <a class="pk-link" href="spacing.html">Spacing</a>
+                    <a class="pk-link" href="typography.html">Typography</a>
+                    <a class="pk-link" href="flex.html">Flexbox</a>
+                    <a class="pk-link fw-bold text-warning" href="display.html">Display</a>
+                    <a class="pk-link" href="borders.html">Borders</a>
+                    <a class="pk-link" href="shadows.html">Shadows</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <section class="col-12 col-lg-9">
+              <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+              <h1 class="pk-title-1">Display</h1>
+
+              <p class="pk-lead">
+                Las utilidades display permiten controlar cómo se muestran los elementos:
+                bloque, inline, flex, grid u ocultos según el tamaño de pantalla.
+              </p>
+
+              <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                <div class="theme-card p-4">
+                  <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                  <h2 class="theme-title pk-title-2">Control visual rápido</h2>
+                  <p class="pk-text">
+                    Usa clases como <code>.d-block</code>, <code>.d-none</code>,
+                    <code>.d-flex</code> y variantes responsive como <code>.d-md-block</code>.
+                  </p>
+                  <a href="#display-basic" class="theme-button pk-btn">Ver display</a>
+                </div>
+              </div>
+
+              <hr class="pk-divider" />
+
+              <section class="mb-8" id="display-basic">
+                <h2 class="pk-title-2">Display básico</h2>
+
+                <p class="pk-text">
+                  Las clases <code>.d-*</code> cambian el comportamiento visual del elemento.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <div class="d-block bg-warning text-dark p-3 rounded-md mb-3">
+                      .d-block ocupa todo el ancho disponible
+                    </div>
+
+                    <span class="d-inline bg-primary text-black p-3 rounded-md me-2">
+                      .d-inline
+                    </span>
+
+                    <span class="d-inline-block bg-accent text-black p-3 rounded-md">
+                      .d-inline-block
+                    </span>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-block"&gt;Bloque&lt;/div&gt;
+&lt;span class="d-inline"&gt;Inline&lt;/span&gt;
+&lt;span class="d-inline-block"&gt;Inline block&lt;/span&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Display flex y grid</h2>
+
+                <p class="pk-text">
+                  También puedes activar layouts modernos con <code>.d-flex</code> y
+                  <code>.d-grid</code>, si están disponibles en tus utilidades.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <div class="d-flex bg-gray-200 p-3 rounded-md mb-4">
+                      <div class="bg-warning text-dark p-3 rounded-md me-2">Flex 1</div>
+                      <div class="bg-warning text-dark p-3 rounded-md me-2">Flex 2</div>
+                      <div class="bg-warning text-dark p-3 rounded-md">Flex 3</div>
+                    </div>
+
+                    <div class="d-grid bg-gray-200 p-3 rounded-md">
+                      <div class="bg-primary text-black p-3 rounded-md mb-2">Grid item</div>
+                      <div class="bg-primary text-black p-3 rounded-md">Grid item</div>
+                    </div>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex"&gt;
+  &lt;div&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="d-grid"&gt;
+  &lt;div&gt;Grid item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Ocultar elementos</h2>
+
+                <p class="pk-text">
+                  La clase <code>.d-none</code> oculta un elemento completamente.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <div class="pk-alert pk-alert-info mb-3">
+                      El siguiente elemento existe en el HTML, pero está oculto con <code>.d-none</code>.
+                    </div>
+
+                    <div class="d-none bg-danger text-white p-3 rounded-md">
+                      Este contenido no se muestra.
+                    </div>
+
+                    <div class="bg-warning text-dark p-3 rounded-md">
+                      Este contenido sí se muestra.
+                    </div>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-none"&gt;
+  Este contenido está oculto
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Display responsive</h2>
+
+                <p class="pk-text">
+                  Puedes mostrar u ocultar elementos según el breakpoint.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <div class="pk-alert pk-alert-warning mb-4">
+                      Cambia el ancho del navegador para ver el comportamiento.
+                    </div>
+
+                    <div class="d-block d-md-none bg-primary text-black p-4 rounded-md text-center">
+                      Visible solo en móvil: <code>.d-block .d-md-none</code>
+                    </div>
+
+                    <div class="d-none d-md-block bg-warning text-dark p-4 rounded-md text-center">
+                      Visible desde pantallas medianas: <code>.d-none .d-md-block</code>
+                    </div>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-block d-md-none"&gt;
+  Visible solo en móvil
+&lt;/div&gt;
+
+&lt;div class="d-none d-md-block"&gt;
+  Visible desde md
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Casos comunes</h2>
+
+                <p class="pk-text">
+                  Un uso frecuente es tener botones o mensajes distintos según el tamaño de pantalla.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <div class="d-block d-lg-none">
+                      <button class="pk-btn pk-btn-primary w-100">
+                        Botón móvil ancho completo
+                      </button>
+                    </div>
+
+                    <div class="d-none d-lg-flex justify-content-between align-items-center bg-gray-200 p-4 rounded-md">
+                      <span class="fw-bold">Vista escritorio</span>
+                      <button class="pk-btn pk-btn-primary">Acción principal</button>
+                    </div>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-block d-lg-none"&gt;
+  Botón para móvil
+&lt;/div&gt;
+
+&lt;div class="d-none d-lg-flex"&gt;
+  Contenido para escritorio
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section>
+                <h2 class="pk-title-2">Referencia rápida</h2>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <table class="pk-table pk-table-bordered pk-table-hover">
+                      <thead>
+                        <tr>
+                          <th>Clase</th>
+                          <th>Descripción</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td><code>.d-none</code></td>
+                          <td>Oculta el elemento.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-block</code></td>
+                          <td>Muestra el elemento como bloque.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-inline</code></td>
+                          <td>Muestra el elemento en línea.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-inline-block</code></td>
+                          <td>Muestra el elemento en línea con propiedades de bloque.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-flex</code></td>
+                          <td>Activa un contenedor flex.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-md-none</code></td>
+                          <td>Oculta desde pantallas medianas.</td>
+                        </tr>
+                        <tr>
+                          <td><code>.d-md-block</code></td>
+                          <td>Muestra como bloque desde pantallas medianas.</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-none d-md-block"&gt;
+  Visible desde pantallas medianas
+&lt;/div&gt;</code></pre>
+              </section>
+
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-sm bg-gray-900 text-white">
+      <div class="container text-center">
+        <p class="pk-small m-0">
+          PokeStrap Framework · Documentación de utilities · Electric Build
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../../assets/js/docs.js"></script>
+</body>
+</html>

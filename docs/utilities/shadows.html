@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shadows | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-electric">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+      <nav class="pk-navbar">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="../../index.html" class="pk-navbar-brand">
+            <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+            <span>PokeStrap</span>
+          </a>
+
+          <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+            style="color: #fff; border: 0; font-size: 2rem;">
+            ☰
+          </button>
+        </div>
+
+        <div class="pk-navbar-menu d-none d-md-flex">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+        </div>
+
+        <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+          style="background-color: var(--pk-primary); padding-top: 1rem;">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+        </div>
+      </nav>
+    </header>
+
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Utilities</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="colors.html">Colors</a>
+                                        <a class="pk-link" href="spacing.html">Spacing</a>
+                                        <a class="pk-link" href="typography.html">Typography</a>
+                                        <a class="pk-link" href="flex.html">Flexbox</a>
+                                        <a class="pk-link" href="display.html">Display</a>
+                                        <a class="pk-link" href="borders.html">Borders</a>
+                                        <a class="pk-link fw-bold text-warning" href="shadows.html">Shadows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+                            <h1 class="pk-title-1">Shadows</h1>
+
+                            <p class="pk-lead">
+                                Las utilidades de sombras permiten agregar profundidad visual a tarjetas,
+                                botones, badges, contenedores y elementos destacados.
+                            </p>
+
+                            <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                                    <h2 class="theme-title pk-title-2">Profundidad visual rápida</h2>
+                                    <p class="pk-text">
+                                        Usa clases como <code>.shadow-sm</code>, <code>.shadow-md</code>,
+                                        <code>.shadow-lg</code> y <code>.shadow-none</code> para controlar elevación.
+                                    </p>
+                                    <a href="#shadow-examples" class="theme-button pk-btn">Ver sombras</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="shadow-examples">
+                                <h2 class="pk-title-2">Escala de sombras</h2>
+
+                                <p class="pk-text">
+                                    PokeStrap incluye diferentes niveles de sombra para crear jerarquía visual.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mb-4">
+                                                <div class="bg-white shadow-sm rounded-lg p-5 text-center">
+                                                    <strong>.shadow-sm</strong>
+                                                    <p class="pk-small m-0 mt-2">Sombra ligera</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-4">
+                                                <div class="bg-white shadow-md rounded-lg p-5 text-center">
+                                                    <strong>.shadow-md</strong>
+                                                    <p class="pk-small m-0 mt-2">Sombra media</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-4">
+                                                <div class="bg-white shadow-lg rounded-lg p-5 text-center">
+                                                    <strong>.shadow-lg</strong>
+                                                    <p class="pk-small m-0 mt-2">Sombra alta</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="shadow-sm"&gt;Sombra ligera&lt;/div&gt;
+&lt;div class="shadow-md"&gt;Sombra media&lt;/div&gt;
+&lt;div class="shadow-lg"&gt;Sombra alta&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Eliminar sombras</h2>
+
+                                <p class="pk-text">
+                                    La clase <code>.shadow-none</code> elimina cualquier sombra aplicada al elemento.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="bg-white shadow-lg rounded-lg p-5 text-center mb-4">
+                                            Caja con <code>.shadow-lg</code>
+                                        </div>
+
+                                        <div class="bg-white shadow-none rounded-lg p-5 text-center border">
+                                            Caja con <code>.shadow-none</code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="shadow-none"&gt;
+  Sin sombra
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Cards elevadas</h2>
+
+                                <p class="pk-text">
+                                    Las sombras se combinan muy bien con <code>.pk-card</code> para crear bloques
+                                    destacados.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="pk-card shadow-md">
+                                            <div class="pk-card-body">
+                                                <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">Medium</span>
+                                                <h3 class="pk-card-title">Card con shadow-md</h3>
+                                                <p class="pk-card-text">
+                                                    Útil para cards normales con un poco de elevación.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="pk-card shadow-lg">
+                                            <div class="pk-card-body">
+                                                <span class="pk-badge pk-badge-primary pk-badge-pill mb-3">Large</span>
+                                                <h3 class="pk-card-title">Card con shadow-lg</h3>
+                                                <p class="pk-card-text">
+                                                    Ideal para contenido importante o bloques destacados.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card shadow-md"&gt;
+  &lt;div class="pk-card-body"&gt;Card elevada&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="pk-card shadow-lg"&gt;
+  &lt;div class="pk-card-body"&gt;Card destacada&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Sombras en botones</h2>
+
+                                <p class="pk-text">
+                                    Puedes usar sombras para que una acción importante tenga más presencia visual.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-primary shadow-sm me-2 mb-2">
+                                            shadow-sm
+                                        </button>
+
+                                        <button class="pk-btn pk-btn-primary shadow-md me-2 mb-2">
+                                            shadow-md
+                                        </button>
+
+                                        <button class="pk-btn pk-btn-primary shadow-lg mb-2">
+                                            shadow-lg
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary shadow-md"&gt;
+  Botón destacado
+&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Sombras con badges</h2>
+
+                                <p class="pk-text">
+                                    También puedes aplicar sombras pequeñas a badges o etiquetas visuales.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span class="pk-badge pk-badge-warning shadow-sm rounded-pill me-2 mb-2">
+                                            Electric
+                                        </span>
+
+                                        <span class="pk-badge pk-badge-primary shadow-md rounded-pill me-2 mb-2">
+                                            Primary
+                                        </span>
+
+                                        <span class="pk-badge pk-badge-dark shadow-lg rounded-pill mb-2">
+                                            Dark
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-warning shadow-md rounded-pill"&gt;
+  Electric
+&lt;/span&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Referencia rápida</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Clase</th>
+                                                    <th>Descripción</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>.shadow-none</code></td>
+                                                    <td>Elimina la sombra del elemento.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.shadow-sm</code></td>
+                                                    <td>Aplica una sombra ligera.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.shadow-md</code></td>
+                                                    <td>Aplica una sombra media.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.shadow-lg</code></td>
+                                                    <td>Aplica una sombra grande.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="shadow-lg rounded-lg p-4"&gt;
+  Elemento elevado
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de utilities · Electric Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

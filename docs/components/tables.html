@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tables | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="buttons.html">Buttons</a>
+                                        <a class="pk-link" href="cards.html">Cards</a>
+                                        <a class="pk-link" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link" href="navbar.html">Navbar</a>
+                                        <a class="pk-link" href="badges.html">Badges</a>
+                                        <a class="pk-link fw-bold text-success" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Tables</h1>
+
+                            <p class="pk-lead">
+                                Las tablas de PokeStrap permiten presentar información tabular de forma clara,
+                                ordenada y compatible con variantes como bordes, hover y filas alternadas.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Component Docs</span>
+                                    <h2 class="theme-title pk-title-2">Tablas limpias y reutilizables</h2>
+                                    <p class="pk-text">
+                                        Usa tablas para documentar datos, listas, registros o comparaciones dentro
+                                        de interfaces administrativas y páginas de documentación.
+                                    </p>
+                                    <a href="#table-variants" class="theme-button pk-btn">Ver variantes</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Tabla básica</h2>
+
+                                <p class="pk-text">
+                                    Para crear una tabla base, usa la clase <code>.pk-table</code>.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Pokémon</th>
+                                                    <th>Tipo</th>
+                                                    <th>Región</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bulbasaur</td>
+                                                    <td>Grass / Poison</td>
+                                                    <td>Kanto</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chikorita</td>
+                                                    <td>Grass</td>
+                                                    <td>Johto</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Treecko</td>
+                                                    <td>Grass</td>
+                                                    <td>Hoenn</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Pokémon&lt;/th&gt;
+      &lt;th&gt;Tipo&lt;/th&gt;
+      &lt;th&gt;Región&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bulbasaur&lt;/td&gt;
+      &lt;td&gt;Grass / Poison&lt;/td&gt;
+      &lt;td&gt;Kanto&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8" id="table-variants">
+                                <h2 class="pk-title-2">Tabla con bordes</h2>
+
+                                <p class="pk-text">
+                                    Agrega <code>.pk-table-bordered</code> para mostrar bordes en todas las celdas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Componente</th>
+                                                    <th>Clase</th>
+                                                    <th>Disponible</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Botones</td>
+                                                    <td><code>.pk-btn</code></td>
+                                                    <td>Sí</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cards</td>
+                                                    <td><code>.pk-card</code></td>
+                                                    <td>Sí</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alertas</td>
+                                                    <td><code>.pk-alert</code></td>
+                                                    <td>Sí</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-bordered"&gt;
+  ...
+&lt;/table&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Tabla con hover</h2>
+
+                                <p class="pk-text">
+                                    Agrega <code>.pk-table-hover</code> para resaltar filas al pasar el cursor.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Starter</th>
+                                                    <th>Generación</th>
+                                                    <th>Estado</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bulbasaur</td>
+                                                    <td>Primera</td>
+                                                    <td><span class="pk-badge pk-badge-success">Disponible</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chikorita</td>
+                                                    <td>Segunda</td>
+                                                    <td><span class="pk-badge pk-badge-success">Disponible</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Treecko</td>
+                                                    <td>Tercera</td>
+                                                    <td><span class="pk-badge pk-badge-success">Disponible</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-hover"&gt;
+  ...
+&lt;/table&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Tabla striped</h2>
+
+                                <p class="pk-text">
+                                    Agrega <code>.pk-table-striped</code> para alternar el fondo de las filas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Clase</th>
+                                                    <th>Uso</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>.pk-table</code></td>
+                                                    <td>Aplica el estilo base de tabla.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.pk-table-bordered</code></td>
+                                                    <td>Agrega bordes a las celdas.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.pk-table-hover</code></td>
+                                                    <td>Resalta filas al pasar el cursor.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.pk-table-striped</code></td>
+                                                    <td>Alterna el fondo de las filas.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-striped"&gt;
+  ...
+&lt;/table&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación de variantes</h2>
+
+                                <p class="pk-text">
+                                    Las clases pueden combinarse para construir tablas más completas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover pk-table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Pokémon</th>
+                                                    <th>Tipo</th>
+                                                    <th>Badge</th>
+                                                    <th>Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bulbasaur</td>
+                                                    <td>Grass / Poison</td>
+                                                    <td><span
+                                                            class="pk-badge pk-badge-success pk-badge-pill">Grass</span>
+                                                    </td>
+                                                    <td><button class="pk-btn pk-btn-sm pk-btn-primary">Ver</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chikorita</td>
+                                                    <td>Grass</td>
+                                                    <td><span
+                                                            class="pk-badge pk-badge-success pk-badge-pill">Grass</span>
+                                                    </td>
+                                                    <td><button class="pk-btn pk-btn-sm pk-btn-primary">Ver</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Treecko</td>
+                                                    <td>Grass</td>
+                                                    <td><span
+                                                            class="pk-badge pk-badge-success pk-badge-pill">Grass</span>
+                                                    </td>
+                                                    <td><button class="pk-btn pk-btn-sm pk-btn-primary">Ver</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;table class="pk-table pk-table-bordered pk-table-hover pk-table-striped"&gt;
+  ...
+&lt;/table&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

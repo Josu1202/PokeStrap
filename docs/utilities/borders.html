@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Borders | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-electric">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Utilities</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="colors.html">Colors</a>
+                                        <a class="pk-link" href="spacing.html">Spacing</a>
+                                        <a class="pk-link" href="typography.html">Typography</a>
+                                        <a class="pk-link" href="flex.html">Flexbox</a>
+                                        <a class="pk-link" href="display.html">Display</a>
+                                        <a class="pk-link fw-bold text-warning" href="borders.html">Borders</a>
+                                        <a class="pk-link" href="shadows.html">Shadows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+                            <h1 class="pk-title-1">Borders</h1>
+
+                            <p class="pk-lead">
+                                Las utilidades de bordes permiten agregar contornos, radios y formas redondeadas
+                                para mejorar la separación visual de los elementos.
+                            </p>
+
+                            <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                                    <h2 class="theme-title pk-title-2">Bordes y formas rápidas</h2>
+                                    <p class="pk-text">
+                                        Usa clases como <code>.border</code>, <code>.border-warning</code>,
+                                        <code>.rounded-md</code>, <code>.rounded-xl</code> y
+                                        <code>.rounded-pill</code>.
+                                    </p>
+                                    <a href="#border-basic" class="theme-button pk-btn">Ver bordes</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="border-basic">
+                                <h2 class="pk-title-2">Borde básico</h2>
+
+                                <p class="pk-text">
+                                    La clase <code>.border</code> agrega un borde simple al elemento.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="border p-4 rounded-md bg-white">
+                                            Caja con <code>.border</code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="border p-4"&gt;
+  Caja con borde
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Bordes de color</h2>
+
+                                <p class="pk-text">
+                                    Puedes combinar <code>.border</code> con variantes de color.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-primary p-4 rounded-md text-center bg-white">
+                                                    border-primary
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-warning p-4 rounded-md text-center bg-white">
+                                                    border-warning
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-info p-4 rounded-md text-center bg-white">
+                                                    border-info
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-success p-4 rounded-md text-center bg-white">
+                                                    border-success
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-danger p-4 rounded-md text-center bg-white">
+                                                    border-danger
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="border border-dark p-4 rounded-md text-center bg-white">
+                                                    border-dark
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="border border-warning p-4"&gt;
+  Borde warning
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Radios</h2>
+
+                                <p class="pk-text">
+                                    Las clases <code>.rounded-*</code> controlan qué tan redondeadas son las esquinas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-warning text-dark p-4 rounded-sm text-center">
+                                                    rounded-sm
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-warning text-dark p-4 rounded-md text-center">
+                                                    rounded-md
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-warning text-dark p-4 rounded-lg text-center">
+                                                    rounded-lg
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 mb-3">
+                                                <div class="bg-primary text-black p-4 rounded-xl text-center">
+                                                    rounded-xl
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 mb-3">
+                                                <div class="bg-accent text-black p-4 rounded-pill text-center">
+                                                    rounded-pill
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="rounded-sm"&gt;Radio pequeño&lt;/div&gt;
+&lt;div class="rounded-lg"&gt;Radio grande&lt;/div&gt;
+&lt;div class="rounded-pill"&gt;Forma tipo pill&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Badges con bordes</h2>
+
+                                <p class="pk-text">
+                                    Los bordes también pueden complementar componentes como badges.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span
+                                            class="pk-badge pk-badge-warning border border-dark rounded-pill me-2 mb-2">
+                                            Electric
+                                        </span>
+
+                                        <span
+                                            class="pk-badge pk-badge-info border border-primary rounded-pill me-2 mb-2">
+                                            Info
+                                        </span>
+
+                                        <span class="pk-badge pk-badge-success border border-dark rounded-pill mb-2">
+                                            Success
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-warning border border-dark rounded-pill"&gt;
+  Electric
+&lt;/span&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Cards con bordes</h2>
+
+                                <p class="pk-text">
+                                    Puedes crear tarjetas más expresivas combinando <code>.pk-card</code> con
+                                    bordes y radios.
+                                </p>
+
+                                <div class="row mb-4">
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="pk-card border border-warning rounded-xl shadow-sm">
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Card Electric</h3>
+                                                <p class="pk-card-text">
+                                                    Card con borde del tema y radio amplio.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="pk-card border border-info rounded-xl shadow-sm">
+                                            <div class="pk-card-body">
+                                                <h3 class="pk-card-title">Card Info</h3>
+                                                <p class="pk-card-text">
+                                                    Otra variación usando borde de color.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-card border border-warning rounded-xl"&gt;
+  &lt;div class="pk-card-body"&gt;
+    Card con borde
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Referencia rápida</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Clase</th>
+                                                    <th>Descripción</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>.border</code></td>
+                                                    <td>Agrega un borde básico.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.border-primary</code></td>
+                                                    <td>Aplica color primary al borde.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.rounded-sm</code></td>
+                                                    <td>Radio pequeño.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.rounded-md</code></td>
+                                                    <td>Radio medio.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.rounded-lg</code></td>
+                                                    <td>Radio grande.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.rounded-xl</code></td>
+                                                    <td>Radio extra grande.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>.rounded-pill</code></td>
+                                                    <td>Forma completamente redondeada.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="border border-warning rounded-lg p-4"&gt;
+  Caja con borde y radio
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de utilities · Electric Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

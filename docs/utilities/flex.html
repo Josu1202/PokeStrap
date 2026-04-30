@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flexbox | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-electric">
+
+        <<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+      <nav class="pk-navbar">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="../../index.html" class="pk-navbar-brand">
+            <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+            <span>PokeStrap</span>
+          </a>
+
+          <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+            style="color: #fff; border: 0; font-size: 2rem;">
+            ☰
+          </button>
+        </div>
+
+        <div class="pk-navbar-menu d-none d-md-flex">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+        </div>
+
+        <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+          style="background-color: var(--pk-primary); padding-top: 1rem;">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+        </div>
+      </nav>
+    </header>
+
+
+        <main style="padding-top:70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position:sticky; top:90px;">
+                                <div class="pk-card-header">Utilities</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="colors.html">Colors</a>
+                                        <a class="pk-link" href="spacing.html">Spacing</a>
+                                        <a class="pk-link" href="typography.html">Typography</a>
+                                        <a class="pk-link fw-bold text-warning" href="flex.html">Flexbox</a>
+                                        <a class="pk-link" href="display.html">Display</a>
+                                        <a class="pk-link" href="borders.html">Borders</a>
+                                        <a class="pk-link" href="shadows.html">Shadows</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+
+                            <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+                            <h1 class="pk-title-1">Flexbox</h1>
+
+                            <p class="pk-lead">
+                                Las utilidades flex permiten alinear, distribuir y organizar elementos de forma
+                                flexible dentro de un contenedor.
+                            </p>
+
+                            <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                                    <h2 class="theme-title pk-title-2">Layout moderno con flex</h2>
+                                    <p class="pk-text">
+                                        Usa clases como <code>d-flex</code>, <code>justify-content-center</code>,
+                                        <code>align-items-center</code> y <code>flex-column</code>.
+                                    </p>
+                                    <a href="#flex-display" class="theme-button pk-btn">Ver ejemplos</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="flex-display">
+                                <h2 class="pk-title-2">Activar flex</h2>
+
+                                <p class="pk-text">
+                                    La clase <code>d-flex</code> convierte un contenedor en flexbox.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex bg-gray-200 p-3 rounded-md">
+                                            <div class="bg-warning p-3 me-2">1</div>
+                                            <div class="bg-warning p-3 me-2">2</div>
+                                            <div class="bg-warning p-3">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex"&gt;
+  &lt;div&gt;1&lt;/div&gt;
+  &lt;div&gt;2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Dirección</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex flex-column bg-gray-200 p-3 rounded-md">
+                                            <div class="bg-primary text-black p-3 mb-2">Vertical</div>
+                                            <div class="bg-primary text-black p-3">Vertical</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex flex-column"&gt;
+  Elementos en columna
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Justify Content</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex justify-content-between bg-gray-200 p-3 rounded-md">
+                                            <div class="bg-warning p-3">1</div>
+                                            <div class="bg-warning p-3">2</div>
+                                            <div class="bg-warning p-3">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex justify-content-between"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Align Items</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex align-items-center bg-gray-200 p-3 rounded-md"
+                                            style="height:120px;">
+                                            <div class="bg-primary text-black p-3">Centro vertical</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex align-items-center"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Espaciado entre elementos</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex gap-3 bg-gray-200 p-3 rounded-md">
+                                            <div class="bg-accent p-3">1</div>
+                                            <div class="bg-accent p-3">2</div>
+                                            <div class="bg-accent p-3">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex gap-3"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación completa</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="d-flex justify-content-center align-items-center flex-column bg-warning p-4 rounded-md text-center"
+                                            style="height:180px;">
+                                            <h3 class="fw-bold">Flex Center</h3>
+                                            <p class="m-0">Contenido perfectamente centrado</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="d-flex justify-content-center align-items-center flex-column"&gt;
+  Centrado total
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Utilities · Electric Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

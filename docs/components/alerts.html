@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alerts | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="buttons.html">Buttons</a>
+                                        <a class="pk-link" href="cards.html">Cards</a>
+                                        <a class="pk-link fw-bold text-success" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link" href="navbar.html">Navbar</a>
+                                        <a class="pk-link" href="badges.html">Badges</a>
+                                        <a class="pk-link" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Alerts</h1>
+
+                            <p class="pk-lead">
+                                Las alertas permiten mostrar mensajes contextuales al usuario como éxito,
+                                error, advertencia o información.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Component Docs</span>
+                                    <h2 class="theme-title pk-title-2">Feedback visual con estilo</h2>
+                                    <p class="pk-text">
+                                        Las alertas mantienen la estructura base, pero adoptan colores del build Grass.
+                                    </p>
+                                    <a href="#alert-types" class="theme-button pk-btn">
+                                        Explorar alertas
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Alerta básica</h2>
+
+                                <p class="pk-text">
+                                    Las alertas utilizan la clase <code>.pk-alert</code> junto con una variante.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-alert pk-alert-primary">
+                                            Esta es una alerta básica.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-primary"&gt;
+  Esta es una alerta básica.
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8" id="alert-types">
+                                <h2 class="pk-title-2">Tipos de alertas</h2>
+
+                                <p class="pk-text">
+                                    Puedes usar diferentes variantes según el contexto.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-alert pk-alert-success mb-3">Operación exitosa</div>
+                                        <div class="pk-alert pk-alert-danger mb-3">Error crítico</div>
+                                        <div class="pk-alert pk-alert-warning mb-3">Advertencia importante</div>
+                                        <div class="pk-alert pk-alert-info mb-3">Información útil</div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-success"&gt;Éxito&lt;/div&gt;
+&lt;div class="pk-alert pk-alert-danger"&gt;Error&lt;/div&gt;
+&lt;div class="pk-alert pk-alert-warning"&gt;Advertencia&lt;/div&gt;
+&lt;div class="pk-alert pk-alert-info"&gt;Info&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Alertas con contenido</h2>
+
+                                <p class="pk-text">
+                                    Puedes incluir títulos, enlaces y otros elementos.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-alert pk-alert-success">
+                                            <strong>¡Éxito!</strong> Tu acción se ha completado correctamente.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-success"&gt;
+  &lt;strong&gt;¡Éxito!&lt;/strong&gt; Acción completada.
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación con utilidades</h2>
+
+                                <p class="pk-text">
+                                    Las alertas pueden combinarse con utilidades de espaciado y sombras.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="pk-alert pk-alert-success shadow-md rounded-pill text-center">
+                                            Alerta con utilidades aplicadas
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="pk-alert pk-alert-success shadow-md rounded-pill"&gt;
+  Alerta personalizada
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Grid | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-water.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-water">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link is-active">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Layout</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="containers.html">Containers</a>
+                                        <a class="pk-link fw-bold text-info" href="grid.html">Grid</a>
+                                        <a class="pk-link" href="columns.html">Columns</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-info pk-badge-pill mb-4">Water Build</span>
+
+                            <h1 class="pk-title-1">Grid System</h1>
+
+                            <p class="pk-lead">
+                                El sistema de grid de PokeStrap permite crear estructuras responsivas usando
+                                filas y columnas basadas en un sistema de 12 columnas.
+                            </p>
+
+                            <div class="theme-water theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Layout Docs</span>
+                                    <h2 class="theme-title pk-title-2">Rejilla responsive</h2>
+                                    <p class="pk-text">
+                                        Usa <code>.row</code> para crear filas y <code>.col-*</code> para definir
+                                        el ancho de cada columna según el tamaño de pantalla.
+                                    </p>
+                                    <a href="#grid-example" class="theme-button pk-btn">Ver grid</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8" id="grid-example">
+                                <h2 class="pk-title-2">Estructura básica</h2>
+
+                                <p class="pk-text">
+                                    Una grilla se construye con un contenedor, una fila y columnas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-info text-white p-4 rounded-md text-center">col-md-4
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-primary text-white p-4 rounded-md text-center">col-md-4
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mb-3">
+                                                <div class="bg-accent text-white p-4 rounded-md text-center">col-md-4
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-12 col-md-4"&gt;Columna 1&lt;/div&gt;
+    &lt;div class="col-12 col-md-4"&gt;Columna 2&lt;/div&gt;
+    &lt;div class="col-12 col-md-4"&gt;Columna 3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Sistema de 12 columnas</h2>
+
+                                <p class="pk-text">
+                                    Cada fila se divide en 12 partes. Puedes asignar tamaños como
+                                    <code>.col-6</code>, <code>.col-4</code> o <code>.col-3</code>.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row mb-3">
+                                            <div class="col-12">
+                                                <div class="bg-info text-white p-3 rounded-md text-center">col-12</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <div class="bg-primary text-white p-3 rounded-md text-center">col-6
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="bg-primary text-white p-3 rounded-md text-center">col-6
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-4">
+                                                <div class="bg-accent text-white p-3 rounded-md text-center">col-4</div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="bg-accent text-white p-3 rounded-md text-center">col-4</div>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <div class="bg-accent text-white p-3 rounded-md text-center">col-4</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="bg-gray-800 text-white p-3 rounded-md text-center">col-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="bg-gray-800 text-white p-3 rounded-md text-center">col-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="bg-gray-800 text-white p-3 rounded-md text-center">col-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <div class="bg-gray-800 text-white p-3 rounded-md text-center">col-3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="row"&gt;
+  &lt;div class="col-6"&gt;Mitad&lt;/div&gt;
+  &lt;div class="col-6"&gt;Mitad&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="col-4"&gt;Tercio&lt;/div&gt;
+  &lt;div class="col-4"&gt;Tercio&lt;/div&gt;
+  &lt;div class="col-4"&gt;Tercio&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Columnas automáticas</h2>
+
+                                <p class="pk-text">
+                                    La clase <code>.col</code> distribuye automáticamente el espacio disponible
+                                    entre las columnas.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <div class="bg-info text-white p-3 rounded-md text-center">col</div>
+                                            </div>
+
+                                            <div class="col mb-3">
+                                                <div class="bg-info text-white p-3 rounded-md text-center">col</div>
+                                            </div>
+
+                                            <div class="col mb-3">
+                                                <div class="bg-info text-white p-3 rounded-md text-center">col</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="row"&gt;
+  &lt;div class="col"&gt;Columna automática&lt;/div&gt;
+  &lt;div class="col"&gt;Columna automática&lt;/div&gt;
+  &lt;div class="col"&gt;Columna automática&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Grid responsive</h2>
+
+                                <p class="pk-text">
+                                    Puedes combinar clases base con breakpoints para cambiar la distribución
+                                    según el tamaño de pantalla.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                <div class="bg-info text-white p-4 rounded-md text-center">
+                                                    col-12<br>col-md-6<br>col-lg-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                <div class="bg-primary text-white p-4 rounded-md text-center">
+                                                    col-12<br>col-md-6<br>col-lg-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                <div class="bg-accent text-white p-4 rounded-md text-center">
+                                                    col-12<br>col-md-6<br>col-lg-3
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                                                <div class="bg-gray-800 text-white p-4 rounded-md text-center">
+                                                    col-12<br>col-md-6<br>col-lg-3
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="row"&gt;
+  &lt;div class="col-12 col-md-6 col-lg-3"&gt;Responsive&lt;/div&gt;
+  &lt;div class="col-12 col-md-6 col-lg-3"&gt;Responsive&lt;/div&gt;
+  &lt;div class="col-12 col-md-6 col-lg-3"&gt;Responsive&lt;/div&gt;
+  &lt;div class="col-12 col-md-6 col-lg-3"&gt;Responsive&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Breakpoints del grid</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <table class="pk-table pk-table-bordered pk-table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Breakpoint</th>
+                                                    <th>Clase</th>
+                                                    <th>Desde</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td>Base</td>
+                                                    <td><code>.col-*</code></td>
+                                                    <td>Todos los tamaños</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Small</td>
+                                                    <td><code>.col-sm-*</code></td>
+                                                    <td>576px</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Medium</td>
+                                                    <td><code>.col-md-*</code></td>
+                                                    <td>768px</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Large</td>
+                                                    <td><code>.col-lg-*</code></td>
+                                                    <td>992px</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extra Large</td>
+                                                    <td><code>.col-xl-*</code></td>
+                                                    <td>1200px</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extra Extra Large</td>
+                                                    <td><code>.col-xxl-*</code></td>
+                                                    <td>1400px</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;div class="col-sm-6"&gt;Desde small&lt;/div&gt;
+&lt;div class="col-md-4"&gt;Desde medium&lt;/div&gt;
+&lt;div class="col-lg-3"&gt;Desde large&lt;/div&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de layout · Water Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

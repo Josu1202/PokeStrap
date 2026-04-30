@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Badges | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top:70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position:sticky; top:90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="buttons.html">Buttons</a>
+                                        <a class="pk-link" href="cards.html">Cards</a>
+                                        <a class="pk-link" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link" href="navbar.html">Navbar</a>
+                                        <a class="pk-link fw-bold text-success" href="badges.html">Badges</a>
+                                        <a class="pk-link" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Badges</h1>
+
+                            <p class="pk-lead">
+                                Los badges permiten mostrar estados, etiquetas o información breve de forma visual.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Component Docs</span>
+
+                                    <h2 class="theme-title pk-title-2">Etiquetas dinámicas</h2>
+
+                                    <p class="pk-text">
+                                        Los badges se utilizan para resaltar información como estados, tipos o
+                                        categorías.
+                                    </p>
+
+                                    <a href="#badge-types" class="theme-button pk-btn">
+                                        Ver badges
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Badge básico</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span class="pk-badge pk-badge-primary">Nuevo</span>
+                                    </div>
+                                </div>
+
+                                <pre
+                                    class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-primary"&gt;Nuevo&lt;/span&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8" id="badge-types">
+                                <h2 class="pk-title-2">Variantes</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span class="pk-badge pk-badge-primary me-2">Primary</span>
+                                        <span class="pk-badge pk-badge-secondary me-2">Secondary</span>
+                                        <span class="pk-badge pk-badge-accent me-2">Accent</span>
+                                        <span class="pk-badge pk-badge-success me-2">Success</span>
+                                        <span class="pk-badge pk-badge-danger me-2">Danger</span>
+                                        <span class="pk-badge pk-badge-warning me-2">Warning</span>
+                                        <span class="pk-badge pk-badge-info me-2">Info</span>
+                                        <span class="pk-badge pk-badge-dark">Dark</span>
+                                    </div>
+                                </div>
+
+                                <pre
+                                    class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-success"&gt;Success&lt;/span&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Badges tipo pill</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <span class="pk-badge pk-badge-success pk-badge-pill me-2">Grass</span>
+                                        <span class="pk-badge pk-badge-danger pk-badge-pill me-2">Fire</span>
+                                        <span class="pk-badge pk-badge-info pk-badge-pill">Water</span>
+                                    </div>
+                                </div>
+
+                                <pre
+                                    class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-success pk-badge-pill"&gt;Grass&lt;/span&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Uso en componentes</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+
+                                        <h3 class="pk-title-3">
+                                            Bulbasaur
+                                            <span class="pk-badge pk-badge-success ms-2">Grass</span>
+                                            <span class="pk-badge pk-badge-accent ms-2">Poison</span>
+                                        </h3>
+
+                                        <p class="pk-text">
+                                            Los badges pueden integrarse dentro de títulos, botones o cards.
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;h3&gt;
+  Bulbasaur
+  &lt;span class="pk-badge pk-badge-success"&gt;Grass&lt;/span&gt;
+&lt;/h3&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación con utilidades</h2>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+
+                                        <span class="pk-badge pk-badge-success rounded-pill shadow-md px-3 py-2">
+                                            Badge personalizado
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                                <pre
+                                    class="bg-gray-900 text-white shadow-md"><code>&lt;span class="pk-badge pk-badge-success shadow-md"&gt;Badge&lt;/span&gt;</code></pre>
+                            </section>
+
+                        </section>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

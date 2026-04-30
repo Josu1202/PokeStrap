@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Buttons | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link fw-bold text-success" href="buttons.html">Buttons</a>
+                                        <a class="pk-link" href="cards.html">Cards</a>
+                                        <a class="pk-link" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link" href="navbar.html">Navbar</a>
+                                        <a class="pk-link" href="badges.html">Badges</a>
+                                        <a class="pk-link" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Buttons</h1>
+
+                            <p class="pk-lead">
+                                Esta página utiliza el build <strong>pokestrap-grass.css</strong>, por lo que
+                                los componentes mantienen las mismas clases, pero adoptan una paleta tipo planta.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Grass Theme</span>
+                                    <h2 class="theme-title pk-title-2">Misma estructura, nueva identidad visual</h2>
+                                    <p class="pk-text">
+                                        El framework conserva clases como <code>.pk-btn</code>,
+                                        <code>.pk-btn-primary</code> y <code>.pk-card</code>, pero ahora sus colores
+                                        principales se generan desde la configuración Grass.
+                                    </p>
+                                    <a href="#button-variants" class="theme-button pk-btn">
+                                        Explorar botones
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Botón base</h2>
+
+                                <p class="pk-text">
+                                    Todo botón parte de la clase <code>.pk-btn</code>. Luego se agrega una variante
+                                    de color como <code>.pk-btn-primary</code>.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-primary">Primary Button</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary"&gt;
+  Primary Button
+&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8" id="button-variants">
+                                <h2 class="pk-title-2">Variantes solid</h2>
+
+                                <p class="pk-text">
+                                    Las variantes solid usan los colores principales del build Grass.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2">Primary</button>
+                                        <button class="pk-btn pk-btn-secondary me-2 mb-2">Secondary</button>
+                                        <button class="pk-btn pk-btn-accent me-2 mb-2">Accent</button>
+                                        <button class="pk-btn pk-btn-success me-2 mb-2">Success</button>
+                                        <button class="pk-btn pk-btn-danger me-2 mb-2">Danger</button>
+                                        <button class="pk-btn pk-btn-warning me-2 mb-2">Warning</button>
+                                        <button class="pk-btn pk-btn-info me-2 mb-2">Info</button>
+                                        <button class="pk-btn pk-btn-dark mb-2">Dark</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-accent"&gt;Accent&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-success"&gt;Success&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Variantes outline</h2>
+
+                                <p class="pk-text">
+                                    Las variantes outline mantienen fondo transparente y borde temático.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-outline-primary me-2 mb-2">Primary</button>
+                                        <button class="pk-btn pk-btn-outline-secondary me-2 mb-2">Secondary</button>
+                                        <button class="pk-btn pk-btn-outline-accent me-2 mb-2">Accent</button>
+                                        <button class="pk-btn pk-btn-outline-success me-2 mb-2">Success</button>
+                                        <button class="pk-btn pk-btn-outline-danger me-2 mb-2">Danger</button>
+                                        <button class="pk-btn pk-btn-outline-dark mb-2">Dark</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-outline-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-outline-accent"&gt;Accent&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-outline-success"&gt;Success&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Tamaños</h2>
+
+                                <p class="pk-text">
+                                    PokeStrap incluye tres tamaños principales: small, default y large.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-sm pk-btn-primary me-2 mb-2">Small</button>
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2">Default</button>
+                                        <button class="pk-btn pk-btn-lg pk-btn-primary mb-2">Large</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-sm pk-btn-primary"&gt;Small&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-primary"&gt;Default&lt;/button&gt;
+&lt;button class="pk-btn pk-btn-lg pk-btn-primary"&gt;Large&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Estados</h2>
+
+                                <p class="pk-text">
+                                    Los botones incluyen estados de interacción como hover, active y disabled.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2">Normal</button>
+                                        <button class="pk-btn pk-btn-primary me-2 mb-2" disabled>Disabled</button>
+                                        <button class="pk-btn pk-btn-outline-primary is-disabled mb-2">Disabled
+                                            class</button>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;button class="pk-btn pk-btn-primary" disabled&gt;
+  Disabled
+&lt;/button&gt;
+
+&lt;button class="pk-btn pk-btn-outline-primary is-disabled"&gt;
+  Disabled class
+&lt;/button&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Combinación con utilidades</h2>
+
+                                <p class="pk-text">
+                                    Puedes combinar botones con utilidades de espaciado, sombras, bordes o display.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body d-flex flex-wrap justify-content-center">
+                                        <a href="#" class="pk-btn pk-btn-secondary shadow-md rounded-pill me-2 mb-2">
+                                            Botón destacado
+                                        </a>
+
+                                        <a href="#" class="pk-btn pk-btn-outline-accent rounded-pill mb-2">
+                                            Botón outline
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;a href="#" class="pk-btn pk-btn-secondary shadow-md rounded-pill"&gt;
+  Botón destacado
+&lt;/a&gt;</code></pre>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Typography | PokeStrap</title>
+
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-electric.css" />
+</head>
+
+<body style="margin: 0;">
+  <div class="pk-app theme-electric">
+
+    <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+      <nav class="pk-navbar">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="../../index.html" class="pk-navbar-brand">
+            <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+            <span>PokeStrap</span>
+          </a>
+
+          <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+            style="color: #fff; border: 0; font-size: 2rem;">
+            ☰
+          </button>
+        </div>
+
+        <div class="pk-navbar-menu d-none d-md-flex">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active" style="white-space: nowrap;">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+        </div>
+
+        <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+          style="background-color: var(--pk-primary); padding-top: 1rem;">
+          <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+          <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+          <a href="../../pages/components.html" class="pk-navbar-link">Componentes</a>
+          <a href="../../pages/utilities.html" class="pk-navbar-link is-active">Utilidades</a>
+          <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+        </div>
+      </nav>
+    </header>
+
+    <main style="padding-top: 70px;">
+      <section class="section bg-light">
+        <div class="container">
+          <div class="row">
+
+            <aside class="col-12 col-lg-3 mb-6">
+              <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                <div class="pk-card-header">Utilities</div>
+
+                <div class="pk-card-body">
+                  <div class="stack-md">
+                    <a class="pk-link" href="colors.html">Colors</a>
+                    <a class="pk-link" href="spacing.html">Spacing</a>
+                    <a class="pk-link fw-bold text-warning" href="typography.html">Typography</a>
+                    <a class="pk-link" href="flex.html">Flexbox</a>
+                    <a class="pk-link" href="display.html">Display</a>
+                    <a class="pk-link" href="borders.html">Borders</a>
+                    <a class="pk-link" href="shadows.html">Shadows</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+            <section class="col-12 col-lg-9">
+              <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">Electric Build</span>
+
+              <h1 class="pk-title-1">Typography</h1>
+
+              <p class="pk-lead">
+                Las utilidades tipográficas permiten controlar tamaño, peso, alineación,
+                transformación y comportamiento del texto sin escribir CSS adicional.
+              </p>
+
+              <div class="theme-electric theme-section p-4 rounded-lg mb-6">
+                <div class="theme-card p-4">
+                  <span class="theme-badge pk-badge pk-badge-pill mb-3">Utility Docs</span>
+                  <h2 class="theme-title pk-title-2">Texto flexible y expresivo</h2>
+                  <p class="pk-text">
+                    Usa clases como <code>.fs-lg</code>, <code>.fw-bold</code>,
+                    <code>.text-center</code> y <code>.text-uppercase</code> para modificar
+                    texto rápidamente.
+                  </p>
+                  <a href="#font-sizes" class="theme-button pk-btn">Ver tipografía</a>
+                </div>
+              </div>
+
+              <hr class="pk-divider" />
+
+              <section class="mb-8" id="font-sizes">
+                <h2 class="pk-title-2">Tamaños de fuente</h2>
+
+                <p class="pk-text">
+                  Las clases <code>.fs-*</code> permiten cambiar el tamaño del texto.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <p class="fs-sm">Texto pequeño con .fs-sm</p>
+                    <p class="fs-md">Texto base con .fs-md</p>
+                    <p class="fs-lg">Texto grande con .fs-lg</p>
+                    <p class="fs-xl">Texto extra grande con .fs-xl</p>
+                    <p class="fs-2xl fw-bold">Texto destacado con .fs-2xl</p>
+                    <p class="fs-3xl fw-bold">Título visual con .fs-3xl</p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="fs-lg"&gt;Texto grande&lt;/p&gt;
+&lt;p class="fs-2xl fw-bold"&gt;Texto destacado&lt;/p&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Clases tipográficas base</h2>
+
+                <p class="pk-text">
+                  PokeStrap también incluye clases base para títulos y párrafos.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <h2 class="pk-title-1">.pk-title-1</h2>
+                    <h3 class="pk-title-2">.pk-title-2</h3>
+                    <h4 class="pk-title-3">.pk-title-3</h4>
+                    <p class="pk-lead">.pk-lead para texto introductorio o destacado.</p>
+                    <p class="pk-text">.pk-text para párrafos normales dentro del framework.</p>
+                    <p class="pk-small">.pk-small para texto secundario o notas breves.</p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;h1 class="pk-title-1"&gt;Título principal&lt;/h1&gt;
+&lt;p class="pk-lead"&gt;Texto introductorio&lt;/p&gt;
+&lt;p class="pk-text"&gt;Párrafo normal&lt;/p&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Pesos de fuente</h2>
+
+                <p class="pk-text">
+                  Las clases <code>.fw-*</code> permiten cambiar el grosor del texto.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <p class="fw-light">Texto con .fw-light</p>
+                    <p class="fw-normal">Texto con .fw-normal</p>
+                    <p class="fw-medium">Texto con .fw-medium</p>
+                    <p class="fw-semibold">Texto con .fw-semibold</p>
+                    <p class="fw-bold">Texto con .fw-bold</p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="fw-light"&gt;Light&lt;/p&gt;
+&lt;p class="fw-semibold"&gt;Semibold&lt;/p&gt;
+&lt;p class="fw-bold"&gt;Bold&lt;/p&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Alineación de texto</h2>
+
+                <p class="pk-text">
+                  Usa <code>.text-start</code>, <code>.text-center</code> y
+                  <code>.text-end</code> para controlar la alineación.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <p class="text-start bg-gray-200 p-3 rounded-md">Texto alineado a la izquierda.</p>
+                    <p class="text-center bg-gray-200 p-3 rounded-md">Texto centrado.</p>
+                    <p class="text-end bg-gray-200 p-3 rounded-md">Texto alineado a la derecha.</p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="text-start"&gt;Izquierda&lt;/p&gt;
+&lt;p class="text-center"&gt;Centro&lt;/p&gt;
+&lt;p class="text-end"&gt;Derecha&lt;/p&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Transformación de texto</h2>
+
+                <p class="pk-text">
+                  Puedes transformar visualmente el texto con clases utilitarias.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <p class="text-uppercase">texto convertido a mayúsculas</p>
+                    <p class="text-lowercase">TEXTO CONVERTIDO A MINÚSCULAS</p>
+                    <p class="text-capitalize">texto capitalizado con utilidades</p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;p class="text-uppercase"&gt;Mayúsculas&lt;/p&gt;
+&lt;p class="text-lowercase"&gt;MINÚSCULAS&lt;/p&gt;
+&lt;p class="text-capitalize"&gt;texto capitalizado&lt;/p&gt;</code></pre>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Decoración y truncado</h2>
+
+                <p class="pk-text">
+                  Las clases <code>.text-decoration-none</code> y <code>.text-truncate</code>
+                  ayudan a controlar enlaces y textos largos.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body">
+                    <a href="#" class="pk-link text-decoration-none">
+                      Enlace sin subrayado
+                    </a>
+
+                    <div class="bg-gray-200 p-3 rounded-md mt-4" style="max-width: 360px;">
+                      <p class="text-truncate m-0">
+                        Este es un texto demasiado largo que será truncado con puntos suspensivos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;a href="#" class="text-decoration-none"&gt;
+  Enlace sin subrayado
+&lt;/a&gt;
+
+&lt;p class="text-truncate"&gt;
+  Texto demasiado largo...
+&lt;/p&gt;</code></pre>
+              </section>
+
+              <section>
+                <h2 class="pk-title-2">Combinación de utilidades</h2>
+
+                <p class="pk-text">
+                  Puedes combinar tamaño, peso, color y alineación para crear jerarquía visual.
+                </p>
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-body text-center">
+                    <span class="pk-badge pk-badge-warning pk-badge-pill mb-3">
+                      Electric Text
+                    </span>
+
+                    <h3 class="fs-3xl fw-bold text-warning">
+                      PokeStrap Typography
+                    </h3>
+
+                    <p class="fs-lg text-dark">
+                      Texto grande, centrado, con peso fuerte y color del tema.
+                    </p>
+                  </div>
+                </div>
+
+                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;h3 class="fs-3xl fw-bold text-warning text-center"&gt;
+  PokeStrap Typography
+&lt;/h3&gt;
+
+&lt;p class="fs-lg text-dark text-center"&gt;
+  Texto destacado
+&lt;/p&gt;</code></pre>
+              </section>
+
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-sm bg-gray-900 text-white">
+      <div class="container text-center">
+        <p class="pk-small m-0">
+          PokeStrap Framework · Documentación de utilities · Electric Build
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../../assets/js/docs.js"></script>
+</body>
+</html>

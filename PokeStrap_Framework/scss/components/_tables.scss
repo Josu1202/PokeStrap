@@ -21,11 +21,9 @@
 .pk-table-bordered td {
   border: 1px solid var(--pk-gray-300);
 }
-
-.pk-table-hover tbody tr:hover {
-  background-color: var(--pk-gray-100);
-}
-
 .pk-table-striped tbody tr:nth-child(odd) {
   background-color: var(--pk-gray-100);
+}
+.pk-table-hover tbody tr:hover {
+  background-color: var(--pk-gray-200);
 }

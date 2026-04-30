@@ -1,0 +1,29 @@
+@use 'abstracts/colors' with (
+  $pk-primary: #2563eb,
+  $pk-secondary: #06b6d4,
+  $pk-accent: #93c5fd,
+
+  $pk-primary-light: #60a5fa,
+  $pk-primary-dark: #1e40af,
+
+  $pk-secondary-light: #67e8f9,
+  $pk-secondary-dark: #0e7490,
+
+  $pk-accent-light: #bfdbfe,
+  $pk-accent-dark: #3b82f6,
+
+  $pk-light: #eef8ff,
+  $pk-dark: #0f172a,
+
+  $pk-success: #10b981,
+  $pk-danger: #ef4444,
+  $pk-warning: #facc15,
+  $pk-info: #06b6d4,
+
+  $pk-body-bg: #eef8ff,
+  $pk-surface-bg: #ffffff,
+  $pk-text-main: #0f172a,
+  $pk-text-muted: #075985
+);
+
+@use 'framework';

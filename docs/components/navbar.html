@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Navbar | PokeStrap</title>
+
+    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+    <link rel="stylesheet" href="../../../PokeStrap_Framework/dist/css/pokestrap-grass.css" />
+</head>
+
+<body style="margin: 0;">
+    <div class="pk-app theme-grass">
+
+        <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+            <nav class="pk-navbar">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <a href="../../index.html" class="pk-navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="PokeStrap Logo" width="34" height="34" />
+                        <span>PokeStrap</span>
+                    </a>
+
+                    <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+                        style="color: #fff; border: 0; font-size: 2rem;">
+                        ☰
+                    </button>
+                </div>
+
+                <div class="pk-navbar-menu d-none d-md-flex">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active"
+                        style="white-space: nowrap;">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link"
+                        style="white-space: nowrap;">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+                </div>
+
+                <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu
+                    style="background-color: var(--pk-primary); padding-top: 1rem;">
+                    <a href="../../pages/getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+                    <a href="../../pages/layout.html" class="pk-navbar-link">Layout</a>
+                    <a href="../../pages/components.html" class="pk-navbar-link is-active">Componentes</a>
+                    <a href="../../pages/utilities.html" class="pk-navbar-link">Utilidades</a>
+                    <a href="../../pages/examples.html" class="pk-navbar-link">Ejemplos</a>
+                </div>
+            </nav>
+        </header>
+
+        <main style="padding-top: 70px;">
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row">
+
+                        <aside class="col-12 col-lg-3 mb-6">
+                            <div class="pk-card shadow-sm" style="position: sticky; top: 90px;">
+                                <div class="pk-card-header">Componentes</div>
+
+                                <div class="pk-card-body">
+                                    <div class="stack-md">
+                                        <a class="pk-link" href="buttons.html">Buttons</a>
+                                        <a class="pk-link" href="cards.html">Cards</a>
+                                        <a class="pk-link" href="alerts.html">Alerts</a>
+                                        <a class="pk-link" href="forms.html">Forms</a>
+                                        <a class="pk-link fw-bold text-success" href="navbar.html">Navbar</a>
+                                        <a class="pk-link" href="badges.html">Badges</a>
+                                        <a class="pk-link" href="tables.html">Tables</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <section class="col-12 col-lg-9">
+                            <span class="pk-badge pk-badge-success pk-badge-pill mb-4">Grass Build</span>
+
+                            <h1 class="pk-title-1">Navbar</h1>
+
+                            <p class="pk-lead">
+                                El navbar de PokeStrap permite crear menús de navegación responsivos
+                                con soporte para escritorio y dispositivos móviles.
+                            </p>
+
+                            <div class="theme-grass theme-section p-4 rounded-lg mb-6">
+                                <div class="theme-card p-4">
+                                    <span class="theme-badge pk-badge pk-badge-pill mb-3">Component Docs</span>
+                                    <h2 class="theme-title pk-title-2">Navbar responsivo</h2>
+                                    <p class="pk-text">
+                                        Este componente utiliza clases del framework junto con utilidades flex
+                                        para lograr un comportamiento adaptable.
+                                    </p>
+                                    <a href="#navbar-example" class="theme-button pk-btn">Ver ejemplo</a>
+                                </div>
+                            </div>
+
+                            <hr class="pk-divider" />
+
+                            <section class="mb-8">
+                                <h2 class="pk-title-2">Estructura básica</h2>
+
+                                <p class="pk-text">
+                                    El navbar se compone de un contenedor principal, un bloque superior,
+                                    un menú de escritorio y un menú móvil.
+                                </p>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;nav class="pk-navbar"&gt;
+  &lt;div class="d-flex align-items-center justify-content-between w-100"&gt;
+
+    &lt;a class="pk-navbar-brand"&gt;Brand&lt;/a&gt;
+
+    &lt;button data-navbar-toggle&gt;☰&lt;/button&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class="pk-navbar-menu d-none d-md-flex"&gt;...&lt;/div&gt;
+  &lt;div class="pk-navbar-menu is-hidden d-md-none"&gt;...&lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                            </section>
+
+                            <section class="mb-8" id="navbar-example">
+                                <h2 class="pk-title-2">Ejemplo funcional</h2>
+
+                                <p class="pk-text">
+                                    Este ejemplo muestra un navbar completo con comportamiento responsive.
+                                </p>
+
+                                <div class="pk-card shadow-sm mb-4">
+                                    <div class="pk-card-body">
+
+                                        <nav class="pk-navbar rounded-md">
+                                            <div class="d-flex align-items-center justify-content-between w-100">
+                                                <span class="pk-navbar-brand">PokeStrap</span>
+
+                                                <button class="pk-navbar-toggle d-block d-md-none">☰</button>
+                                            </div>
+
+                                            <div class="pk-navbar-menu d-none d-md-flex">
+                                                <a href="#" class="pk-navbar-link">Inicio</a>
+                                                <a href="#" class="pk-navbar-link">Docs</a>
+                                                <a href="#" class="pk-navbar-link">Ejemplos</a>
+                                            </div>
+                                        </nav>
+
+                                    </div>
+                                </div>
+
+                                <pre class="bg-gray-900 text-white shadow-md"><code>&lt;nav class="pk-navbar"&gt;
+  &lt;div class="d-flex justify-content-between"&gt;
+    &lt;span class="pk-navbar-brand"&gt;PokeStrap&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+                            </section>
+
+                            <section>
+                                <h2 class="pk-title-2">Comportamiento responsive</h2>
+
+                                <p class="pk-text">
+                                    El menú cambia automáticamente entre escritorio y móvil usando clases
+                                    <code>d-none</code>, <code>d-md-flex</code> y <code>d-md-none</code>.
+                                </p>
+
+                                <div class="pk-alert pk-alert-info">
+                                    Usa JavaScript con <code>data-navbar-toggle</code> para mostrar/ocultar el menú
+                                    móvil.
+                                </div>
+                            </section>
+
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section-sm bg-gray-900 text-white">
+            <div class="container text-center">
+                <p class="pk-small m-0">
+                    PokeStrap Framework · Documentación de componentes · Grass Build
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../../assets/js/docs.js"></script>
+</body>
+
+</html>
