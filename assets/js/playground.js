@@ -113,7 +113,7 @@ const lessons = [
     title: "9. Usar utilidades de spacing",
     description: "Aplica margen, padding, color, bordes y sombra a una caja.",
     starter: `<div>
-  Caja con utilidades
+  Caja con utilidades de PokeStrap
 </div>`,
     hint: "Prueba clases como .p-4, .mb-4, .bg-warning, .rounded-lg y .shadow-md.",
     solution: `<div class="bg-warning text-black p-4 mb-4 rounded-lg shadow-md">
@@ -128,6 +128,7 @@ const lessons = [
   <p>Construida con PokeStrap.</p>
 </section>`,
     hint: "Combina .pk-hero, .container, .row, .col-* y .pk-card.",
+    skipCheck: true,
     solution: `<section class="pk-hero rounded-lg">
   <div class="container">
     <span class="pk-badge pk-badge-secondary pk-badge-pill mb-4">Demo</span>
@@ -188,7 +189,7 @@ function createPreviewDocument(content) {
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css">
   <style>
     body {
       margin: 0;
@@ -314,10 +315,16 @@ function selectLesson(index, button) {
   renderFrame(preview, lesson.starter);
 
 document.getElementById("active-run").addEventListener("click", () => {
+  renderFrame(preview, editor.value);
+
+  if (lesson.skipCheck) {
+    message.className = "pk-alert pk-alert-info mt-4";
+    message.textContent = "Tu código se ejecutó correctamente. En este reto se evalúa la creatividad y estructura, no una coincidencia exacta.";
+    return;
+  }
+
   const userCode = normalizeCode(editor.value);
   const solutionCode = normalizeCode(lesson.solution);
-
-  renderFrame(preview, editor.value);
 
   if (userCode === solutionCode) {
     message.className = "pk-alert pk-alert-success mt-4";
