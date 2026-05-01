@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PokeStrap University | PokeStrap</title>
+
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+  <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css" />
+</head>
+
+<body style="margin: 0;">
+  <div class="pk-app theme-pokemon-classic">
+
+    <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+      <nav class="pk-navbar">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <a href="../index.html" class="pk-navbar-brand">
+            <img src="../assets/img/logo.png" alt="PokeStrap Logo" />
+            <span>PokeStrap</span>
+          </a>
+
+          <button class="pk-navbar-toggle d-block d-md-none" type="button" data-navbar-toggle
+            style="color: #fff; border: 0; font-size: 2rem;">
+            ☰
+          </button>
+        </div>
+
+        <div class="pk-navbar-menu d-none d-md-flex">
+          <a href="getting-started.html" class="pk-navbar-link" style="white-space: nowrap;">Inicio rápido</a>
+          <a href="layout.html" class="pk-navbar-link" style="white-space: nowrap;">Layout</a>
+          <a href="components.html" class="pk-navbar-link" style="white-space: nowrap;">Componentes</a>
+          <a href="utilities.html" class="pk-navbar-link" style="white-space: nowrap;">Utilidades</a>
+          <a href="examples.html" class="pk-navbar-link" style="white-space: nowrap;">Ejemplos</a>
+          <a href="playground.html" class="pk-navbar-link is-active" style="white-space: nowrap;">University</a>
+        </div>
+
+        <div class="pk-navbar-menu is-hidden d-md-none" data-navbar-menu>
+          <a href="getting-started.html" class="pk-navbar-link">Inicio rápido</a>
+          <a href="layout.html" class="pk-navbar-link">Layout</a>
+          <a href="components.html" class="pk-navbar-link">Componentes</a>
+          <a href="utilities.html" class="pk-navbar-link">Utilidades</a>
+          <a href="examples.html" class="pk-navbar-link">Ejemplos</a>
+          <a href="playground.html" class="pk-navbar-link is-active">University</a>
+        </div>
+      </nav>
+    </header>
+
+    <main style="padding-top: 70px;">
+      <section class="section bg-white">
+        <div class="container">
+          <div class="row">
+
+            <aside class="col-12 col-lg-3 mb-6">
+              <div style="position: sticky; top: 90px;">
+
+                <div class="pk-card shadow-sm mb-4">
+                  <div class="pk-card-header">Documentación</div>
+
+                  <div class="pk-card-body">
+                    <div class="stack-md">
+                      <a class="pk-link" href="getting-started.html">Inicio rápido</a>
+                      <a class="pk-link" href="installation.html">Instalación</a>
+                      <a class="pk-link" href="layout.html">Layout</a>
+                      <a class="pk-link" href="components.html">Componentes</a>
+                      <a class="pk-link" href="utilities.html">Utilidades</a>
+                      <a class="pk-link" href="themes.html">Temas</a>
+                      <a class="pk-link" href="examples.html">Ejemplos</a>
+                      <a class="pk-link fw-bold text-primary" href="playground.html">University</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pk-card shadow-sm text-center d-none d-lg-block">
+                  <div class="pk-card-body">
+                    <img
+                      src="../assets/img/rotomDex.png"
+                      alt="Pokémon decorativo"
+                      class="pk-img-fluid mx-auto d-block"
+                      style="max-height: 240px; object-fit: contain;"
+                    />
+
+                    <p class="pk-small mt-3 m-0">
+                      Aprende practicando
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </aside>
+
+            <section class="col-12 col-lg-9">
+              <span class="pk-badge pk-badge-primary pk-badge-pill mb-4">
+                Laboratorio interactivo
+              </span>
+
+              <h1 class="pk-title-1">PokeStrap University</h1>
+
+              <p class="pk-lead">
+                Practica el uso del framework con 10 lecciones guiadas. Selecciona una lección,
+                escribe código, ejecútalo, revisa pistas y compara con la solución.
+              </p>
+
+              <hr class="pk-divider" />
+
+              <section class="mb-8">
+                <h2 class="pk-title-2">Lecciones disponibles</h2>
+                <p class="pk-text">
+                  Haz clic en una lección para desplegar el ejercicio justo debajo. Al abrir otra,
+                  la anterior se cerrará automáticamente.
+                </p>
+
+                <div id="lesson-list" class="stack-sm"></div>
+              </section>
+
+              <section class="mb-8">
+                <span class="pk-badge pk-badge-warning pk-badge-pill mb-4">
+                  Sandbox libre
+                </span>
+
+                <h2 class="pk-title-2">Consola libre para probar código</h2>
+
+                <p class="pk-text">
+                  Escribe cualquier HTML usando clases de PokeStrap y observa el resultado.
+                </p>
+
+                <div class="pk-card shadow-sm mb-6">
+                  <div class="pk-card-header">Editor sandbox</div>
+
+                  <div class="pk-card-body">
+                    <textarea
+                      id="sandbox-editor"
+                      class="pk-textarea bg-gray-900 text-white rounded-lg shadow-sm"
+                      style="min-height: 260px; font-family: Consolas, Monaco, 'Courier New', monospace;"
+                    ></textarea>
+
+                    <div class="d-flex flex-wrap mt-4">
+                      <button class="pk-btn pk-btn-primary me-2 mb-2" id="run-sandbox">
+                        Ejecutar sandbox
+                      </button>
+
+                      <button class="pk-btn pk-btn-outline-danger mb-2" id="clear-sandbox">
+                        Limpiar sandbox
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pk-card shadow-sm">
+                  <div class="pk-card-header">Resultado del sandbox</div>
+
+                  <div class="pk-card-body">
+                    <iframe
+                      id="sandbox-preview"
+                      class="w-100 bg-white border rounded-lg shadow-sm"
+                      style="min-height: 360px;"
+                    ></iframe>
+                  </div>
+                </div>
+              </section>
+
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-sm bg-gray-900 text-white">
+      <div class="container text-center">
+        <p class="pk-small m-0">
+          PokeStrap Framework · PokeStrap University
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="../assets/js/docs.js"></script>
+  <script src="../assets/js/playground.js"></script>
+</body>
+</html>
