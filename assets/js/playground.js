@@ -1,5 +1,5 @@
 const frameworkCssUrl = new URL(
-  "../../PokeStrap_Framework/dist/css/pokestrap.css",
+  "../PokeStrap_Framework/dist/css/pokestrap.css",
   window.location.href
 ).href;
 
