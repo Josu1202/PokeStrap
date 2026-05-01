@@ -188,7 +188,7 @@ function createPreviewDocument(content) {
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="../PokeStrap_Framework/dist/css/pokestrap.css">
   <style>
     body {
       margin: 0;
