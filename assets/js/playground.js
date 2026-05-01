@@ -1,3 +1,8 @@
+const frameworkCssUrl = new URL(
+  "../../PokeStrap_Framework/dist/css/pokestrap.css",
+  window.location.href
+).href;
+
 const lessons = [
   {
     title: "1. Crear un botón primary",
@@ -113,7 +118,7 @@ const lessons = [
     title: "9. Usar utilidades de spacing",
     description: "Aplica margen, padding, color, bordes y sombra a una caja.",
     starter: `<div>
-  Caja con utilidades de PokeStrap
+  Caja con utilidades
 </div>`,
     hint: "Prueba clases como .p-4, .mb-4, .bg-warning, .rounded-lg y .shadow-md.",
     solution: `<div class="bg-warning text-black p-4 mb-4 rounded-lg shadow-md">
@@ -128,7 +133,6 @@ const lessons = [
   <p>Construida con PokeStrap.</p>
 </section>`,
     hint: "Combina .pk-hero, .container, .row, .col-* y .pk-card.",
-    skipCheck: true,
     solution: `<section class="pk-hero rounded-lg">
   <div class="container">
     <span class="pk-badge pk-badge-secondary pk-badge-pill mb-4">Demo</span>
@@ -189,7 +193,7 @@ function createPreviewDocument(content) {
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../../PokeStrap_Framework/dist/css/pokestrap.css">
+  <link rel="stylesheet" href="${frameworkCssUrl}">
   <style>
     body {
       margin: 0;
@@ -208,6 +212,15 @@ function createPreviewDocument(content) {
 
 function renderFrame(frame, code) {
   frame.srcdoc = createPreviewDocument(code);
+}
+
+function normalizeCode(code) {
+  return code
+    .replace(/\s+/g, " ")
+    .replace(/>\s+</g, "><")
+    .replace(/\s*=\s*/g, "=")
+    .trim()
+    .toLowerCase();
 }
 
 function setActiveButton(index) {
@@ -276,15 +289,6 @@ function renderLessonCard(index) {
   return wrapper;
 }
 
-function normalizeCode(code) {
-  return code
-    .replace(/\s+/g, " ")
-    .replace(/>\s+</g, "><")
-    .replace(/\s*=\s*/g, "=")
-    .trim()
-    .toLowerCase();
-}
-
 function selectLesson(index, button) {
   if (currentLessonIndex === index && activeLessonCard) {
     activeLessonCard.remove();
@@ -314,26 +318,20 @@ function selectLesson(index, button) {
 
   renderFrame(preview, lesson.starter);
 
-document.getElementById("active-run").addEventListener("click", () => {
-  renderFrame(preview, editor.value);
+  document.getElementById("active-run").addEventListener("click", () => {
+    const userCode = normalizeCode(editor.value);
+    const solutionCode = normalizeCode(lesson.solution);
 
-  if (lesson.skipCheck) {
-    message.className = "pk-alert pk-alert-info mt-4";
-    message.textContent = "Tu código se ejecutó correctamente. En este reto se evalúa la creatividad y estructura, no una coincidencia exacta.";
-    return;
-  }
+    renderFrame(preview, editor.value);
 
-  const userCode = normalizeCode(editor.value);
-  const solutionCode = normalizeCode(lesson.solution);
-
-  if (userCode === solutionCode) {
-    message.className = "pk-alert pk-alert-success mt-4";
-    message.textContent = "¡Excelente! Tu código coincide con la solución.";
-  } else {
-    message.className = "pk-alert pk-alert-warning mt-4";
-    message.textContent = "Tu código se ejecutó, pero todavía no coincide con la solución. Inténtalo de nuevo.";
-  }
-});
+    if (userCode === solutionCode) {
+      message.className = "pk-alert pk-alert-success mt-4";
+      message.textContent = "¡Excelente! Tu código coincide con la solución.";
+    } else {
+      message.className = "pk-alert pk-alert-warning mt-4";
+      message.textContent = "Tu código se ejecutó, pero todavía no coincide con la solución. Inténtalo de nuevo.";
+    }
+  });
 
   document.getElementById("active-hint").addEventListener("click", () => {
     message.className = "pk-alert pk-alert-warning mt-4";
